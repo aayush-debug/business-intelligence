@@ -146,4 +146,7 @@ curl http://localhost:8000/api/stats
 - **Top Products**: `GET /api/top-products?days=90&limit=8` (product, category, revenue, units, profit, margin_pct)
 - **Top Customers**: `GET /api/top-customers?days=90&limit=8` (customer, revenue, orders — excludes walk-ins)
 - **Categories**: `GET /api/categories?days=90` (category, revenue, profit)
+- **Anomalies**: `GET /api/anomalies?days=180` (series and flagged spike/drop events via rolling z-scores on weekday-adjusted daily revenue)
+- **Forecast**: `GET /api/forecast?horizon=30` (7-90 day trend projection with weekday seasonality, confidence bands, 60-day history, and 28-day backtest vs seasonal-naive baseline)
+
 

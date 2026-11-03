@@ -90,3 +90,16 @@ def categories(days: int = Query(90, ge=0, description="Date window in days (0 f
     return A.categories(days=days)
 
 
+@app.get("/api/anomalies")
+def anomalies(days: int = Query(180, ge=0, description="Date window in days (0 for all time)")):
+    """Detect daily revenue anomalies using weekday-normalized rolling z-scores."""
+    return A.anomalies(days=days)
+
+
+@app.get("/api/forecast")
+def forecast(horizon: int = Query(30, description="Forecast horizon in days (clamped to 7..90)")):
+    """Forecast future revenue with confidence bands and backtest metrics."""
+    return A.forecast(horizon=min(max(horizon, 7), 90))
+
+
+

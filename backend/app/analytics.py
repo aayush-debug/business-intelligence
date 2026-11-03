@@ -2,6 +2,7 @@ from enum import Enum
 import json
 import time
 from typing import Any, Optional
+import numpy as np
 import pandas as pd
 from sqlalchemy import text
 from .db import engine
@@ -277,4 +278,143 @@ def categories(days: int = 90) -> list[dict[str, Any]]:
 
     ranked = g.drop(columns=["cogs"]).sort_values("revenue", ascending=False)
     return json.loads(ranked.to_json(orient="records"))
+
+
+def daily() -> pd.Series:
+    """Return total revenue per calendar day from sales_df(), reindexed with 0 for missing days."""
+    s = sales_df()
+    if s.empty:
+        return pd.Series(dtype=float)
+    d = s.groupby("sale_date")["total_amount"].sum()
+    full_index = pd.date_range(d.index.min(), d.index.max(), freq="D")
+    return d.reindex(full_index, fill_value=0.0)
+
+
+def anomalies(days: int = 180) -> dict[str, Any]:
+    """Detect daily revenue anomalies using weekday-normalized rolling z-scores."""
+    d = daily()
+    if d.empty or len(d) < 15:
+        return {"series": [], "flagged": []}
+
+    # Weekday factor normalizes recurring weekly patterns (e.g. weekend peaks) so normal cyclical variation is not flagged
+    overall_mean = d.mean() or 1.0
+    factor = d.groupby(d.index.dayofweek).mean() / overall_mean
+    adj = d / d.index.dayofweek.map(factor).values
+
+    # Rolling statistics over the previous 28 days (shifted by 1 day to exclude current day)
+    base = adj.shift(1).rolling(28, min_periods=14)
+    base_mean = base.mean()
+    base_std = base.std().replace(0, np.nan)
+    z = (adj - base_mean) / base_std
+
+    # Build series and classify anomalies
+    df = pd.DataFrame({
+        "date": d.index.strftime("%Y-%m-%d"),
+        "revenue": d.values.round(2),
+        "z": z.values.round(2),
+    }).dropna()
+
+    df["is_anomaly"] = (df["z"].abs() > 3).astype(bool)
+    df["type"] = np.where(df["z"] > 0, "spike", "drop")
+
+    # Filter window: days=0 means all available days
+    if days > 0:
+        df = df.tail(days)
+
+    flagged = df[df["is_anomaly"]]
+
+    return {
+        "series": json.loads(df.to_json(orient="records")),
+        "flagged": json.loads(flagged.to_json(orient="records")),
+    }
+
+
+def _fit_predict(train: pd.Series, dates: pd.DatetimeIndex) -> tuple[np.ndarray, np.ndarray]:
+    """Fit robust trend with weekday seasonality and predict future dates with confidence bands."""
+    # 1. Weekday factor based on median revenue to account for day-of-week seasonality
+    weekday_median = train.groupby(train.index.dayofweek).median()
+    overall_median = train.median() or 1.0
+    factor = weekday_median / overall_median
+
+    # 2. Adjust revenue by weekday factor to isolate trend, using the last 84 days
+    adj = train / train.index.dayofweek.map(factor).values
+    adj_84 = adj.tail(84)
+    med = adj_84.median()
+    # Robust standard deviation estimator: 1.4826 * MAD
+    mad = float((adj_84 - med).abs().median()) or 1.0
+    # Outlier clipping: clip values beyond median +/- 3 * 1.4826 * MAD (~3 sigma) so one-off spikes do not skew trend
+    adj_clipped = adj_84.clip(med - 3 * 1.4826 * mad, med + 3 * 1.4826 * mad)
+
+    # 3. Fit a straight line (degree 1 polynomial) to the adjusted series
+    x = np.arange(len(adj_clipped))
+    slope, icpt = np.polyfit(x, adj_clipped.values, 1)
+    resid = float(np.std(adj_clipped.values - (slope * x + icpt)))
+
+    # 4. Project line values to future day indices and reapply each day's weekday factor
+    xf = len(adj_clipped) + np.arange(len(dates))
+    f = dates.dayofweek.map(factor).values
+    mid = (slope * xf + icpt) * f
+    band = 1.96 * resid * f
+    return mid, band
+
+
+def forecast(horizon: int = 30) -> dict[str, Any]:
+    """Forecast future revenue using robust seasonal linear trend and evaluate backtest performance."""
+    d = daily()
+    if d.empty or len(d) < 35:
+        return {
+            "history": [],
+            "forecast": [],
+            "total_forecast": 0.0,
+            "backtest": {"model_mae": 0.0, "naive_mae": 0.0, "improvement_pct": None},
+        }
+
+    # Clamp horizon to 7..90
+    clamped_horizon = min(max(horizon, 7), 90)
+
+    # BACKTEST: Hold out last 28 days, train on everything before
+    hold = 28
+    train, test = d.iloc[:-hold], d.iloc[-hold:]
+    pred_mid, _ = _fit_predict(train, test.index)
+    pred = np.clip(pred_mid, 0, None)
+
+    # Seasonal-naive baseline: average of the last 4 same-weekday values in the training data
+    naive = np.array([train[train.index.dayofweek == dw].tail(4).mean() for dw in test.index.dayofweek])
+    mae_model = float(np.mean(np.abs(test.values - pred)))
+    mae_naive = float(np.mean(np.abs(test.values - naive)))
+    improvement_pct = round((1 - mae_model / mae_naive) * 100, 1) if mae_naive else None
+
+    # FUTURE FORECAST
+    future = pd.date_range(d.index.max() + pd.Timedelta(days=1), periods=clamped_horizon, freq="D")
+    mid, band = _fit_predict(d, future)
+
+    forecast_vals = np.clip(mid, 0, None).round(2)
+    lower_vals = np.clip(mid - band, 0, None).round(2)
+    upper_vals = (mid + band).round(2)
+
+    f_df = pd.DataFrame({
+        "date": future.strftime("%Y-%m-%d"),
+        "forecast": forecast_vals,
+        "lower": lower_vals,
+        "upper": upper_vals,
+    })
+
+    # History: last 60 days
+    h = d.tail(60)
+    hist_df = pd.DataFrame({
+        "date": h.index.strftime("%Y-%m-%d"),
+        "actual": h.values.round(2),
+    })
+
+    return {
+        "history": json.loads(hist_df.to_json(orient="records")),
+        "forecast": json.loads(f_df.to_json(orient="records")),
+        "total_forecast": round(float(f_df["forecast"].sum()), 2),
+        "backtest": {
+            "model_mae": round(mae_model, 2),
+            "naive_mae": round(mae_naive, 2),
+            "improvement_pct": improvement_pct,
+        },
+    }
+
 
