@@ -33,6 +33,15 @@ company-brain/
       expenses.csv
     requirements.txt   # Pinned dependencies
     Dockerfile         # Multi-stage Python 3.11-slim container
+  bi-platform/
+    frontend/          # Next.js 14 dashboard (React 18, Recharts, Plain CSS)
+      app/
+        globals.css
+        layout.js
+        page.js
+      package.json
+      next.config.js
+      .env.example
   docker-compose.yml   # PostgreSQL 16 + backend service with healthcheck
   .gitignore
   README.md
@@ -87,6 +96,32 @@ To point to a custom or PostgreSQL database locally:
 export DATABASE_URL="postgresql://company_brain:company_brain@localhost:5432/company_brain"
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
+
+---
+
+## Frontend Setup & Run (Next.js 14)
+
+### 1. Navigate to the frontend directory
+```bash
+cd bi-platform/frontend
+# or: cd frontend
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Build the application
+```bash
+npm run build
+```
+
+### 4. Start development server
+```bash
+npm run dev
+```
+The frontend dashboard will be live at `http://localhost:3000`. It connects to the backend at `http://localhost:8000` by default (configurable via `NEXT_PUBLIC_API_URL`).
 
 ---
 
