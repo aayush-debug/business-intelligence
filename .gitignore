@@ -44,6 +44,10 @@ data/email_digests/
 .DS_Store
 *.zip
 
+# Logs
+logs/
+*.log
+
 # Node & Next.js
 node_modules/
 .next/
