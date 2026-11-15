@@ -81,10 +81,34 @@ echo -e "  ${BOLD}Press Ctrl+C in this terminal anytime to stop the servers.${RE
 echo -e "${GREEN}================================================================${RESET}"
 echo ""
 
-# Automatically open dashboard in browser on macOS
-if command -v open >/dev/null 2>&1; then
-    open "http://localhost:3000"
-fi
+# Automatically open dashboard in browser across macOS, Windows, and Linux
+open_browser() {
+    local target_url="$1"
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # macOS
+        open "$target_url" 2>/dev/null || true
+    elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" || "$OSTYPE" == "win32" ]]; then
+        # Windows Git Bash / Cygwin / MSYS
+        cmd.exe /c start "" "$target_url" 2>/dev/null || start "$target_url" 2>/dev/null || explorer.exe "$target_url" 2>/dev/null || true
+    elif grep -qi microsoft /proc/version 2>/dev/null; then
+        # Windows Subsystem for Linux (WSL)
+        if command -v wslview >/dev/null 2>&1; then
+            wslview "$target_url" 2>/dev/null || true
+        else
+            cmd.exe /c start "" "$target_url" 2>/dev/null || powershell.exe -NoProfile -Command "Start-Process '$target_url'" 2>/dev/null || true
+        fi
+    elif command -v xdg-open >/dev/null 2>&1; then
+        # Linux desktop
+        xdg-open "$target_url" 2>/dev/null || true
+    elif command -v cmd.exe >/dev/null 2>&1; then
+        # Fallback Windows cmd
+        cmd.exe /c start "" "$target_url" 2>/dev/null || true
+    elif command -v open >/dev/null 2>&1; then
+        open "$target_url" 2>/dev/null || true
+    fi
+}
+
+open_browser "http://localhost:3000"
 
 # Wait for background processes
 wait

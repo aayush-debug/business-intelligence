@@ -8,18 +8,23 @@ Supports SQLite locally, PostgreSQL 16 in production, and a zero-database **Snap
 
 ## ⚡ Quick Start (One Command)
 
-To run the entire platform (FastAPI Backend + Next.js Frontend) in a single command:
-
+### macOS, Linux & Windows (Git Bash / WSL)
 ```bash
 ./run.sh
 ```
 
-### What `./run.sh` Handles Automatically:
+### Windows (Command Prompt / PowerShell / Double-Click)
+```cmd
+run.bat
+```
+
+### What These Scripts Handle Automatically:
 1. **Frees Ports `8000` & `3000`**: Kills any leftover or stale background processes.
 2. **Clears Cache**: Wipes stale Next.js build cache to eliminate webpack module errors (`Cannot find module './755.js'`).
 3. **Launches Backend**: Starts FastAPI on `http://localhost:8000` with hot-reloading.
 4. **Launches Frontend**: Starts Next.js on `http://localhost:3000`.
-5. **Graceful Shutdown**: Pressing `Ctrl+C` cleanly terminates both servers simultaneously.
+5. **Auto-Opens Browser**: Automatically opens `http://localhost:3000` in your default browser on Windows, macOS, and Linux.
+6. **Graceful Shutdown**: Pressing `Ctrl+C` cleanly terminates both servers simultaneously.
 
 ### Access Links
 - **Business Dashboard**: [http://localhost:3000](http://localhost:3000)
