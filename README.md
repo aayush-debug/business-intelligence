@@ -29,8 +29,8 @@ Supports SQLite locally and PostgreSQL 16 in production.
 - **SQLite** (local default) / **PostgreSQL 16** (production / docker-compose)
 
 **Frontend**
-- **Next.js 14** (App Router)
-- **React 18** (Plain JavaScript, no TypeScript)
+- **Next.js 14** (App Router, configured for static HTML export `output: "export"`)
+- **React 18** (Plain JavaScript, no TypeScript, client-rendered)
 - **Recharts**: Responsive charting
 - **Plain CSS**: Clean, dependency-free CSS in `globals.css` with Indian Rupee formatting (`₹`)
 
@@ -101,13 +101,27 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 By default, the server connects to SQLite at `./company_brain.db` and starts **EMPTY**.
 
 ### 2. Run the Frontend
+
+#### Local Development Server
 ```bash
 cd bi-platform/frontend
 npm install
-npm run build
 npm run dev
 ```
 Open `http://localhost:3000` in your browser.
+
+#### Static Export & Local Testing
+The frontend is configured as a standalone static export (`output: "export"`, `trailingSlash: true`, `images: { unoptimized: true }`), meaning it does not require a Node.js server in production and can be served from any static host (Cloudflare Pages, Netlify, Vercel, AWS S3, GitHub Pages, Nginx).
+
+> **Important**: The backend address is set via the `NEXT_PUBLIC_API_URL` environment variable (defaults to `http://localhost:8000`). Because this is a static site export, `NEXT_PUBLIC_API_URL` is **baked in at build time** into the client JavaScript bundles. If deploying to production, define `NEXT_PUBLIC_API_URL=https://your-api.com` prior to building.
+
+To build the static export and test the exported site locally:
+```bash
+cd bi-platform/frontend
+npm run build
+npx serve out
+```
+This serves the generated static assets from the `out/` directory.
 
 ### 3. Load Demo Data (Optional)
 To populate the database with the sample pharmacy dataset:
