@@ -90,6 +90,23 @@ company-brain/
 
 ## Getting Started
 
+### ⚡ One-Command Startup (Recommended)
+
+To start both the FastAPI backend and Next.js frontend with a single command:
+```bash
+./run.sh
+```
+This script automatically:
+1. Frees ports `8000` and `3000` if previously occupied.
+2. Clears stale Next.js cache artifacts.
+3. Launches the FastAPI backend on `http://localhost:8000`.
+4. Launches the Next.js frontend on `http://localhost:3000`.
+5. Gracefully stops both servers when you press `Ctrl+C`.
+
+---
+
+### Manual Setup
+
 ### 1. Run the Backend
 ```bash
 cd backend
