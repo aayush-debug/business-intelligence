@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-15",
+  "revenue": 38.0,
+  "invoices": 1,
+  "aov": 38.0,
+  "gross_profit": 5.32,
+  "margin_pct": 14.0,
+  "vs_usual_pct": -99.9,
+  "top_products": [
+    {
+      "product": "Metformin 500mg (10 tabs)",
+      "units": 1,
+      "revenue": 38.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 17,
+  "summary_text": "Daily summary, Sun 15 Nov 2026\nSales: \u20b938 from 1 bills (100% below a usual Sun)\nGross profit: \u20b95 (14.0%)\nBest sellers: Metformin 500mg (10 tabs) (1)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 17"
+}

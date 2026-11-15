@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-24",
+  "revenue": 43570.0,
+  "invoices": 76,
+  "aov": 573.29,
+  "gross_profit": 9181.59,
+  "margin_pct": 21.07,
+  "vs_usual_pct": 4.1,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 6,
+      "revenue": 3900.0
+    },
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 7,
+      "revenue": 2450.0
+    },
+    {
+      "product": "Protein Powder 500g",
+      "units": 2,
+      "revenue": 2400.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Sat 24 Oct 2026\nSales: \u20b943,570 from 76 bills (4% above a usual Sat)\nGross profit: \u20b99,182 (21.07%)\nBest sellers: Baby Diapers (pack of 36) (6), Multivitamin (30 tabs) (7), Protein Powder 500g (2)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

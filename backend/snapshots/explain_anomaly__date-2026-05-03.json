@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-03",
+  "type": "drop",
+  "revenue": 16759.0,
+  "baseline_revenue": 29566.75,
+  "diff_pct": -43.3,
+  "invoices": 39,
+  "top_products": [
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 4,
+      "revenue": 1800.0,
+      "share_pct": 10.7
+    },
+    {
+      "product": "Telmisartan 40mg (10 tabs)",
+      "units": 11,
+      "revenue": 1045.0,
+      "share_pct": 6.2
+    },
+    {
+      "product": "Atorvastatin 10mg (10 tabs)",
+      "units": 7,
+      "revenue": 840.0,
+      "share_pct": 5.0
+    }
+  ],
+  "explanation": "On 3 May 2026, revenue dropped to \u20b916,759 (-43.3% below the usual Sunday average of \u20b929,567). Only 39 orders were billed, with top sales from Omega-3 Fish Oil (30 caps) (4 units, \u20b91,800), Telmisartan 40mg (10 tabs) (11 units, \u20b91,045), Atorvastatin 10mg (10 tabs) (7 units, \u20b9840)."
+}

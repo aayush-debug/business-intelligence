@@ -1,0 +1,25 @@
+{
+  "products": {
+    "rows": 54,
+    "loaded": true
+  },
+  "customers": {
+    "rows": 420,
+    "loaded": true
+  },
+  "sales": {
+    "rows": 94677,
+    "loaded": true
+  },
+  "expenses": {
+    "rows": 188,
+    "loaded": true
+  },
+  "inventory": {
+    "rows": 53,
+    "loaded": true
+  },
+  "first_sale_date": "2024-11-01",
+  "last_sale_date": "2026-11-15",
+  "last_closed_date": "2026-11-15"
+}

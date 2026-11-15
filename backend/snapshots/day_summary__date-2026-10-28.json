@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-28",
+  "revenue": 31704.0,
+  "invoices": 67,
+  "aov": 473.19,
+  "gross_profit": 6742.77,
+  "margin_pct": 21.27,
+  "vs_usual_pct": -13.4,
+  "top_products": [
+    {
+      "product": "Amoxicillin-Clav 625 (10 tabs)",
+      "units": 11,
+      "revenue": 2310.0
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 4,
+      "revenue": 1800.0
+    },
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 5,
+      "revenue": 1750.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Wed 28 Oct 2026\nSales: \u20b931,704 from 67 bills (13% below a usual Wed)\nGross profit: \u20b96,743 (21.27%)\nBest sellers: Amoxicillin-Clav 625 (10 tabs) (11), Omega-3 Fish Oil (30 caps) (4), Multivitamin (30 tabs) (5)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

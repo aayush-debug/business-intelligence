@@ -1,0 +1,14 @@
+{
+  "revenue": 2824359.0,
+  "cogs": 2219816.01,
+  "gross_profit": 604542.99,
+  "expenses": 501010.26,
+  "net_profit": 103532.73,
+  "margin": 3.67,
+  "orders": 5065,
+  "customers": 416,
+  "aov": 557.62,
+  "revenue_growth": -17.86,
+  "profit_growth": 1.05,
+  "days": 90
+}

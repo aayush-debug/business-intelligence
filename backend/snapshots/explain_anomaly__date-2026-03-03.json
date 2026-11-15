@@ -1,0 +1,29 @@
+{
+  "date": "2026-03-03",
+  "type": "spike",
+  "revenue": 54159.0,
+  "baseline_revenue": 35860.25,
+  "diff_pct": 51.0,
+  "invoices": 79,
+  "top_products": [
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 11,
+      "revenue": 3850.0,
+      "share_pct": 7.1
+    },
+    {
+      "product": "Glucometer Strips (50)",
+      "units": 5,
+      "revenue": 3750.0,
+      "share_pct": 6.9
+    },
+    {
+      "product": "BP Monitor (Digital)",
+      "units": 2,
+      "revenue": 3600.0,
+      "share_pct": 6.6
+    }
+  ],
+  "explanation": "On 3 Mar 2026, revenue spiked to \u20b954,159 (+51.0% above the usual Tuesday average of \u20b935,860). The spike was driven by strong sales in: Multivitamin (30 tabs) (11 units, \u20b93,850), Glucometer Strips (50) (5 units, \u20b93,750), BP Monitor (Digital) (2 units, \u20b93,600) across 79 orders."
+}

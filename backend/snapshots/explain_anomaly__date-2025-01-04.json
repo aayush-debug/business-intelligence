@@ -1,0 +1,29 @@
+{
+  "date": "2025-01-04",
+  "type": "spike",
+  "revenue": 60506.0,
+  "baseline_revenue": 42269.75,
+  "diff_pct": 43.1,
+  "invoices": 84,
+  "top_products": [
+    {
+      "product": "Protein Powder 500g",
+      "units": 4,
+      "revenue": 4800.0,
+      "share_pct": 7.9
+    },
+    {
+      "product": "Pulse Oximeter",
+      "units": 3,
+      "revenue": 4500.0,
+      "share_pct": 7.4
+    },
+    {
+      "product": "Nebulizer",
+      "units": 2,
+      "revenue": 4400.0,
+      "share_pct": 7.3
+    }
+  ],
+  "explanation": "On 4 Jan 2025, revenue spiked to \u20b960,506 (+43.1% above the usual Saturday average of \u20b942,270). The spike was driven by strong sales in: Protein Powder 500g (4 units, \u20b94,800), Pulse Oximeter (3 units, \u20b94,500), Nebulizer (2 units, \u20b94,400) across 84 orders."
+}

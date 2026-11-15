@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-02",
+  "type": "drop",
+  "revenue": 3978.0,
+  "baseline_revenue": 34794.75,
+  "diff_pct": -88.6,
+  "invoices": 6,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 2,
+      "revenue": 1300.0,
+      "share_pct": 32.7
+    },
+    {
+      "product": "Montelukast-Levocetirizine (10 tabs)",
+      "units": 4,
+      "revenue": 640.0,
+      "share_pct": 16.1
+    },
+    {
+      "product": "Steam Inhaler",
+      "units": 1,
+      "revenue": 550.0,
+      "share_pct": 13.8
+    }
+  ],
+  "explanation": "On 2 Oct 2026, revenue dropped to \u20b93,978 (-88.6% below the usual Friday average of \u20b934,795). Only 6 orders were billed, with top sales from Baby Diapers (pack of 36) (2 units, \u20b91,300), Montelukast-Levocetirizine (10 tabs) (4 units, \u20b9640), Steam Inhaler (1 units, \u20b9550)."
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-11",
+  "type": "spike",
+  "revenue": 51304.0,
+  "baseline_revenue": 32002.25,
+  "diff_pct": 60.3,
+  "invoices": 87,
+  "top_products": [
+    {
+      "product": "Pain Relief Gel 30g",
+      "units": 16,
+      "revenue": 3040.0,
+      "share_pct": 5.9
+    },
+    {
+      "product": "Pulse Oximeter",
+      "units": 2,
+      "revenue": 3000.0,
+      "share_pct": 5.8
+    },
+    {
+      "product": "Pantoprazole 40mg (10 tabs)",
+      "units": 21,
+      "revenue": 2940.0,
+      "share_pct": 5.7
+    }
+  ],
+  "explanation": "On 11 Aug 2026, revenue spiked to \u20b951,304 (+60.3% above the usual Tuesday average of \u20b932,002). The spike was driven by strong sales in: Pain Relief Gel 30g (16 units, \u20b93,040), Pulse Oximeter (2 units, \u20b93,000), Pantoprazole 40mg (10 tabs) (21 units, \u20b92,940) across 87 orders."
+}

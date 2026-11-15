@@ -1,0 +1,29 @@
+{
+  "date": "2026-01-26",
+  "type": "drop",
+  "revenue": 6386.0,
+  "baseline_revenue": 35882.0,
+  "diff_pct": -82.2,
+  "invoices": 10,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 2,
+      "revenue": 1300.0,
+      "share_pct": 20.4
+    },
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 3,
+      "revenue": 1050.0,
+      "share_pct": 16.4
+    },
+    {
+      "product": "Cefixime 200mg (10 tabs)",
+      "units": 5,
+      "revenue": 650.0,
+      "share_pct": 10.2
+    }
+  ],
+  "explanation": "On 26 Jan 2026, revenue dropped to \u20b96,386 (-82.2% below the usual Monday average of \u20b935,882). Only 10 orders were billed, with top sales from Baby Diapers (pack of 36) (2 units, \u20b91,300), Multivitamin (30 tabs) (3 units, \u20b91,050), Cefixime 200mg (10 tabs) (5 units, \u20b9650)."
+}

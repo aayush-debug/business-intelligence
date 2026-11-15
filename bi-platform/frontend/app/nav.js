@@ -9,6 +9,16 @@ const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").re
 export default function Navigation() {
   const pathname = usePathname();
   const [dayStatus, setDayStatus] = useState(null);
+  const [config, setConfig] = useState(null);
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/config`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data) setConfig(data);
+      })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     fetch(`${API_BASE}/api/day/status`)
@@ -22,6 +32,14 @@ export default function Navigation() {
   const lastClosed = dayStatus?.last_closed_date;
   const openDays = dayStatus?.open_days || [];
   const openCount = openDays.length;
+  const isSnapshot = Boolean(config?.snapshot_mode);
+  const snapshotDateStr = config?.snapshot_built_at
+    ? new Date(config.snapshot_built_at).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+      })
+    : "";
 
   const links = [
     { href: "/", label: "Dashboard" },
@@ -55,7 +73,22 @@ export default function Navigation() {
               })}
             </div>
           </div>
-          <div className="nav-right">
+          <div className="nav-right" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            {(isSnapshot || config?.demo_mode) && (
+              <span
+                style={{
+                  background: "#fef3c7",
+                  color: "#b45309",
+                  border: "1px solid #fde68a",
+                  borderRadius: "6px",
+                  padding: "2px 8px",
+                  fontSize: "12px",
+                  fontWeight: 600,
+                }}
+              >
+                Demo data
+              </span>
+            )}
             {lastClosed ? (
               <span className="nav-status-badge">
                 Data up to {new Date(lastClosed + "T00:00:00").toLocaleDateString("en-IN", {
@@ -63,7 +96,6 @@ export default function Navigation() {
                   month: "short",
                   year: "numeric"
                 })}
-                {lastClosed === "2026-10-31" ? " (Mock data)" : ""}
               </span>
             ) : (
               <span className="nav-status-badge">No closed days</span>
@@ -72,7 +104,23 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {openCount > 0 && (
+      {isSnapshot && snapshotDateStr && (
+        <div
+          style={{
+            background: "#eff6ff",
+            color: "#1d4ed8",
+            borderBottom: "1px solid #dbeafe",
+            padding: "6px 20px",
+            fontSize: "13px",
+            textAlign: "center",
+            fontWeight: 500,
+          }}
+        >
+          Sample data snapshot built {snapshotDateStr}
+        </div>
+      )}
+
+      {openCount > 0 && !isSnapshot && (
         <div className="banner-warning">
           <span>
             {openCount} day{openCount > 1 ? "s" : ""} not closed yet.

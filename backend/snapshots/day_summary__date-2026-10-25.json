@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-25",
+  "revenue": 36696.0,
+  "invoices": 55,
+  "aov": 667.2,
+  "gross_profit": 7588.67,
+  "margin_pct": 20.68,
+  "vs_usual_pct": 10.8,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 10,
+      "revenue": 6500.0
+    },
+    {
+      "product": "Pantoprazole 40mg (10 tabs)",
+      "units": 18,
+      "revenue": 2520.0
+    },
+    {
+      "product": "BP Monitor (Digital)",
+      "units": 1,
+      "revenue": 1800.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Sun 25 Oct 2026\nSales: \u20b936,696 from 55 bills (11% above a usual Sun)\nGross profit: \u20b97,589 (20.68%)\nBest sellers: Baby Diapers (pack of 36) (10), Pantoprazole 40mg (10 tabs) (18), BP Monitor (Digital) (1)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

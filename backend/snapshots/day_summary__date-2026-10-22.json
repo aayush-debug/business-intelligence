@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-22",
+  "revenue": 51945.0,
+  "invoices": 79,
+  "aov": 657.53,
+  "gross_profit": 11024.35,
+  "margin_pct": 21.22,
+  "vs_usual_pct": 33.4,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 9,
+      "revenue": 5850.0
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 8,
+      "revenue": 3600.0
+    },
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 10,
+      "revenue": 3500.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Thu 22 Oct 2026\nSales: \u20b951,945 from 79 bills (33% above a usual Thu)\nGross profit: \u20b911,024 (21.22%)\nBest sellers: Baby Diapers (pack of 36) (9), Omega-3 Fish Oil (30 caps) (8), Multivitamin (30 tabs) (10)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

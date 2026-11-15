@@ -1,0 +1,42 @@
+[
+  {
+    "customer": "Isha Sharma #126",
+    "revenue": 14797.0,
+    "orders": 24
+  },
+  {
+    "customer": "Ramesh Desai #180",
+    "revenue": 12772.0,
+    "orders": 30
+  },
+  {
+    "customer": "Neil Singh #191",
+    "revenue": 12522.0,
+    "orders": 12
+  },
+  {
+    "customer": "Aarav Iyer #374",
+    "revenue": 10994.0,
+    "orders": 28
+  },
+  {
+    "customer": "Neil Joshi #168",
+    "revenue": 10770.0,
+    "orders": 20
+  },
+  {
+    "customer": "Kabir Khan #109",
+    "revenue": 10561.0,
+    "orders": 17
+  },
+  {
+    "customer": "Prakash Patel #7",
+    "revenue": 10443.0,
+    "orders": 16
+  },
+  {
+    "customer": "Kavita Khan #90",
+    "revenue": 10359.0,
+    "orders": 13
+  }
+]

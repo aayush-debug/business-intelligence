@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-20",
+  "revenue": 28062.0,
+  "invoices": 61,
+  "aov": 460.03,
+  "gross_profit": 5755.98,
+  "margin_pct": 20.51,
+  "vs_usual_pct": -33.0,
+  "top_products": [
+    {
+      "product": "Pantoprazole 40mg (10 tabs)",
+      "units": 11,
+      "revenue": 1540.0
+    },
+    {
+      "product": "Telmisartan 40mg (10 tabs)",
+      "units": 15,
+      "revenue": 1425.0
+    },
+    {
+      "product": "Losartan 50mg (10 tabs)",
+      "units": 16,
+      "revenue": 1360.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Tue 20 Oct 2026\nSales: \u20b928,062 from 61 bills (33% below a usual Tue)\nGross profit: \u20b95,756 (20.51%)\nBest sellers: Pantoprazole 40mg (10 tabs) (11), Telmisartan 40mg (10 tabs) (15), Losartan 50mg (10 tabs) (16)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

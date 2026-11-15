@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-13",
+  "type": "spike",
+  "revenue": 78396.0,
+  "baseline_revenue": 33758.0,
+  "diff_pct": 132.2,
+  "invoices": 134,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 15,
+      "revenue": 9750.0,
+      "share_pct": 12.4
+    },
+    {
+      "product": "Montelukast-Levocetirizine (10 tabs)",
+      "units": 29,
+      "revenue": 4640.0,
+      "share_pct": 5.9
+    },
+    {
+      "product": "Cefixime 200mg (10 tabs)",
+      "units": 34,
+      "revenue": 4420.0,
+      "share_pct": 5.6
+    }
+  ],
+  "explanation": "On 13 Aug 2026, revenue spiked to \u20b978,396 (+132.2% above the usual Thursday average of \u20b933,758). The spike was driven by strong sales in: Baby Diapers (pack of 36) (15 units, \u20b99,750), Montelukast-Levocetirizine (10 tabs) (29 units, \u20b94,640), Cefixime 200mg (10 tabs) (34 units, \u20b94,420) across 134 orders."
+}

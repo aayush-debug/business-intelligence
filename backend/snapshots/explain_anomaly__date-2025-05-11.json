@@ -1,0 +1,29 @@
+{
+  "date": "2025-05-11",
+  "type": "spike",
+  "revenue": 42655.0,
+  "baseline_revenue": 27274.5,
+  "diff_pct": 56.4,
+  "invoices": 48,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 11,
+      "revenue": 7150.0,
+      "share_pct": 16.8
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 15,
+      "revenue": 6750.0,
+      "share_pct": 15.8
+    },
+    {
+      "product": "Protein Powder 500g",
+      "units": 3,
+      "revenue": 3600.0,
+      "share_pct": 8.4
+    }
+  ],
+  "explanation": "On 11 May 2025, revenue spiked to \u20b942,655 (+56.4% above the usual Sunday average of \u20b927,274). The spike was driven by strong sales in: Baby Diapers (pack of 36) (11 units, \u20b97,150), Omega-3 Fish Oil (30 caps) (15 units, \u20b96,750), Protein Powder 500g (3 units, \u20b93,600) across 48 orders."
+}

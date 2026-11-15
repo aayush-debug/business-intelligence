@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-26",
+  "revenue": 39904.0,
+  "invoices": 73,
+  "aov": 546.63,
+  "gross_profit": 8910.63,
+  "margin_pct": 22.33,
+  "vs_usual_pct": -8.2,
+  "top_products": [
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 7,
+      "revenue": 3150.0
+    },
+    {
+      "product": "Pulse Oximeter",
+      "units": 2,
+      "revenue": 3000.0
+    },
+    {
+      "product": "Pain Relief Gel 30g",
+      "units": 14,
+      "revenue": 2660.0
+    }
+  ],
+  "top_category": "Vitamins & Supplements",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Mon 26 Oct 2026\nSales: \u20b939,904 from 73 bills (8% below a usual Mon)\nGross profit: \u20b98,911 (22.33%)\nBest sellers: Omega-3 Fish Oil (30 caps) (7), Pulse Oximeter (2), Pain Relief Gel 30g (14)\nTop category: Vitamins & Supplements\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

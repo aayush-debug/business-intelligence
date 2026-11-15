@@ -1,0 +1,249 @@
+{
+  "series": [
+    {
+      "date": "2026-10-17",
+      "revenue": 38894.0,
+      "z": -0.5,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-18",
+      "revenue": 36167.0,
+      "z": 0.76,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-19",
+      "revenue": 42801.0,
+      "z": 0.28,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-20",
+      "revenue": 28062.0,
+      "z": -1.23,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-21",
+      "revenue": 33708.0,
+      "z": -0.5,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-22",
+      "revenue": 51945.0,
+      "z": 1.59,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-23",
+      "revenue": 45773.0,
+      "z": 0.56,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-24",
+      "revenue": 43570.0,
+      "z": -0.06,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-25",
+      "revenue": 36696.0,
+      "z": 0.71,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-26",
+      "revenue": 39904.0,
+      "z": -0.09,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-27",
+      "revenue": 31929.0,
+      "z": -0.73,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-28",
+      "revenue": 31704.0,
+      "z": -0.76,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-29",
+      "revenue": 51393.0,
+      "z": 1.38,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-30",
+      "revenue": 48084.0,
+      "z": 0.69,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-31",
+      "revenue": 34080.0,
+      "z": -1.91,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-01",
+      "revenue": 0.0,
+      "z": -6.63,
+      "is_anomaly": true,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 0.0,
+      "z": -4.0,
+      "is_anomaly": true,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 0.0,
+      "z": -3.09,
+      "is_anomaly": true,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-04",
+      "revenue": 0.0,
+      "z": -2.57,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-05",
+      "revenue": 0.0,
+      "z": -2.23,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-06",
+      "revenue": 0.0,
+      "z": -1.98,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-07",
+      "revenue": 0.0,
+      "z": -1.78,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-08",
+      "revenue": 0.0,
+      "z": -1.62,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-09",
+      "revenue": 0.0,
+      "z": -1.48,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-10",
+      "revenue": 0.0,
+      "z": -1.37,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-11",
+      "revenue": 0.0,
+      "z": -1.27,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-12",
+      "revenue": 0.0,
+      "z": -1.18,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-13",
+      "revenue": 0.0,
+      "z": -1.09,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-14",
+      "revenue": 0.0,
+      "z": -1.02,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-11-15",
+      "revenue": 38.0,
+      "z": -0.95,
+      "is_anomaly": false,
+      "type": "drop"
+    }
+  ],
+  "flagged": [
+    {
+      "date": "2026-11-01",
+      "revenue": 0.0,
+      "z": -6.63,
+      "is_anomaly": true,
+      "type": "drop",
+      "explanation": "On 1 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Sunday average) with only 0 orders.",
+      "top_products": [],
+      "baseline_revenue": 34856.0,
+      "diff_pct": -100.0
+    },
+    {
+      "date": "2026-11-02",
+      "revenue": 0.0,
+      "z": -4.0,
+      "is_anomaly": true,
+      "type": "drop",
+      "explanation": "On 2 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Monday average) with only 0 orders.",
+      "top_products": [],
+      "baseline_revenue": 42351.25,
+      "diff_pct": -100.0
+    },
+    {
+      "date": "2026-11-03",
+      "revenue": 0.0,
+      "z": -3.09,
+      "is_anomaly": true,
+      "type": "drop",
+      "explanation": "On 3 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Tuesday average) with only 0 orders.",
+      "top_products": [],
+      "baseline_revenue": 37799.0,
+      "diff_pct": -100.0
+    }
+  ]
+}

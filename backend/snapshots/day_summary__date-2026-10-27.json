@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-27",
+  "revenue": 31929.0,
+  "invoices": 60,
+  "aov": 532.15,
+  "gross_profit": 6786.38,
+  "margin_pct": 21.25,
+  "vs_usual_pct": -17.6,
+  "top_products": [
+    {
+      "product": "Pantoprazole 40mg (10 tabs)",
+      "units": 22,
+      "revenue": 3080.0
+    },
+    {
+      "product": "Adult Diapers (pack of 10)",
+      "units": 5,
+      "revenue": 3000.0
+    },
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 7,
+      "revenue": 2450.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Tue 27 Oct 2026\nSales: \u20b931,929 from 60 bills (18% below a usual Tue)\nGross profit: \u20b96,786 (21.25%)\nBest sellers: Pantoprazole 40mg (10 tabs) (22), Adult Diapers (pack of 10) (5), Multivitamin (30 tabs) (7)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

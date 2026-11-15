@@ -1,0 +1,114 @@
+[
+  {
+    "date": "2026-11-15",
+    "revenue": 38.0,
+    "invoices": 1,
+    "vs_usual_pct": -99.9,
+    "gross_profit": 5.32,
+    "margin_pct": 14.0
+  },
+  {
+    "date": "2026-10-31",
+    "revenue": 34080.0,
+    "invoices": 84,
+    "vs_usual_pct": -20.3,
+    "gross_profit": 7282.59,
+    "margin_pct": 21.37
+  },
+  {
+    "date": "2026-10-30",
+    "revenue": 48084.0,
+    "invoices": 81,
+    "vs_usual_pct": 38.0,
+    "gross_profit": 10082.56,
+    "margin_pct": 20.97
+  },
+  {
+    "date": "2026-10-29",
+    "revenue": 51393.0,
+    "invoices": 82,
+    "vs_usual_pct": 20.6,
+    "gross_profit": 11387.1,
+    "margin_pct": 22.16
+  },
+  {
+    "date": "2026-10-28",
+    "revenue": 31704.0,
+    "invoices": 67,
+    "vs_usual_pct": -13.4,
+    "gross_profit": 6742.77,
+    "margin_pct": 21.27
+  },
+  {
+    "date": "2026-10-27",
+    "revenue": 31929.0,
+    "invoices": 60,
+    "vs_usual_pct": -17.6,
+    "gross_profit": 6786.38,
+    "margin_pct": 21.25
+  },
+  {
+    "date": "2026-10-26",
+    "revenue": 39904.0,
+    "invoices": 73,
+    "vs_usual_pct": -8.2,
+    "gross_profit": 8910.63,
+    "margin_pct": 22.33
+  },
+  {
+    "date": "2026-10-25",
+    "revenue": 36696.0,
+    "invoices": 55,
+    "vs_usual_pct": 10.8,
+    "gross_profit": 7588.67,
+    "margin_pct": 20.68
+  },
+  {
+    "date": "2026-10-24",
+    "revenue": 43570.0,
+    "invoices": 76,
+    "vs_usual_pct": 4.1,
+    "gross_profit": 9181.59,
+    "margin_pct": 21.07
+  },
+  {
+    "date": "2026-10-23",
+    "revenue": 45773.0,
+    "invoices": 64,
+    "vs_usual_pct": 35.1,
+    "gross_profit": 9946.16,
+    "margin_pct": 21.73
+  },
+  {
+    "date": "2026-10-22",
+    "revenue": 51945.0,
+    "invoices": 79,
+    "vs_usual_pct": 33.4,
+    "gross_profit": 11024.35,
+    "margin_pct": 21.22
+  },
+  {
+    "date": "2026-10-21",
+    "revenue": 33708.0,
+    "invoices": 65,
+    "vs_usual_pct": -11.0,
+    "gross_profit": 7451.47,
+    "margin_pct": 22.11
+  },
+  {
+    "date": "2026-10-20",
+    "revenue": 28062.0,
+    "invoices": 61,
+    "vs_usual_pct": -33.0,
+    "gross_profit": 5755.98,
+    "margin_pct": 20.51
+  },
+  {
+    "date": "2026-10-19",
+    "revenue": 42801.0,
+    "invoices": 70,
+    "vs_usual_pct": -1.9,
+    "gross_profit": 9193.5,
+    "margin_pct": 21.48
+  }
+]

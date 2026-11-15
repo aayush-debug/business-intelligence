@@ -21,6 +21,8 @@ from sqlalchemy.orm import Session
 from . import analytics as A
 from .analytics import Granularity
 from . import chat as C
+from . import snapshots as S
+from .snapshots import is_snapshot_mode
 from .db import (
     Base,
     Customer,
@@ -44,8 +46,9 @@ CRON_SECRET = os.getenv("CRON_SECRET", "cron_secret_123")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup creates database tables only. App starts EMPTY (no auto-seeding).
-    Base.metadata.create_all(bind=engine)
+    # Startup creates database tables only when NOT running in snapshot mode
+    if not is_snapshot_mode():
+        Base.metadata.create_all(bind=engine)
     yield
 
 
@@ -76,9 +79,33 @@ def health():
     return {"status": "ok"}
 
 
+@app.get("/api/config")
+def config():
+    """Return platform runtime configuration and snapshot demo metadata."""
+    if is_snapshot_mode():
+        manifest = S.get_manifest()
+        return {
+            "demo_mode": True,
+            "snapshot_mode": True,
+            "store_name": manifest.get("store_name", "Apollo Pharmacy (Indiranagar)"),
+            "snapshot_built_at": manifest.get("snapshot_built_at"),
+        }
+    return {
+        "demo_mode": False,
+        "snapshot_mode": False,
+        "store_name": "Company Brain",
+        "snapshot_built_at": None,
+    }
+
+
 @app.get("/api/stats")
 def stats(db: Session = Depends(get_db)):
     """Return row counts for database tables."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("stats.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return {
         "products": db.query(Product).count(),
         "customers": db.query(Customer).count(),
@@ -92,6 +119,12 @@ def stats(db: Session = Depends(get_db)):
 @app.get("/api/data/status")
 def data_status(db: Session = Depends(get_db)):
     """Return dataset loading status and sales/closed date boundaries."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("data_status.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
+
     p_cnt = db.query(Product).count()
     c_cnt = db.query(Customer).count()
     s_cnt = db.query(Sale).count()
@@ -124,6 +157,8 @@ def data_status(db: Session = Depends(get_db)):
 @app.post("/api/demo/load")
 def demo_load(db: Session = Depends(get_db)):
     """Load sample CSV dataset if products table is empty. Returns 409 otherwise."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     success = load_demo_data(db)
     if not success:
         raise HTTPException(
@@ -169,6 +204,8 @@ async def import_commit(
     db: Session = Depends(get_db),
 ):
     """Validate, clean, and insert rows in a single atomic transaction."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     content = await file.read()
     filename = file.filename or "uploaded_file"
     try:
@@ -203,6 +240,12 @@ def import_rejected(filename: str):
 @app.get("/api/kpis")
 def kpis(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Return key performance indicators for the specified window."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"kpis__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.kpis(days=days)
 
 
@@ -212,6 +255,14 @@ def trend(
     days: int = Query(365, ge=0, description="Date window in days (0 for all time)"),
 ):
     """Return periodic revenue and gross profit series."""
+    if is_snapshot_mode():
+        g_val = granularity.value if hasattr(granularity, "value") else str(granularity)
+        norm_gran = S.normalize_granularity(g_val)
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"trend__granularity-{norm_gran}__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.trend(granularity=granularity.value, days=days)
 
 
@@ -221,6 +272,12 @@ def top_products(
     limit: int = Query(8, ge=1, le=50, description="Max products to return"),
 ):
     """Return top products sorted by revenue descending."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"top_products__days-{norm_days}.json")
+        if data is not None:
+            return data[:limit]
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.top_products(days=days, limit=limit)
 
 
@@ -230,30 +287,58 @@ def top_customers(
     limit: int = Query(8, ge=1, le=50, description="Max customers to return"),
 ):
     """Return top customers excluding walk-ins, sorted by revenue descending."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"top_customers__days-{norm_days}.json")
+        if data is not None:
+            return data[:limit]
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.top_customers(days=days, limit=limit)
 
 
 @app.get("/api/categories")
 def categories(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Return revenue and gross profit by category."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"categories__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.categories(days=days)
 
 
 @app.get("/api/anomalies")
 def anomalies(days: int = Query(180, ge=0, description="Date window in days (0 for all time)")):
     """Detect daily revenue anomalies using weekday-normalized rolling z-scores."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"anomalies__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.anomalies(days=days)
 
 
 @app.get("/api/anomalies/explain")
 def explain_anomaly(date: str = Query(..., description="Target date in YYYY-MM-DD")):
     """Provide AI 'why' explanation for a revenue spike or drop using top sellers and baseline comparisons."""
+    if is_snapshot_mode():
+        data = S.get_snapshot(f"explain_anomaly__date-{date}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.explain_anomaly(date)
 
 
 @app.get("/api/forecast")
 def forecast(horizon: int = Query(30, description="Forecast horizon in days (clamped to 7..90)")):
     """Forecast future revenue with confidence bands and backtest metrics."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("forecast__horizon-30.json") or S.get_snapshot("forecast.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.forecast(horizon=min(max(horizon, 7), 90))
 
 
@@ -264,12 +349,23 @@ def forecast(horizon: int = Query(30, description="Forecast horizon in days (cla
 @app.get("/api/brands/comparison")
 def brands_comparison(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Compare competing brands in product groups that contain 2+ products."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"brands_comparison__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.brands_comparison(days=days)
 
 
 @app.get("/api/inventory/status")
 def inventory_status():
     """Return stock status per product and aggregate inventory alert summary."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("inventory_status.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.inventory_status()
 
 
@@ -279,6 +375,13 @@ def reorder_suggestions(
     cover_days: int = Query(14, ge=3, le=60, description="Days of stock cover to purchase"),
 ):
     """Generate purchase recommendations for low stock products."""
+    if is_snapshot_mode():
+        norm_lead = S.normalize_lead_days(lead_days)
+        norm_cover = S.normalize_cover_days(cover_days)
+        data = S.get_snapshot(f"reorder_suggestions__lead_days-{norm_lead}__cover_days-{norm_cover}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.reorder_suggestions(lead_days=lead_days, cover_days=cover_days)
 
 
@@ -288,6 +391,15 @@ def reorder_export_csv(
     cover_days: int = Query(14, ge=3, le=60),
 ):
     """Export purchase recommendations as CSV."""
+    if is_snapshot_mode():
+        csv_content = S.get_snapshot("reorder_export.csv")
+        if csv_content is not None:
+            return Response(
+                content=csv_content,
+                media_type="text/csv",
+                headers={"Content-Disposition": "attachment; filename=reorder_suggestions.csv"},
+            )
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     data = A.reorder_suggestions(lead_days=lead_days, cover_days=cover_days)
     lines = data["lines"]
     rows = ["manufacturer,product,qty,unit_cost,line_cost"]
@@ -313,6 +425,11 @@ def refills(
     include_names: bool = Query(False, description="Whether to include medicine names in responses"),
 ):
     """Return regular chronic medication refill alerts."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("refills.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.refills(within_days=within_days, include_names=include_names)
 
 
@@ -322,6 +439,8 @@ def refill_message(
     include_names: bool = Query(False, description="Whether to include medicine names for privacy"),
 ):
     """Return pre-composed reminder message and WhatsApp click URL."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.refill_message(customer_id=customer_id, include_names=include_names)
 
 
@@ -332,6 +451,17 @@ def refill_message(
 @app.get("/api/day/summary")
 def day_summary(date: Optional[str] = Query(None, description="Date in YYYY-MM-DD format (default: last closed date)")):
     """Return comprehensive summary for a closed date."""
+    if is_snapshot_mode():
+        if date:
+            data = S.get_snapshot(f"day_summary__date-{date}.json")
+            if data is not None:
+                return data
+            raise HTTPException(status_code=404, detail=f"Date {date} is not available in the snapshot demo.")
+        data = S.get_snapshot("day_summary.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
+
     target_date = None
     if date:
         try:
@@ -348,6 +478,11 @@ def day_summary(date: Optional[str] = Query(None, description="Date in YYYY-MM-D
 @app.get("/api/day/summaries")
 def day_summaries(limit: int = Query(14, ge=1, le=60, description="Max closed days to return")):
     """Return recent closed days overview."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("day_summaries__limit-14.json") or S.get_snapshot("day_summaries.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.day_summaries(limit=limit)
 
 
@@ -358,6 +493,12 @@ def day_summaries(limit: int = Query(14, ge=1, le=60, description="Max closed da
 @app.get("/api/profit/leaks")
 def profit_leaks(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Analyze profit leaks: discount leakage, brand margin gaps, low-margin bestsellers, expiry."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"profit_leaks__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.profit_leaks(days=days)
 
 
@@ -368,6 +509,12 @@ def basket_pairs(
     limit: int = Query(15, ge=1, le=50, description="Max pairs to return"),
 ):
     """Market-basket analysis returning top product group pairs ranked by lift."""
+    if is_snapshot_mode():
+        norm_days = S.normalize_days(days)
+        data = S.get_snapshot(f"basket_pairs__days-{norm_days}.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.basket_pairs(days=days, min_count=min_count, limit=limit)
 
 
@@ -377,6 +524,8 @@ def basket_companions(
     limit: int = Query(3, ge=1, le=10, description="Max companion items to return"),
 ):
     """Return top cross-sell companion items for quick addition during billing."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     return A.basket_companions(product_group=product_group, limit=limit)
 
 
@@ -400,6 +549,8 @@ def create_live_sale(req: LiveBillRequest, db: Session = Depends(get_db)):
     """
     Record live bill items, decrement inventory FIFO by batch expiry, and store as unclosed sale.
     """
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     if not req.items:
         raise HTTPException(status_code=422, detail="Items list cannot be empty.")
 
@@ -505,6 +656,12 @@ def create_live_sale(req: LiveBillRequest, db: Session = Depends(get_db)):
 @app.get("/api/day/status")
 def day_status(db: Session = Depends(get_db)):
     """Return day closing status: last closed date, open days with invoice/line counts (no revenue)."""
+    if is_snapshot_mode():
+        data = S.get_snapshot("day_status.json")
+        if data is not None:
+            return data
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
+
     tz = ZoneInfo(STORE_TZ)
     today_tz = datetime.now(tz).date()
 
@@ -546,6 +703,8 @@ def close_day(req: DayCloseRequest, db: Session = Depends(get_db)):
     Close a business day in sequential order. Computes invoices and revenue,
     updates day_closes, clears analytics cache, and returns closed day summary.
     """
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     target_date = req.date
     tz = ZoneInfo(STORE_TZ)
     today_tz = datetime.now(tz).date()
@@ -614,6 +773,8 @@ def close_due_days(
     Automated cron endpoint to close all unclosed days strictly before today in order.
     Requires valid X-Cron-Secret header.
     """
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     if x_cron_secret != CRON_SECRET:
         raise HTTPException(status_code=401, detail="Unauthorized: invalid cron secret.")
 
@@ -675,6 +836,8 @@ def chat(req: ChatRequest):
 @app.get("/api/reports/export/excel")
 def export_accountant_excel(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Generate and download multi-sheet Excel financial report for accountant."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     excel_bytes = R.generate_accountant_excel(days=days)
     filename = f"company_brain_accountant_report_{days}days.xlsx" if days > 0 else "company_brain_accountant_report_all_time.xlsx"
     return Response(
@@ -687,6 +850,8 @@ def export_accountant_excel(days: int = Query(90, ge=0, description="Date window
 @app.get("/api/reports/export/pdf")
 def export_accountant_pdf(days: int = Query(90, ge=0, description="Date window in days (0 for all time)")):
     """Generate and download official PDF audit & financial statement for accountant."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     pdf_bytes = R.generate_accountant_pdf(days=days)
     filename = f"company_brain_financial_statement_{days}days.pdf" if days > 0 else "company_brain_financial_statement_all_time.pdf"
     return Response(
@@ -708,11 +873,15 @@ class EmailDigestRequest(BaseModel):
 @app.post("/api/day/email-digest")
 def trigger_email_digest(req: EmailDigestRequest):
     """Manually dispatch daily email digest for a specific closed date."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
     return ED.send_daily_digest(req.date, req.recipient)
 
 
 @app.get("/api/day/email-preview")
 def preview_email_digest(date: date = Query(..., description="Target closed business date")):
     """Preview the exact HTML email digest for a closed date directly in the browser."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=404, detail="Not available in the snapshot demo.")
     _, _, html_content = ED.generate_email_content(date)
     return Response(content=html_content, media_type="text/html")

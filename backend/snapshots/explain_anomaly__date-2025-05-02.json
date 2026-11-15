@@ -1,0 +1,29 @@
+{
+  "date": "2025-05-02",
+  "type": "spike",
+  "revenue": 54012.0,
+  "baseline_revenue": 34770.5,
+  "diff_pct": 55.3,
+  "invoices": 78,
+  "top_products": [
+    {
+      "product": "Multivitamin (30 tabs)",
+      "units": 16,
+      "revenue": 5600.0,
+      "share_pct": 10.4
+    },
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 7,
+      "revenue": 4550.0,
+      "share_pct": 8.4
+    },
+    {
+      "product": "Protein Powder 500g",
+      "units": 3,
+      "revenue": 3600.0,
+      "share_pct": 6.7
+    }
+  ],
+  "explanation": "On 2 May 2025, revenue spiked to \u20b954,012 (+55.3% above the usual Friday average of \u20b934,770). The spike was driven by strong sales in: Multivitamin (30 tabs) (16 units, \u20b95,600), Baby Diapers (pack of 36) (7 units, \u20b94,550), Protein Powder 500g (3 units, \u20b93,600) across 78 orders."
+}

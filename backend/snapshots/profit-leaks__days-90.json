@@ -1,0 +1,128 @@
+{
+  "discount_leakage": {
+    "lines": 0,
+    "total_discount_given": 0.0,
+    "avg_discount_pct": 0.0,
+    "top_products": [],
+    "below_cost": [],
+    "below_cost_loss_total": 0.0,
+    "headline": "No discount leakage detected in this period.",
+    "what_to_do": "Check who gave these discounts and whether they were allowed."
+  },
+  "brand_margin_gaps": {
+    "items": [
+      {
+        "product_group": "Cetirizine 10mg",
+        "brand": "Cetirizine 10mg (Curalife)",
+        "manufacturer": "Curalife",
+        "share_pct": 10.5,
+        "margin_pct": 25.0,
+        "leader": "Cetirizine 10mg (10 tabs)",
+        "leader_margin_pct": 20.0,
+        "est_extra_profit_per_month": 27.23
+      }
+    ],
+    "headline": "Switching 10% of sales to higher-margin brands could add ~\u20b927/month in extra profit.",
+    "what_to_do": "Recommend higher-margin alternatives when customers do not specify a brand."
+  },
+  "low_margin_bestsellers": {
+    "items": [
+      {
+        "product": "Baby Diapers (pack of 36)",
+        "category": "Personal & Baby Care",
+        "revenue": 149500.0,
+        "margin_pct": 16.0,
+        "overall_margin_pct": 21.4,
+        "diff_pct": 5.4
+      },
+      {
+        "product": "Levothyroxine 50mcg (100 tabs)",
+        "category": "Chronic Care (Rx)",
+        "revenue": 101220.0,
+        "margin_pct": 14.0,
+        "overall_margin_pct": 21.4,
+        "diff_pct": 7.4
+      }
+    ],
+    "headline": "2 best-selling products make significantly lower profit margins than your store average of 21.4%.",
+    "what_to_do": "Review supplier purchase costs or consider modest price adjustments for these bestsellers."
+  },
+  "expiry_writeoffs": {
+    "months": [
+      {
+        "month": "2026-10",
+        "amount": 22198.0,
+        "pct_of_revenue": 1.81,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-09",
+        "amount": 23276.0,
+        "pct_of_revenue": 2.16,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-08",
+        "amount": 31145.0,
+        "pct_of_revenue": 2.49,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-07",
+        "amount": 17912.0,
+        "pct_of_revenue": 1.6,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-06",
+        "amount": 66518.0,
+        "pct_of_revenue": 5.97,
+        "is_above_2x_median": true
+      },
+      {
+        "month": "2026-05",
+        "amount": 23657.0,
+        "pct_of_revenue": 2.1,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-04",
+        "amount": 20542.0,
+        "pct_of_revenue": 1.87,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-03",
+        "amount": 25234.0,
+        "pct_of_revenue": 2.11,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-02",
+        "amount": 19388.0,
+        "pct_of_revenue": 2.04,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2026-01",
+        "amount": 24410.0,
+        "pct_of_revenue": 2.23,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2025-12",
+        "amount": 14680.0,
+        "pct_of_revenue": 1.27,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2025-11",
+        "amount": 7094.0,
+        "pct_of_revenue": 1.2,
+        "is_above_2x_median": false
+      }
+    ],
+    "headline": "\u20b9296,054 written off due to expired stock over the last 12 months.",
+    "what_to_do": "Order in smaller batches and monitor upcoming expiry dates closely."
+  }
+}

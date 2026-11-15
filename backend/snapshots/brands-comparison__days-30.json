@@ -1,0 +1,113 @@
+[
+  {
+    "product_group": "Metformin 500mg",
+    "total_units": 230,
+    "total_revenue": 8740.0,
+    "leader": "Metformin 500mg (10 tabs)",
+    "brands": [
+      {
+        "product_id": 1,
+        "product": "Metformin 500mg (10 tabs)",
+        "manufacturer": "Glyciphage - Franco",
+        "units": 230,
+        "revenue": 8740.0,
+        "profit": 1223.6,
+        "margin_pct": 14.0,
+        "stock_on_hand": 249,
+        "days_of_cover": 32.5,
+        "share_pct": 100.0,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 54,
+        "product": "Glycomet 500mg (10 tabs)",
+        "manufacturer": "USV",
+        "units": 0,
+        "revenue": 0.0,
+        "profit": 0.0,
+        "margin_pct": 0.0,
+        "stock_on_hand": 0,
+        "days_of_cover": null,
+        "share_pct": 0.0,
+        "vs_leader": null,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Glyciphage - Franco dominates Metformin 500mg with 230 units sold while USV had zero sales. USV has 0 units in stock."
+  },
+  {
+    "product_group": "Paracetamol 650mg",
+    "total_units": 239,
+    "total_revenue": 7648.0,
+    "leader": "Paracetamol 650mg (15 tabs)",
+    "brands": [
+      {
+        "product_id": 18,
+        "product": "Paracetamol 650mg (15 tabs)",
+        "manufacturer": "Dolo 650 - Micro Labs",
+        "units": 239,
+        "revenue": 7648.0,
+        "profit": 1682.56,
+        "margin_pct": 22.0,
+        "stock_on_hand": 400,
+        "days_of_cover": 50.2,
+        "share_pct": 100.0,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 53,
+        "product": "Calpol 650mg (15 tabs)",
+        "manufacturer": "GSK",
+        "units": 0,
+        "revenue": 0.0,
+        "profit": 0.0,
+        "margin_pct": 0.0,
+        "stock_on_hand": 35,
+        "days_of_cover": null,
+        "share_pct": 0.0,
+        "vs_leader": null,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Dolo 650 - Micro Labs dominates Paracetamol 650mg with 239 units sold while GSK had zero sales. GSK has 35 units in stock."
+  },
+  {
+    "product_group": "Cetirizine 10mg",
+    "total_units": 173,
+    "total_revenue": 4305.0,
+    "leader": "Cetirizine 10mg (10 tabs)",
+    "brands": [
+      {
+        "product_id": 15,
+        "product": "Cetirizine 10mg (10 tabs)",
+        "manufacturer": "Medora",
+        "units": 153,
+        "revenue": 3825.0,
+        "profit": 765.0,
+        "margin_pct": 20.0,
+        "stock_on_hand": 180,
+        "days_of_cover": 35.3,
+        "share_pct": 88.4,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 52,
+        "product": "Cetirizine 10mg (Curalife)",
+        "manufacturer": "Curalife",
+        "units": 20,
+        "revenue": 480.0,
+        "profit": 120.0,
+        "margin_pct": 25.0,
+        "stock_on_hand": 53,
+        "days_of_cover": 79.5,
+        "share_pct": 11.6,
+        "vs_leader": 7.7,
+        "flag": null
+      }
+    ],
+    "insight": "Medora leads Cetirizine 10mg with 88.4% share across 2 brands."
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "date": "2025-12-11",
+  "type": "spike",
+  "revenue": 61057.0,
+  "baseline_revenue": 32498.75,
+  "diff_pct": 87.9,
+  "invoices": 84,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36)",
+      "units": 10,
+      "revenue": 6500.0,
+      "share_pct": 10.6
+    },
+    {
+      "product": "Protein Powder 500g",
+      "units": 5,
+      "revenue": 6000.0,
+      "share_pct": 9.8
+    },
+    {
+      "product": "Glucometer Strips (50)",
+      "units": 5,
+      "revenue": 3750.0,
+      "share_pct": 6.1
+    }
+  ],
+  "explanation": "On 11 Dec 2025, revenue spiked to \u20b961,057 (+87.9% above the usual Thursday average of \u20b932,499). The spike was driven by strong sales in: Baby Diapers (pack of 36) (10 units, \u20b96,500), Protein Powder 500g (5 units, \u20b96,000), Glucometer Strips (50) (5 units, \u20b93,750) across 84 orders."
+}

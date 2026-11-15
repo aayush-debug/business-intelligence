@@ -1,0 +1,241 @@
+{
+  "lines": [
+    {
+      "product": "Glimepiride 2mg (10 tabs)",
+      "manufacturer": "Amaryl - Sanofi",
+      "stock_on_hand": 72,
+      "avg_daily": 5.15,
+      "days_of_cover": 14.0,
+      "suggested_qty": 9,
+      "unit_cost": 75.6,
+      "line_cost": 680.4
+    },
+    {
+      "product": "Amlodipine 5mg (10 tabs)",
+      "manufacturer": "Amlong - Micro Labs",
+      "stock_on_hand": 64,
+      "avg_daily": 9.3,
+      "days_of_cover": 6.9,
+      "suggested_qty": 76,
+      "unit_cost": 38.25,
+      "line_cost": 2907.0
+    },
+    {
+      "product": "Atorvastatin 10mg (10 tabs)",
+      "manufacturer": "Atorva - Zydus",
+      "stock_on_hand": 68,
+      "avg_daily": 8.0,
+      "days_of_cover": 8.5,
+      "suggested_qty": 52,
+      "unit_cost": 99.6,
+      "line_cost": 5179.2
+    },
+    {
+      "product": "Amoxicillin-Clav 625 (10 tabs)",
+      "manufacturer": "Augmentin - GSK",
+      "stock_on_hand": 80,
+      "avg_daily": 5.4,
+      "days_of_cover": 14.8,
+      "suggested_qty": 3,
+      "unit_cost": 172.2,
+      "line_cost": 516.6
+    },
+    {
+      "product": "Cough Syrup 100ml",
+      "manufacturer": "Benadryl - J&J",
+      "stock_on_hand": 98,
+      "avg_daily": 7.23,
+      "days_of_cover": 13.6,
+      "suggested_qty": 13,
+      "unit_cost": 83.6,
+      "line_cost": 1086.8
+    },
+    {
+      "product": "ORS Sachet (pack of 4)",
+      "manufacturer": "Electral - FDC",
+      "stock_on_hand": 94,
+      "avg_daily": 6.32,
+      "days_of_cover": 14.9,
+      "suggested_qty": 5,
+      "unit_cost": 46.8,
+      "line_cost": 234.0
+    },
+    {
+      "product": "Losartan 50mg (10 tabs)",
+      "manufacturer": "Losacar - Zydus",
+      "stock_on_hand": 70,
+      "avg_daily": 7.18,
+      "days_of_cover": 9.7,
+      "suggested_qty": 41,
+      "unit_cost": 72.25,
+      "line_cost": 2962.25
+    },
+    {
+      "product": "Pantoprazole 40mg (10 tabs)",
+      "manufacturer": "Pan 40 - Alkem",
+      "stock_on_hand": 76,
+      "avg_daily": 8.62,
+      "days_of_cover": 8.8,
+      "suggested_qty": 54,
+      "unit_cost": 114.8,
+      "line_cost": 6199.2
+    },
+    {
+      "product": "Surgical Gloves (box)",
+      "manufacturer": "Standard Labs",
+      "stock_on_hand": 8,
+      "avg_daily": 1.15,
+      "days_of_cover": 7.0,
+      "suggested_qty": 13,
+      "unit_cost": 187.5,
+      "line_cost": 2437.5
+    },
+    {
+      "product": "Throat Lozenges (strip)",
+      "manufacturer": "Strepsils - Reckitt",
+      "stock_on_hand": 106,
+      "avg_daily": 7.28,
+      "days_of_cover": 14.6,
+      "suggested_qty": 3,
+      "unit_cost": 29.6,
+      "line_cost": 88.8
+    },
+    {
+      "product": "Telmisartan 40mg (10 tabs)",
+      "manufacturer": "Telma - Glenmark",
+      "stock_on_hand": 66,
+      "avg_daily": 7.75,
+      "days_of_cover": 8.5,
+      "suggested_qty": 54,
+      "unit_cost": 79.8,
+      "line_cost": 4309.2
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs)",
+      "manufacturer": "Thyronorm - Abbott",
+      "stock_on_hand": 74,
+      "avg_daily": 5.22,
+      "days_of_cover": 14.2,
+      "suggested_qty": 6,
+      "unit_cost": 180.6,
+      "line_cost": 1083.6
+    }
+  ],
+  "by_manufacturer": [
+    {
+      "manufacturer": "Amaryl - Sanofi",
+      "items": 1,
+      "total_cost": 680.4
+    },
+    {
+      "manufacturer": "Amlong - Micro Labs",
+      "items": 1,
+      "total_cost": 2907.0
+    },
+    {
+      "manufacturer": "Atorva - Zydus",
+      "items": 1,
+      "total_cost": 5179.2
+    },
+    {
+      "manufacturer": "Augmentin - GSK",
+      "items": 1,
+      "total_cost": 516.6
+    },
+    {
+      "manufacturer": "Benadryl - J&J",
+      "items": 1,
+      "total_cost": 1086.8
+    },
+    {
+      "manufacturer": "Electral - FDC",
+      "items": 1,
+      "total_cost": 234.0
+    },
+    {
+      "manufacturer": "Losacar - Zydus",
+      "items": 1,
+      "total_cost": 2962.25
+    },
+    {
+      "manufacturer": "Pan 40 - Alkem",
+      "items": 1,
+      "total_cost": 6199.2
+    },
+    {
+      "manufacturer": "Standard Labs",
+      "items": 1,
+      "total_cost": 2437.5
+    },
+    {
+      "manufacturer": "Strepsils - Reckitt",
+      "items": 1,
+      "total_cost": 88.8
+    },
+    {
+      "manufacturer": "Telma - Glenmark",
+      "items": 1,
+      "total_cost": 4309.2
+    },
+    {
+      "manufacturer": "Thyronorm - Abbott",
+      "items": 1,
+      "total_cost": 1083.6
+    }
+  ],
+  "total_cost": 27684.55,
+  "do_not_reorder": [
+    {
+      "product": "Metformin 500mg (10 tabs)",
+      "reason": "Batch expiring soon (2026-12-15)"
+    },
+    {
+      "product": "Protein Powder 500g",
+      "reason": "Already overstocked (106 days of supply)"
+    },
+    {
+      "product": "Digital Thermometer",
+      "reason": "Already overstocked (99 days of supply)"
+    },
+    {
+      "product": "BP Monitor (Digital)",
+      "reason": "Already overstocked (246 days of supply)"
+    },
+    {
+      "product": "Glucometer",
+      "reason": "Already overstocked (302 days of supply)"
+    },
+    {
+      "product": "Glucometer Strips (50)",
+      "reason": "Already overstocked (120 days of supply)"
+    },
+    {
+      "product": "Pulse Oximeter",
+      "reason": "Already overstocked (319 days of supply)"
+    },
+    {
+      "product": "Nebulizer",
+      "reason": "Already overstocked (250 days of supply)"
+    },
+    {
+      "product": "Baby Lotion 200ml",
+      "reason": "Already overstocked (116 days of supply)"
+    },
+    {
+      "product": "Adult Diapers (pack of 10)",
+      "reason": "Already overstocked (115 days of supply)"
+    },
+    {
+      "product": "N95 Masks (pack of 5)",
+      "reason": "Already overstocked (105 days of supply)"
+    },
+    {
+      "product": "Calpol 650mg (15 tabs)",
+      "reason": "No sales in the last 60 days"
+    },
+    {
+      "product": "Glycomet 500mg (10 tabs)",
+      "reason": "No sales in the last 60 days"
+    }
+  ]
+}

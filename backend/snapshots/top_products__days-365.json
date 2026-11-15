@@ -1,0 +1,66 @@
+[
+  {
+    "product": "Protein Powder 500g",
+    "category": "Vitamins & Supplements",
+    "revenue": 836400.0,
+    "units": 697,
+    "profit": 209100.0,
+    "margin_pct": 25.0
+  },
+  {
+    "product": "Baby Diapers (pack of 36)",
+    "category": "Personal & Baby Care",
+    "revenue": 620750.0,
+    "units": 955,
+    "profit": 99320.0,
+    "margin_pct": 16.0
+  },
+  {
+    "product": "Multivitamin (30 tabs)",
+    "category": "Vitamins & Supplements",
+    "revenue": 585900.0,
+    "units": 1674,
+    "profit": 175770.0,
+    "margin_pct": 30.0
+  },
+  {
+    "product": "Pantoprazole 40mg (10 tabs)",
+    "category": "Chronic Care (Rx)",
+    "revenue": 562660.0,
+    "units": 4019,
+    "profit": 101278.8,
+    "margin_pct": 18.0
+  },
+  {
+    "product": "Amoxicillin-Clav 625 (10 tabs)",
+    "category": "Antibiotics & Acute (Rx)",
+    "revenue": 485100.0,
+    "units": 2310,
+    "profit": 87318.0,
+    "margin_pct": 18.0
+  },
+  {
+    "product": "Levothyroxine 50mcg (100 tabs)",
+    "category": "Chronic Care (Rx)",
+    "revenue": 477960.0,
+    "units": 2276,
+    "profit": 66914.4,
+    "margin_pct": 14.0
+  },
+  {
+    "product": "Omega-3 Fish Oil (30 caps)",
+    "category": "Vitamins & Supplements",
+    "revenue": 455850.0,
+    "units": 1013,
+    "profit": 136755.0,
+    "margin_pct": 30.0
+  },
+  {
+    "product": "Atorvastatin 10mg (10 tabs)",
+    "category": "Chronic Care (Rx)",
+    "revenue": 430200.0,
+    "units": 3585,
+    "profit": 73134.0,
+    "margin_pct": 17.0
+  }
+]

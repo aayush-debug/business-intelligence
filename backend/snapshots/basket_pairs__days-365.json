@@ -1,0 +1,95 @@
+{
+  "total_invoices": 23014,
+  "pairs": [
+    {
+      "group_a": "Clopidogrel 75mg",
+      "group_b": "Glimepiride 2mg",
+      "both_count": 67,
+      "support": 0.0029,
+      "confidence_a_to_b": 0.0843,
+      "confidence_b_to_a": 0.0626,
+      "lift": 1.81,
+      "insight": "8% of invoices with Clopidogrel 75mg also include Glimepiride 2mg, 1.81x more often than usual."
+    },
+    {
+      "group_a": "Clopidogrel 75mg",
+      "group_b": "Pantoprazole 40mg",
+      "both_count": 107,
+      "support": 0.0046,
+      "confidence_a_to_b": 0.1346,
+      "confidence_b_to_a": 0.0606,
+      "lift": 1.75,
+      "insight": "13% of invoices with Clopidogrel 75mg also include Pantoprazole 40mg, 1.75x more often than usual."
+    },
+    {
+      "group_a": "Glimepiride 2mg",
+      "group_b": "Telmisartan 40mg",
+      "both_count": 128,
+      "support": 0.0056,
+      "confidence_a_to_b": 0.1196,
+      "confidence_b_to_a": 0.0808,
+      "lift": 1.74,
+      "insight": "12% of invoices with Glimepiride 2mg also include Telmisartan 40mg, 1.74x more often than usual."
+    },
+    {
+      "group_a": "Adult Diapers",
+      "group_b": "ORS Sachet",
+      "both_count": 29,
+      "support": 0.0013,
+      "confidence_a_to_b": 0.1082,
+      "confidence_b_to_a": 0.0189,
+      "lift": 1.63,
+      "insight": "11% of invoices with Adult Diapers also include ORS Sachet, 1.63x more often than usual."
+    },
+    {
+      "group_a": "Clopidogrel 75mg",
+      "group_b": "Metformin 500mg",
+      "both_count": 117,
+      "support": 0.0051,
+      "confidence_a_to_b": 0.1472,
+      "confidence_b_to_a": 0.0552,
+      "lift": 1.6,
+      "insight": "15% of invoices with Clopidogrel 75mg also include Metformin 500mg, 1.6x more often than usual."
+    },
+    {
+      "group_a": "Atorvastatin 10mg",
+      "group_b": "Metformin 500mg",
+      "both_count": 220,
+      "support": 0.0096,
+      "confidence_a_to_b": 0.144,
+      "confidence_b_to_a": 0.1038,
+      "lift": 1.56,
+      "insight": "14% of invoices with Atorvastatin 10mg also include Metformin 500mg, 1.56x more often than usual."
+    },
+    {
+      "group_a": "Cough Syrup",
+      "group_b": "Glucometer",
+      "both_count": 22,
+      "support": 0.001,
+      "confidence_a_to_b": 0.0137,
+      "confidence_b_to_a": 0.1073,
+      "lift": 1.53,
+      "insight": "11% of invoices with Glucometer also include Cough Syrup, 1.53x more often than usual."
+    },
+    {
+      "group_a": "Losartan 50mg",
+      "group_b": "Metformin 500mg",
+      "both_count": 185,
+      "support": 0.008,
+      "confidence_a_to_b": 0.1392,
+      "confidence_b_to_a": 0.0873,
+      "lift": 1.51,
+      "insight": "14% of invoices with Losartan 50mg also include Metformin 500mg, 1.51x more often than usual."
+    },
+    {
+      "group_a": "Metformin 500mg",
+      "group_b": "Pantoprazole 40mg",
+      "both_count": 244,
+      "support": 0.0106,
+      "confidence_a_to_b": 0.1151,
+      "confidence_b_to_a": 0.1381,
+      "lift": 1.5,
+      "insight": "14% of invoices with Pantoprazole 40mg also include Metformin 500mg, 1.5x more often than usual."
+    }
+  ]
+}

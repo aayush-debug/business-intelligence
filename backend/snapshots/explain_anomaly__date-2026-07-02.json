@@ -1,0 +1,29 @@
+{
+  "date": "2026-07-02",
+  "type": "spike",
+  "revenue": 57913.0,
+  "baseline_revenue": 35151.75,
+  "diff_pct": 64.8,
+  "invoices": 91,
+  "top_products": [
+    {
+      "product": "Protein Powder 500g",
+      "units": 11,
+      "revenue": 13200.0,
+      "share_pct": 22.8
+    },
+    {
+      "product": "Cefixime 200mg (10 tabs)",
+      "units": 26,
+      "revenue": 3380.0,
+      "share_pct": 5.8
+    },
+    {
+      "product": "Atorvastatin 10mg (10 tabs)",
+      "units": 24,
+      "revenue": 2880.0,
+      "share_pct": 5.0
+    }
+  ],
+  "explanation": "On 2 Jul 2026, revenue spiked to \u20b957,913 (+64.8% above the usual Thursday average of \u20b935,152). The spike was driven by strong sales in: Protein Powder 500g (11 units, \u20b913,200), Cefixime 200mg (10 tabs) (26 units, \u20b93,380), Atorvastatin 10mg (10 tabs) (24 units, \u20b92,880) across 91 orders."
+}

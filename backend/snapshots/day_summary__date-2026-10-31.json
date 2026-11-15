@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-31",
+  "revenue": 34080.0,
+  "invoices": 84,
+  "aov": 405.71,
+  "gross_profit": 7282.59,
+  "margin_pct": 21.37,
+  "vs_usual_pct": -20.3,
+  "top_products": [
+    {
+      "product": "Omega-3 Fish Oil (30 caps)",
+      "units": 6,
+      "revenue": 2700.0
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs)",
+      "units": 12,
+      "revenue": 2520.0
+    },
+    {
+      "product": "Vitamin D3 60K (4 caps)",
+      "units": 15,
+      "revenue": 2250.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 2,
+    "items": [
+      "Amlodipine 5mg (10 tabs)",
+      "Surgical Gloves (box)"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Sat 31 Oct 2026\nSales: \u20b934,080 from 84 bills (20% below a usual Sat)\nGross profit: \u20b97,283 (21.37%)\nBest sellers: Omega-3 Fish Oil (30 caps) (6), Levothyroxine 50mcg (100 tabs) (12), Vitamin D3 60K (4 caps) (15)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+}

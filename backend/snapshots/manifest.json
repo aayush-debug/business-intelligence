@@ -1,0 +1,513 @@
+{
+  "snapshot_built_at": "2026-11-15T18:26:41.956465+00:00",
+  "store_name": "Apollo Pharmacy (Indiranagar)",
+  "file_count": 126,
+  "total_size_bytes": 798545,
+  "total_size_mb": 0.76,
+  "files": {
+    "kpis__days-30.json": {
+      "size": 266,
+      "sha256": "ac94952a8eb33afcecbc671d61be2fc7f2bb35087d261193257f8f206c6065aa"
+    },
+    "top_products__days-30.json": {
+      "size": 1452,
+      "sha256": "1f8d1b21eb305811804ac84b91feb15bf5417fc5c9b7bdf983914747a7f88023"
+    },
+    "top-products__days-30.json": {
+      "size": 1452,
+      "sha256": "1f8d1b21eb305811804ac84b91feb15bf5417fc5c9b7bdf983914747a7f88023"
+    },
+    "top_customers__days-30.json": {
+      "size": 665,
+      "sha256": "09ffddf2ad131341055b330c9f779041cdac53030853553af1a84a53986b0ca5"
+    },
+    "top-customers__days-30.json": {
+      "size": 665,
+      "sha256": "09ffddf2ad131341055b330c9f779041cdac53030853553af1a84a53986b0ca5"
+    },
+    "categories__days-30.json": {
+      "size": 653,
+      "sha256": "433d583ac65af663a480d4e242c8340d272b5a222223d8f0f6cd09ed66c428b0"
+    },
+    "anomalies__days-30.json": {
+      "size": 4979,
+      "sha256": "9d4338f05ad3076330bd4e231d942b6c1fe1827b839d3c9665418040c45cd258"
+    },
+    "brands_comparison__days-30.json": {
+      "size": 3080,
+      "sha256": "bc3890eee0af9082bc162b0a35a8e31eef7f4ffbf700d305c219ef28bde1a106"
+    },
+    "brands-comparison__days-30.json": {
+      "size": 3080,
+      "sha256": "bc3890eee0af9082bc162b0a35a8e31eef7f4ffbf700d305c219ef28bde1a106"
+    },
+    "profit_leaks__days-30.json": {
+      "size": 3559,
+      "sha256": "3be812d4e7ee3bf38b387091cd37a6be9a3fbed842711c35af3b58c1c955f342"
+    },
+    "profit-leaks__days-30.json": {
+      "size": 3559,
+      "sha256": "3be812d4e7ee3bf38b387091cd37a6be9a3fbed842711c35af3b58c1c955f342"
+    },
+    "basket_pairs__days-30.json": {
+      "size": 43,
+      "sha256": "6cd43b947d1909fbc0e3d2c8c4362025a860a27d1a39f8f5617c349846cb4314"
+    },
+    "basket-pairs__days-30.json": {
+      "size": 43,
+      "sha256": "6cd43b947d1909fbc0e3d2c8c4362025a860a27d1a39f8f5617c349846cb4314"
+    },
+    "kpis__days-90.json": {
+      "size": 269,
+      "sha256": "5fdfd5b38ad19549756b9effcf8942a126433557fc6f63e1960d84238903b035"
+    },
+    "top_products__days-90.json": {
+      "size": 1464,
+      "sha256": "e908f6083466e234a4b3bb592e20b637bfd2aa42f10abc0a87d7a7a3a7185dff"
+    },
+    "top-products__days-90.json": {
+      "size": 1464,
+      "sha256": "e908f6083466e234a4b3bb592e20b637bfd2aa42f10abc0a87d7a7a3a7185dff"
+    },
+    "top_customers__days-90.json": {
+      "size": 686,
+      "sha256": "721bac77d105f082b9de3330b7ee5030bcec9dc22a8e289d12df6e6a3cea738c"
+    },
+    "top-customers__days-90.json": {
+      "size": 686,
+      "sha256": "721bac77d105f082b9de3330b7ee5030bcec9dc22a8e289d12df6e6a3cea738c"
+    },
+    "categories__days-90.json": {
+      "size": 660,
+      "sha256": "b6bf5f203d0016e6a5aca0e7f652fca2f57b2cd8e56432d29848fb33b1dd2f55"
+    },
+    "anomalies__days-90.json": {
+      "size": 13944,
+      "sha256": "30518ac7320ad27950ccf799e02adb782597d55f2cbac07e5f06f9d8e5c3879c"
+    },
+    "brands_comparison__days-90.json": {
+      "size": 3095,
+      "sha256": "3eb905cf883652e6e72317964d4c7524aebe39d2bb64d4ba224b74697ebe68b3"
+    },
+    "brands-comparison__days-90.json": {
+      "size": 3095,
+      "sha256": "3eb905cf883652e6e72317964d4c7524aebe39d2bb64d4ba224b74697ebe68b3"
+    },
+    "profit_leaks__days-90.json": {
+      "size": 3559,
+      "sha256": "c1b4e9cae5f52797bef883621dd5265f79ae580c0d21b07f194b00a1b4b11ce1"
+    },
+    "profit-leaks__days-90.json": {
+      "size": 3559,
+      "sha256": "c1b4e9cae5f52797bef883621dd5265f79ae580c0d21b07f194b00a1b4b11ce1"
+    },
+    "basket_pairs__days-90.json": {
+      "size": 2427,
+      "sha256": "08a25ad5bc94bb61ef7020d2c91ccd20163d20799c47b2fa67718621b25d6fea"
+    },
+    "basket-pairs__days-90.json": {
+      "size": 2427,
+      "sha256": "08a25ad5bc94bb61ef7020d2c91ccd20163d20799c47b2fa67718621b25d6fea"
+    },
+    "kpis__days-365.json": {
+      "size": 274,
+      "sha256": "8bd6917c426d9bccb55707bdf92478929aa07dbc35a5813f4a7068612ea47f8e"
+    },
+    "top_products__days-365.json": {
+      "size": 1475,
+      "sha256": "d178e9073d09bb91e93d4657b6a894b5fae81fbf38966adeb596e2b3335122d1"
+    },
+    "top-products__days-365.json": {
+      "size": 1475,
+      "sha256": "d178e9073d09bb91e93d4657b6a894b5fae81fbf38966adeb596e2b3335122d1"
+    },
+    "top_customers__days-365.json": {
+      "size": 688,
+      "sha256": "f6709b000b10130df55888ef89762df73f792ba314657fa167acfa085f00b3bc"
+    },
+    "top-customers__days-365.json": {
+      "size": 688,
+      "sha256": "f6709b000b10130df55888ef89762df73f792ba314657fa167acfa085f00b3bc"
+    },
+    "categories__days-365.json": {
+      "size": 671,
+      "sha256": "7c869d1819c066d0d73606a884913bb8d42811c38bd7b74315ddbc015adaa34a"
+    },
+    "anomalies__days-365.json": {
+      "size": 59485,
+      "sha256": "a66133f04367492b37f743120390e780848f7ad3ba2c7e5d7d8c83ed354a6654"
+    },
+    "brands_comparison__days-365.json": {
+      "size": 3168,
+      "sha256": "6384eb03ea227cfd1326fcd410a0a8bdab429463934d5a2cdf4cdc7a86011db3"
+    },
+    "brands-comparison__days-365.json": {
+      "size": 3168,
+      "sha256": "6384eb03ea227cfd1326fcd410a0a8bdab429463934d5a2cdf4cdc7a86011db3"
+    },
+    "profit_leaks__days-365.json": {
+      "size": 3565,
+      "sha256": "f84850db911bbf594ef3f4533ca6822807a834cdcf9461a18e5124f859de939f"
+    },
+    "profit-leaks__days-365.json": {
+      "size": 3565,
+      "sha256": "f84850db911bbf594ef3f4533ca6822807a834cdcf9461a18e5124f859de939f"
+    },
+    "basket_pairs__days-365.json": {
+      "size": 3079,
+      "sha256": "15e8907fb08d3d30a40cb16cdc43cefadc676ae49e3f4a0eb0a082b2d75f491f"
+    },
+    "basket-pairs__days-365.json": {
+      "size": 3079,
+      "sha256": "15e8907fb08d3d30a40cb16cdc43cefadc676ae49e3f4a0eb0a082b2d75f491f"
+    },
+    "kpis__days-0.json": {
+      "size": 219,
+      "sha256": "014ab99d71f0540ae1b302ba3fcc6a4da157bfec58036f2eec124ffe9d520058"
+    },
+    "top_products__days-0.json": {
+      "size": 1485,
+      "sha256": "5afd72be77ffa87f4295d920aa15011554cdb0724ec6be4d1100a7cc2a634eb7"
+    },
+    "top-products__days-0.json": {
+      "size": 1485,
+      "sha256": "5afd72be77ffa87f4295d920aa15011554cdb0724ec6be4d1100a7cc2a634eb7"
+    },
+    "top_customers__days-0.json": {
+      "size": 697,
+      "sha256": "d7928d09ce47979a8e81db39ddf662548343e9705b28f19e829d99009cff9d3b"
+    },
+    "top-customers__days-0.json": {
+      "size": 697,
+      "sha256": "d7928d09ce47979a8e81db39ddf662548343e9705b28f19e829d99009cff9d3b"
+    },
+    "categories__days-0.json": {
+      "size": 674,
+      "sha256": "cb7c8583fae4ada6c0e4c1f769db68c26f1bfb16360447879b74ec0b9939f4cf"
+    },
+    "anomalies__days-0.json": {
+      "size": 111062,
+      "sha256": "eb59c79de6e18498e03d12e30d0003776ca5416c382b9b0b665d47f1654e0788"
+    },
+    "brands_comparison__days-0.json": {
+      "size": 3177,
+      "sha256": "839854ad1f6efe8b67543e29d472c879e4480c951b3548b952f1665405ca091f"
+    },
+    "brands-comparison__days-0.json": {
+      "size": 3177,
+      "sha256": "839854ad1f6efe8b67543e29d472c879e4480c951b3548b952f1665405ca091f"
+    },
+    "profit_leaks__days-0.json": {
+      "size": 3566,
+      "sha256": "514a3f0970b5bfeb5860ba9d5e5d8b1283087a3dcad2fbf250ad209b954a36f7"
+    },
+    "profit-leaks__days-0.json": {
+      "size": 3566,
+      "sha256": "514a3f0970b5bfeb5860ba9d5e5d8b1283087a3dcad2fbf250ad209b954a36f7"
+    },
+    "basket_pairs__days-0.json": {
+      "size": 2101,
+      "sha256": "4675bc967ab1e1d8b59f37302fa4d78039933f3df5d976a116ae4df4e4ed8d4f"
+    },
+    "basket-pairs__days-0.json": {
+      "size": 2101,
+      "sha256": "4675bc967ab1e1d8b59f37302fa4d78039933f3df5d976a116ae4df4e4ed8d4f"
+    },
+    "trend__granularity-day__days-30.json": {
+      "size": 2375,
+      "sha256": "fb36096d569e90054139fb2ee3b5caddde755db5d0d6c4afc145d6f1c1a066ad"
+    },
+    "trend__granularity-day__days-90.json": {
+      "size": 7349,
+      "sha256": "429a08ad7602f370f0207c5836c887a337e62a3ddc3231abce51ef7d2e9cf54e"
+    },
+    "trend__granularity-day__days-365.json": {
+      "size": 30184,
+      "sha256": "f795c4c9b95186a87817f5b2b5255023ad7b639e0e832783a932bb5fcdba4559"
+    },
+    "trend__granularity-day__days-0.json": {
+      "size": 61711,
+      "sha256": "047b1551f83504ee6dd5f3c1865bf35f2c0e59b594ab7b167b4f385c2330f797"
+    },
+    "trend__granularity-week__days-30.json": {
+      "size": 408,
+      "sha256": "e51dfc48dd76a5dc61d78001904d4b98e0d542c973f2630ab866f34f8691917d"
+    },
+    "trend__granularity-week__days-90.json": {
+      "size": 1086,
+      "sha256": "4b243ce96b9f643b48c5829e556a466796ce3cc8ec119a9055d85aa34114ca0a"
+    },
+    "trend__granularity-week__days-365.json": {
+      "size": 4479,
+      "sha256": "d1dfe728715785eaf62cb6d815b17c07ccc68bb924f2bc965838df68ccd3d8bc"
+    },
+    "trend__granularity-week__days-0.json": {
+      "size": 9065,
+      "sha256": "b67df7eacdff38a8aa301b2b69f568585376fd0b4bad3f1e14c38c57e1b401d1"
+    },
+    "trend__granularity-month__days-30.json": {
+      "size": 165,
+      "sha256": "62ebd90bd5f0d121f2432b7ffd325ae07872a282e7e49c000335667e3dc57010"
+    },
+    "trend__granularity-month__days-90.json": {
+      "size": 339,
+      "sha256": "73a859bee8ab3047c48ff4800259eb8deb1496134e183eb1296fe7016f9af3f3"
+    },
+    "trend__granularity-month__days-365.json": {
+      "size": 1120,
+      "sha256": "6c2566f7817fc5ddada6ea6f46fadb6b3c046109ac3ecc75eadc9e9d3e4ebeb1"
+    },
+    "trend__granularity-month__days-0.json": {
+      "size": 2163,
+      "sha256": "a0cd841ebc9a0d69a374e16e1d31b2fc689c0cf557c27c0fee9ff9b0dd652a89"
+    },
+    "forecast__horizon-30.json": {
+      "size": 7401,
+      "sha256": "fa69ea5919b3436f1b2def266a320515de6549df59603949c4ed1f3b3a3973df"
+    },
+    "forecast.json": {
+      "size": 7401,
+      "sha256": "fa69ea5919b3436f1b2def266a320515de6549df59603949c4ed1f3b3a3973df"
+    },
+    "inventory_status.json": {
+      "size": 17812,
+      "sha256": "07cf4cfc8164e5902c9a91ea118d622349b44f166b727d8a700b1444355f0a48"
+    },
+    "inventory-status.json": {
+      "size": 17812,
+      "sha256": "07cf4cfc8164e5902c9a91ea118d622349b44f166b727d8a700b1444355f0a48"
+    },
+    "reorder_suggestions__lead_days-3__cover_days-7.json": {
+      "size": 3667,
+      "sha256": "f2dedb3052d8c62072c0f1935bc80426bedd50f83de6fca37fb66478af00b305"
+    },
+    "reorder_suggestions__lead_days-3__cover_days-14.json": {
+      "size": 7638,
+      "sha256": "b75477c90261beb2ab99e01be937130532fed766e8d12dd6242c36a167eca5be"
+    },
+    "reorder_suggestions__lead_days-3__cover_days-21.json": {
+      "size": 10281,
+      "sha256": "befdc18f2986388fbb35c55d6fc7f8dda5bc2e65e8168861aa9c3273d9be3a01"
+    },
+    "reorder_suggestions__lead_days-3__cover_days-30.json": {
+      "size": 11803,
+      "sha256": "cf79754b9e98eff7372449f4a1250b73851d832fd6f74b8c81eeb56c35cfc4a0"
+    },
+    "reorder_suggestions__lead_days-5__cover_days-7.json": {
+      "size": 5809,
+      "sha256": "753b731cd4a6c12c9c086b844fe3b8d4748076293d4409e982d6164ea278297e"
+    },
+    "reorder_suggestions__lead_days-5__cover_days-14.json": {
+      "size": 8608,
+      "sha256": "b2525ac0980f7f59c13a1b2ecf35b9524d915a59b293ae68b1d8bf8efc794945"
+    },
+    "reorder_suggestions__lead_days-5__cover_days-21.json": {
+      "size": 10545,
+      "sha256": "b84e6dae83f035f9f339fe627b8b81443830ed536e6a623d1347f80d753defb7"
+    },
+    "reorder_suggestions__lead_days-5__cover_days-30.json": {
+      "size": 11814,
+      "sha256": "447442d80687d2df129b30d785dcf74784358f0cbc51a88fe9d4accbf4d51cca"
+    },
+    "reorder_suggestions__lead_days-7__cover_days-7.json": {
+      "size": 6560,
+      "sha256": "cbee0157b826adbda1efd14bb0bba9bbcb4cc7b7a0d5d35e40a2c8ba8e6f2d13"
+    },
+    "reorder_suggestions__lead_days-7__cover_days-14.json": {
+      "size": 10011,
+      "sha256": "308fd005c4b437a389145ec82c32ffff587292c4563c9237fdd878ffa641d8d3"
+    },
+    "reorder_suggestions__lead_days-7__cover_days-21.json": {
+      "size": 10910,
+      "sha256": "8a06c02817dbff4f01518373f9c4a0f06be944db8e94e565922dcdf495b34269"
+    },
+    "reorder_suggestions__lead_days-7__cover_days-30.json": {
+      "size": 11824,
+      "sha256": "f091646f8081360ae6dc5b960f38df5e89c6a898b9f9ee86e63291e137ea7dd4"
+    },
+    "reorder_suggestions__lead_days-10__cover_days-7.json": {
+      "size": 8248,
+      "sha256": "0e59760a1ff51f43d62d3b4ec70b6df06135f37c8a688a68b8faafd422f4851e"
+    },
+    "reorder_suggestions__lead_days-10__cover_days-14.json": {
+      "size": 10542,
+      "sha256": "773b9487280b0d1f9fc4d0bcbd12c4b78190eeb6a21943137195778f2e3a2b53"
+    },
+    "reorder_suggestions__lead_days-10__cover_days-21.json": {
+      "size": 11806,
+      "sha256": "325deb2752215f1d32ad4977640084e53d78d2ab0eab37d6870a7b4353003050"
+    },
+    "reorder_suggestions__lead_days-10__cover_days-30.json": {
+      "size": 12089,
+      "sha256": "1ac6ce73972e76c137a9983bf91f5752f1dc581c4db821c4b104422467af8259"
+    },
+    "reorder_export.csv": {
+      "size": 1199,
+      "sha256": "5b947fa6da1f6f53d82c5d6f9f1ddf84b5126f8794eb5e145a95bdfc1b497c68"
+    },
+    "reorder_export__lead_days-5__cover_days-14.csv": {
+      "size": 1199,
+      "sha256": "5b947fa6da1f6f53d82c5d6f9f1ddf84b5126f8794eb5e145a95bdfc1b497c68"
+    },
+    "day_summaries__limit-14.json": {
+      "size": 2212,
+      "sha256": "cb5478dd5e2424ac2ef13be1d9b8a04fbab44ed74cae83b86c31c44ee9d9a02b"
+    },
+    "day_summaries.json": {
+      "size": 2212,
+      "sha256": "cb5478dd5e2424ac2ef13be1d9b8a04fbab44ed74cae83b86c31c44ee9d9a02b"
+    },
+    "day_summary__date-2026-11-15.json": {
+      "size": 839,
+      "sha256": "9b39501ffd327c5bded58a8612da13a36e1d45dbd193e7942d5921b655ae705b"
+    },
+    "day_summary__date-2026-10-31.json": {
+      "size": 1134,
+      "sha256": "f5af17feea129a80e10b4eccb1288be50bab8a56e2cee28e3537ddb002e3e2ce"
+    },
+    "day_summary__date-2026-10-30.json": {
+      "size": 1119,
+      "sha256": "86e9815ed3d3802dc2bbc3e3591484d88f37fed0b910ecc808ffdfa99fe27273"
+    },
+    "day_summary__date-2026-10-29.json": {
+      "size": 1116,
+      "sha256": "919f5a74824903dc3cead349edc4c9e989ef578323cc335a3702f045058a2fc0"
+    },
+    "day_summary__date-2026-10-28.json": {
+      "size": 1130,
+      "sha256": "e5558f2025921123459fb5a508b21d83883c75fd588e84d5de4b4a1b1d5fff27"
+    },
+    "day_summary__date-2026-10-27.json": {
+      "size": 1124,
+      "sha256": "bfa773d20e85724c7be3383b364d48d6ff76dfc8ae4b6d374d972ff997e38b34"
+    },
+    "day_summary__date-2026-10-26.json": {
+      "size": 1100,
+      "sha256": "d87cb1db385c998ca093d88a6fc48c6963305237a77b32836dd639dd647da14e"
+    },
+    "day_summary__date-2026-10-25.json": {
+      "size": 1118,
+      "sha256": "fa64f98153030a626cc4766ec94f35fb601c6fa1dafdc1ea994f7675f024efa4"
+    },
+    "day_summary__date-2026-10-24.json": {
+      "size": 1101,
+      "sha256": "17bedc4584c330209f81d1a287702fb405b4bb3b8e1020a1c020171699cdb455"
+    },
+    "day_summary__date-2026-10-23.json": {
+      "size": 1114,
+      "sha256": "f4cfd219d020a30661bb2e75323b329a3a8bf454d0cf642cc1e1060ac5240f23"
+    },
+    "day_summary__date-2026-10-22.json": {
+      "size": 1121,
+      "sha256": "ec7adadaf53557a4787c3725b16366205eae511d55e67686fe5ecf9e2963c998"
+    },
+    "day_summary__date-2026-10-21.json": {
+      "size": 1134,
+      "sha256": "e9032397422e0cc3b019807f10a906437392bbdfb4bfb24159a86b7bae90a9ba"
+    },
+    "day_summary__date-2026-10-20.json": {
+      "size": 1130,
+      "sha256": "3a7610d2a6ae931f5ce077d36fa4919ce0dea46fceda7321cdd97ed440a00ec1"
+    },
+    "day_summary__date-2026-10-19.json": {
+      "size": 1071,
+      "sha256": "f39fcd9fb1f408cc2d6dd570feb292977b76c8f662c3b7c2bbc13f9b110513e2"
+    },
+    "day_summary.json": {
+      "size": 839,
+      "sha256": "9b39501ffd327c5bded58a8612da13a36e1d45dbd193e7942d5921b655ae705b"
+    },
+    "data_status.json": {
+      "size": 391,
+      "sha256": "010129f9c8a0e9e1c97eed2d9f9ba4005737cf713d1b3065550fafa954fb209a"
+    },
+    "data-status.json": {
+      "size": 391,
+      "sha256": "010129f9c8a0e9e1c97eed2d9f9ba4005737cf713d1b3065550fafa954fb209a"
+    },
+    "stats.json": {
+      "size": 117,
+      "sha256": "6cfdecca8d1ab45538e75350a956069c3fe9d75d60a5f40e612999baf378ec49"
+    },
+    "day_status.json": {
+      "size": 82,
+      "sha256": "3546bbc266ff37107c1ee331c8a286f8b187c43b2523d53e319602506d1eedad"
+    },
+    "day-status.json": {
+      "size": 82,
+      "sha256": "3546bbc266ff37107c1ee331c8a286f8b187c43b2523d53e319602506d1eedad"
+    },
+    "explain_anomaly__date-2025-01-04.json": {
+      "size": 803,
+      "sha256": "e7c1f25c4531867205ea728a7719c9116e3fcbde7acf638dfa39e6a4bdb2fe17"
+    },
+    "explain_anomaly__date-2025-05-02.json": {
+      "size": 851,
+      "sha256": "dc5929a1fd5690329f884ebbd42ad07c1bcc89a6e7bf8a57002f3b340e3b7c7c"
+    },
+    "explain_anomaly__date-2025-05-11.json": {
+      "size": 863,
+      "sha256": "a0a97c4a96812d228973eff500c30be402e47692825158341648e4a195212d03"
+    },
+    "explain_anomaly__date-2025-12-11.json": {
+      "size": 855,
+      "sha256": "6ef480e9becc3f3f1b254df09d609efbd40045f0c9057e760a5314b63d14121b"
+    },
+    "explain_anomaly__date-2026-01-26.json": {
+      "size": 848,
+      "sha256": "4a115153359330b3369ac877b5318defa2b00b8286dd38033e2303426bfad826"
+    },
+    "explain_anomaly__date-2026-03-03.json": {
+      "size": 848,
+      "sha256": "9c0f18e3adfaf34d1ac1b69a037230486a0aa458bfe61cf8a62e56769c58cd0f"
+    },
+    "explain_anomaly__date-2026-03-18.json": {
+      "size": 858,
+      "sha256": "0921e2d16eb216705a3e00e4e7ad4ad11b518b68ed8a242db57d45ccb417a042"
+    },
+    "explain_anomaly__date-2026-05-03.json": {
+      "size": 866,
+      "sha256": "951575bf3204c6e0757b1591473d252ca7c384f09214369eddb046ab6b5aeec7"
+    },
+    "explain_anomaly__date-2026-07-02.json": {
+      "size": 868,
+      "sha256": "dc8e5b5587cbb9824475f456c392e9733b53f20ba2e046c15a42b8bc1037a296"
+    },
+    "explain_anomaly__date-2026-08-11.json": {
+      "size": 843,
+      "sha256": "964b25602004df39d84c41efdaad10418d7544b28a161d28152b3c8a9de3da7b"
+    },
+    "explain_anomaly__date-2026-08-12.json": {
+      "size": 870,
+      "sha256": "3997737b1a3cf7d7074f5112a00d13e7076d572b47491ba4b0b5b777ff7e52a8"
+    },
+    "explain_anomaly__date-2026-08-13.json": {
+      "size": 900,
+      "sha256": "8c60dcbf947089fd10e3ef9f267d0490187d397e0b11e884128dc13f7a8a229e"
+    },
+    "explain_anomaly__date-2026-10-02.json": {
+      "size": 849,
+      "sha256": "7bedd92e670198f25b3a8fd9b9a49dcd4e59d17e927e94e40d2b13114f151a26"
+    },
+    "explain_anomaly__date-2026-11-01.json": {
+      "size": 273,
+      "sha256": "5dda7104b655f8be7e311f65be1bfa535b81d6cff10b5d95ea28d4fab12107b5"
+    },
+    "explain_anomaly__date-2026-11-02.json": {
+      "size": 274,
+      "sha256": "2227cb0af02db38bdbf644e4602eb9e797dbc0c6024b2c08755e9b710e7d2136"
+    },
+    "explain_anomaly__date-2026-11-03.json": {
+      "size": 274,
+      "sha256": "541b21a0fdf6659bbdcf5712c6e4d69f5cbb003fd7fc23b4d4aed0eb03bb10e1"
+    },
+    "refills__within_days-5__include_names-false.json": {
+      "size": 80142,
+      "sha256": "1e9a2eab76a975808f84fb4f08a09621dddca1caf4af2f6d01c3381f5d0c731a"
+    },
+    "refills.json": {
+      "size": 80142,
+      "sha256": "1e9a2eab76a975808f84fb4f08a09621dddca1caf4af2f6d01c3381f5d0c731a"
+    }
+  }
+}

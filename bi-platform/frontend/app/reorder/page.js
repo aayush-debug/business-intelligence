@@ -14,9 +14,19 @@ export default function ReorderPage() {
   const [leadDays, setLeadDays] = useState(5);
   const [coverDays, setCoverDays] = useState(14);
   const [reorderData, setReorderData] = useState(null);
+  const [config, setConfig] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showDoNotReorder, setShowDoNotReorder] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+    fetch(`${API_BASE}/api/config`)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data) setConfig(data);
+      })
+      .catch(() => {});
+  }, []);
 
   const fetchReorder = () => {
     setLoading(true);
@@ -98,29 +108,57 @@ export default function ReorderPage() {
             <label className="form-label" style={{ margin: 0 }}>
               Delivery time (days):
             </label>
-            <input
-              type="number"
-              min={1}
-              max={30}
-              className="form-input"
-              style={{ width: 80 }}
-              value={leadDays}
-              onChange={(e) => setLeadDays(Math.max(1, Number(e.target.value)))}
-            />
+            {config?.snapshot_mode ? (
+              <select
+                className="form-input"
+                style={{ width: 100 }}
+                value={leadDays}
+                onChange={(e) => setLeadDays(Number(e.target.value))}
+              >
+                <option value={3}>3 days</option>
+                <option value={5}>5 days</option>
+                <option value={7}>7 days</option>
+                <option value={10}>10 days</option>
+              </select>
+            ) : (
+              <input
+                type="number"
+                min={1}
+                max={30}
+                className="form-input"
+                style={{ width: 80 }}
+                value={leadDays}
+                onChange={(e) => setLeadDays(Math.max(1, Number(e.target.value)))}
+              />
+            )}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <label className="form-label" style={{ margin: 0 }}>
               Days of stock to buy for:
             </label>
-            <input
-              type="number"
-              min={3}
-              max={60}
-              className="form-input"
-              style={{ width: 80 }}
-              value={coverDays}
-              onChange={(e) => setCoverDays(Math.max(3, Number(e.target.value)))}
-            />
+            {config?.snapshot_mode ? (
+              <select
+                className="form-input"
+                style={{ width: 100 }}
+                value={coverDays}
+                onChange={(e) => setCoverDays(Number(e.target.value))}
+              >
+                <option value={7}>7 days</option>
+                <option value={14}>14 days</option>
+                <option value={21}>21 days</option>
+                <option value={30}>30 days</option>
+              </select>
+            ) : (
+              <input
+                type="number"
+                min={3}
+                max={60}
+                className="form-input"
+                style={{ width: 80 }}
+                value={coverDays}
+                onChange={(e) => setCoverDays(Math.max(3, Number(e.target.value)))}
+              />
+            )}
           </div>
           {reorderData && (
             <div style={{ marginLeft: "auto", fontSize: 16, fontWeight: 700 }}>
