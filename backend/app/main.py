@@ -243,8 +243,10 @@ async def import_commit(
     try:
         res = imp.commit_import(db, filename, content, dataset, mapping, mode)
     except ValueError as e:
+        db.rollback()
         raise HTTPException(status_code=422, detail=str(e))
     except Exception as e:
+        db.rollback()
         raise HTTPException(status_code=400, detail=str(e))
     A.clear_cache()
     return res

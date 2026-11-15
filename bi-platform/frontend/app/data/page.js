@@ -438,6 +438,11 @@ export default function YourDataPage() {
               </div>
 
               {/* Import Options & Action */}
+              {isMockLoaded && mode === "replace" && (
+                <div style={{ margin: "16px 0 10px", fontSize: 13, color: "#1e40af", background: "#eff6ff", border: "1px solid #bfdbfe", padding: "8px 12px", borderRadius: 6 }}>
+                  💡 <strong>Tip:</strong> Mock pharmacy data is currently loaded. Selecting &ldquo;Replace existing data&rdquo; will cleanly clear the sample demo dataset so your uploaded business files become your primary database.
+                </div>
+              )}
               <div style={{ display: "flex", alignItems: "center", gap: 20, flexWrap: "wrap", borderTop: "1px solid var(--border-light)", paddingTop: 16 }}>
                 <div>
                   <label style={{ fontSize: 13.5, fontWeight: 600, marginRight: 10 }}>Import Mode:</label>
