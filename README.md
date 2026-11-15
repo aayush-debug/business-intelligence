@@ -1,18 +1,38 @@
-# Company Brain - Backend Foundation
+# Company Brain
 
-A clean, production-ready backend foundation for **Company Brain**: a Business Intelligence and Decision Platform for small businesses. Built with FastAPI, SQLAlchemy 2.0, and Pandas. Supports SQLite for local development and PostgreSQL for production.
+A complete, production-ready **Business Intelligence & Decision Platform** for small businesses. Built with **FastAPI**, **SQLAlchemy 2.0**, **Pandas**, and **Next.js 14** (App Router, React 18, Plain CSS).
+
+Supports SQLite locally and PostgreSQL 16 in production.
+
+---
+
+## Important: Upgrading From Previous Database
+
+> [!IMPORTANT]
+> If you have an existing local SQLite database file (`backend/company_brain.db` or `backend/bi.db`), **delete it once** so that the updated schema (`inventory`, `day_closes`, `product_group`, `manufacturer`, `phone`, `sale_time`, `source`) is initialized cleanly:
+> ```bash
+> rm -f backend/company_brain.db backend/bi.db company_brain.db bi.db
+> ```
+> The server will start **completely empty**. You can load demo data at any time via `POST /api/demo/load` or upload your own files via the `/data` web interface.
 
 ---
 
 ## Tech Stack
 
-- **Python 3.11**
-- **FastAPI**: Modern, fast web framework for building APIs
-- **Uvicorn**: High-performance ASGI server
-- **SQLAlchemy 2.0**: SQL toolkit and ORM
-- **Pandas**: Fast CSV reading and data transformation
-- **psycopg2-binary**: PostgreSQL adapter for Python
-- **SQLite** (local default) / **PostgreSQL 16** (production / docker compose)
+**Backend**
+- **Python 3.11+**
+- **FastAPI**: Modern REST API framework
+- **SQLAlchemy 2.0**: ORM and connection pooling
+- **Pandas & NumPy**: In-memory data transformation, anomaly detection, forecasting
+- **openpyxl**: Excel file parsing (.xlsx)
+- **python-multipart**: Multipart form data parser for file uploads
+- **SQLite** (local default) / **PostgreSQL 16** (production / docker-compose)
+
+**Frontend**
+- **Next.js 14** (App Router)
+- **React 18** (Plain JavaScript, no TypeScript)
+- **Recharts**: Responsive charting
+- **Plain CSS**: Clean, dependency-free CSS in `globals.css` with Indian Rupee formatting (`₹`)
 
 ---
 
@@ -23,27 +43,35 @@ company-brain/
   backend/
     app/
       __init__.py
-      main.py          # FastAPI app, CORS configuration, startup & lifespan
-      db.py            # Engine, SessionLocal, Base, and SQLAlchemy models
-      seed.py          # CSV validation, date parsing, and bulk seeding logic
+      main.py          # FastAPI app, API routes, lifespan & CORS
+      db.py            # Database engine, SessionLocal, and SQLAlchemy models
+      analytics.py     # KPIs, trends, brands, inventory, refills, profit leaks, basket
+      importer.py      # Multi-format data import, preview, column mapping, validation
+      seed.py          # Demo CSV loader (triggered via POST /api/demo/load)
+      chat.py          # BI Assistant tools and query fallback
     data/              # Seed CSV datasets
       products.csv
       customers.csv
       sales.csv
       expenses.csv
     requirements.txt   # Pinned dependencies
-    Dockerfile         # Multi-stage Python 3.11-slim container
+    Dockerfile         # Multi-stage Python container
   bi-platform/
-    frontend/          # Next.js 14 dashboard (React 18, Recharts, Plain CSS)
+    frontend/          # Next.js 14 application
       app/
-        globals.css
-        layout.js
-        page.js
+        globals.css    # Clean, modern stylesheet
+        layout.js      # App layout with sticky navigation
+        nav.js         # Top navbar with status badge and open-days banner
+        page.js        # Dashboard (KPIs, Charts, Brands, Stock, Leaks, Basket)
+        billing/page.js# Point-of-Sale billing, companion chips, and Close Day modal
+        data/page.js   # File upload wizard, preview, mapping & rejection summary
+        reorder/page.js# Restock suggestions by manufacturer, CSV download, WhatsApp copy
+        refills/page.js# Chronic care refill alerts, privacy toggle, WhatsApp link
+        summary/page.js# 14-day closed history and WhatsApp daily report preview
       package.json
       next.config.js
       .env.example
-  docker-compose.yml   # PostgreSQL 16 + backend service with healthcheck
-  .gitignore
+  docker-compose.yml   # PostgreSQL 16 + backend with healthcheck
   README.md
 ```
 
@@ -51,137 +79,80 @@ company-brain/
 
 ## Database Models
 
-- **Product (`products`)**: `id`, `name`, `category`, `unit_cost`, `unit_price`
-- **Customer (`customers`)**: `id`, `name`, `city`
-- **Sale (`sales`)**: `id`, `invoice_id` (indexed), `sale_date` (Date, indexed), `customer_id` (FK -> `customers.id`, indexed), `product_id` (FK -> `products.id`, indexed), `quantity`, `unit_price`, `total_amount`
+- **Product (`products`)**: `id`, `name`, `category`, `unit_cost`, `unit_price`, `product_group` (indexed, nullable), `manufacturer` (nullable)
+- **Customer (`customers`)**: `id`, `name`, `city`, `phone` (nullable)
+- **Sale (`sales`)**: `id`, `invoice_id` (indexed), `sale_date` (Date, indexed), `sale_time` (DateTime, nullable), `customer_id` (FK), `product_id` (FK), `quantity`, `unit_price`, `total_amount`, `source` ("import" or "live")
 - **Expense (`expenses`)**: `id`, `expense_date` (Date, indexed), `category`, `amount`
+- **Inventory (`inventory`)**: `id`, `product_id` (FK), `batch_no`, `stock_on_hand`, `reorder_level`, `expiry_date` (Date, indexed), `last_restock_date` (Date) — unique constraint on `(product_id, batch_no)`
+- **DayClose (`day_closes`)**: `date` (Date, PK), `closed_at` (DateTime), `invoices` (int), `revenue` (float)
 
 ---
 
-## Seeding & Startup Behavior
+## Getting Started
 
-1. **Table Creation**: Tables are automatically created if they do not exist.
-2. **Conditional CSV Seeding**: If the `products` table is empty, the 4 CSV files in `backend/data/` are parsed and bulk-inserted into the database. If records already exist, seeding is skipped.
-3. **Validation**: Each CSV file is validated against required columns; missing columns raise a descriptive error naming the file and the missing fields.
-4. **Date Parsing**: Date columns (`sale_date` and `expense_date`) are converted to Python `datetime.date` objects.
-
----
-
-## Local Setup & Run (venv + uvicorn)
-
-### 1. Navigate to the backend directory
+### 1. Run the Backend
 ```bash
 cd backend
-```
-
-### 2. Create and activate a virtual environment
-```bash
 python3 -m venv .venv
 source .venv/bin/activate
-```
-
-### 3. Install pinned dependencies
-```bash
 pip install -r requirements.txt
-```
-
-### 4. Run the API server with Uvicorn
-```bash
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ```
-By default, this connects to SQLite at `./company_brain.db`.
+By default, the server connects to SQLite at `./company_brain.db` and starts **EMPTY**.
 
-To point to a custom or PostgreSQL database locally:
-```bash
-export DATABASE_URL="postgresql://company_brain:company_brain@localhost:5432/company_brain"
-uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-```
-
----
-
-## Frontend Setup & Run (Next.js 14)
-
-### 1. Navigate to the frontend directory
+### 2. Run the Frontend
 ```bash
 cd bi-platform/frontend
-# or: cd frontend
-```
-
-### 2. Install dependencies
-```bash
 npm install
-```
-
-### 3. Build the application
-```bash
 npm run build
-```
-
-### 4. Start development server
-```bash
 npm run dev
 ```
-The frontend dashboard will be live at `http://localhost:3000`. It connects to the backend at `http://localhost:8000` by default (configurable via `NEXT_PUBLIC_API_URL`).
+Open `http://localhost:3000` in your browser.
 
----
-
-## Docker Compose Setup & Run
-
-To run the full stack with PostgreSQL 16 and automatic healthchecks:
-
+### 3. Load Demo Data (Optional)
+To populate the database with the sample pharmacy dataset:
 ```bash
-docker compose up --build
-```
-
-The database container boots first, validates its healthcheck (`pg_isready`), and then the backend container starts, runs migrations, seeds data, and listens on port 8000.
-
-To run in the background (detached mode):
-```bash
-docker compose up --build -d
-```
-
-To stop services:
-```bash
-docker compose down
+curl -X POST http://localhost:8000/api/demo/load
 ```
 
 ---
 
-## API Verification
+## API Reference
 
-Once running, verify the backend endpoints:
+### Health, Stats & Seeding
+- `GET /health`: Health status check.
+- `GET /api/stats`: Table row counts.
+- `GET /api/data/status`: Status of all 5 datasets (`{rows, loaded}`), date boundaries, and last closed date.
+- `POST /api/demo/load`: Loads demo CSVs (returns `409` if database is not empty).
 
-### 1. Health Check
-```bash
-curl http://localhost:8000/health
-```
-**Response:**
-```json
-{"status": "ok"}
-```
+### Data Import System
+- `GET /api/import/template/{dataset}`: Download a header-only CSV template for `products`, `customers`, `sales`, `expenses`, or `inventory`.
+- `POST /api/import/preview`: Upload `.csv`, `.tsv`, `.txt`, `.xlsx`, or `.json` to preview columns, sample rows, and suggested mappings.
+- `POST /api/import/commit`: Atomically insert rows with deduplication, currency stripping, and rejected rows logging.
+- `GET /api/import/rejected/{filename}`: Download CSV of rejected invalid rows with exact reasons.
 
-### 2. Stats Check
-```bash
-curl http://localhost:8000/api/stats
-```
-**Response:**
-```json
-{
-  "products": 51,
-  "customers": 420,
-  "sales": 94652,
-  "expenses": 176
-}
-```
+### Live Billing & Day Closes
+- `POST /api/sales/live`: Create live invoice, decrement inventory batches FIFO by earliest expiry, mark as `source="live"`.
+- `GET /api/day/status`: Check last closed date and list open days (counts only, no open revenue).
+- `POST /api/day/close`: Chronologically close a day, calculate totals, update `day_closes`, and return closed day summary.
+- `POST /api/day/close-due`: Automated cron endpoint closing all open days prior to today (requires `X-Cron-Secret`).
 
-### 3. Analytics Endpoints
-
-- **KPIs**: `GET /api/kpis?days=90` (revenue, cogs, gross_profit, expenses, net_profit, margin, orders, customers, aov, revenue_growth, profit_growth, days)
-- **Trends**: `GET /api/trend?granularity=week&days=365` (period, revenue, profit)
-- **Top Products**: `GET /api/top-products?days=90&limit=8` (product, category, revenue, units, profit, margin_pct)
-- **Top Customers**: `GET /api/top-customers?days=90&limit=8` (customer, revenue, orders — excludes walk-ins)
-- **Categories**: `GET /api/categories?days=90` (category, revenue, profit)
-- **Anomalies**: `GET /api/anomalies?days=180` (series and flagged spike/drop events via rolling z-scores on weekday-adjusted daily revenue)
-- **Forecast**: `GET /api/forecast?horizon=30` (7-90 day trend projection with weekday seasonality, confidence bands, 60-day history, and 28-day backtest vs seasonal-naive baseline)
-
-
+### Core & Advanced Analytics (Closed Days Only)
+- `GET /api/kpis?days=90`: Revenue, net profit, margin %, orders, customer count, AOV, and growth vs previous window.
+- `GET /api/trend?granularity=week&days=365`: Periodic revenue and gross profit series.
+- `GET /api/top-products?days=90&limit=8`: Best-selling products by revenue and margin.
+- `GET /api/categories?days=90`: Revenue and gross profit grouped by category.
+- `GET /api/anomalies?days=180`: Weekday-normalized rolling z-score spike and drop detector.
+- `GET /api/forecast?horizon=30`: 30-day projection with weekday seasonality and 28-day backtest.
+- `GET /api/brands/comparison?days=90`: Competing brands analysis, unit market share, and plain-English insights.
+- `GET /api/inventory/status`: Stock alerts (reorder, overstocked, expiring soon, dead stock) and tied-up capital.
+- `GET /api/reorder/suggestions?lead_days=5&cover_days=14`: Recommended restock quantities grouped by manufacturer.
+- `GET /api/reorder/export.csv`: Export purchase recommendations as CSV.
+- `GET /api/refills?within_days=5`: Chronic prescription refill predictions (due soon, overdue, lapsed).
+- `GET /api/refills/message`: Pre-composed WhatsApp reminder message and click-to-chat URL.
+- `GET /api/day/summary?date=YYYY-MM-DD`: Day summary report with WhatsApp-ready formatted text.
+- `GET /api/day/summaries?limit=14`: Recent closed days overview.
+- `GET /api/profit/leaks?days=90`: Discount leakage, brand margin gaps, low-margin bestsellers, expiry write-offs.
+- `GET /api/basket/pairs?days=90`: Market basket association rules (joint invoice count, support, confidence, lift).
+- `GET /api/basket/companions?product_group=NAME`: Cross-sell companions for quick billing.
+- `POST /api/chat`: AI Business Intelligence assistant with rule-based fallback and analytics tools.

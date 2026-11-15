@@ -30,6 +30,8 @@ bi.db
 *.db
 *.sqlite
 *.sqlite3
+backend/data/email_digests/
+data/email_digests/
 
 # Environment & IDE
 .env
