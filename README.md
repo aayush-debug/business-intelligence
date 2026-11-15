@@ -6,25 +6,50 @@ Supports SQLite locally, PostgreSQL 16 in production, and a zero-database **Snap
 
 ---
 
-## ⚡ Quick Start (One Command)
+## ⚡ Quick Start (One-Command Startup)
 
-### macOS, Linux & Windows (Git Bash / WSL)
+Run the entire platform (FastAPI Backend + Next.js Frontend) with a single command:
+
+### 🍎 For Mac (Terminal)
+
+Open your Terminal in the project folder and run:
 ```bash
 ./run.sh
 ```
+- **What happens**:
+  - Automatically frees ports `8000` & `3000`.
+  - Clears stale `.next` cache to avoid webpack module errors.
+  - Launches FastAPI backend (`:8000`) and Next.js frontend (`:3000`).
+  - Displays high-visibility clickable links right inside your Terminal.
+  - **Automatically opens `http://localhost:3000` in your default Mac browser (Safari / Chrome)**.
+- **To stop**: Press `Ctrl + C` in the Terminal anytime to shut down both servers cleanly.
 
-### Windows (Command Prompt / PowerShell / Double-Click)
+---
+
+### 🪟 For Windows (Command Prompt, PowerShell, or Explorer)
+
+#### Option 1: Command Prompt or PowerShell
+Open Command Prompt (`cmd`) or PowerShell in the project folder and run:
 ```cmd
 run.bat
 ```
 
-### What These Scripts Handle Automatically:
-1. **Frees Ports `8000` & `3000`**: Kills any leftover or stale background processes.
-2. **Clears Cache**: Wipes stale Next.js build cache to eliminate webpack module errors (`Cannot find module './755.js'`).
-3. **Launches Backend**: Starts FastAPI on `http://localhost:8000` with hot-reloading.
-4. **Launches Frontend**: Starts Next.js on `http://localhost:3000`.
-5. **Auto-Opens Browser**: Automatically opens `http://localhost:3000` in your default browser on Windows, macOS, and Linux.
-6. **Graceful Shutdown**: Pressing `Ctrl+C` cleanly terminates both servers simultaneously.
+#### Option 2: File Explorer Double-Click
+Simply double-click the `run.bat` file in Windows File Explorer!
+
+#### Option 3: Git Bash or WSL
+If you use Git Bash or Windows Subsystem for Linux (WSL), run:
+```bash
+./run.sh
+```
+
+- **What happens**:
+  - Automatically finds and terminates any stale processes on ports `8000` & `3000` using Windows `taskkill`.
+  - Clears stale build cache and sets up log routing to `logs\`.
+  - Launches both servers simultaneously.
+  - Displays clickable URLs in the Windows console.
+  - **Automatically opens `http://localhost:3000` in your default Windows browser (Edge / Chrome)**.
+- **To stop**: Press `Ctrl + C` in the window anytime.
 
 ### Access Links
 - **Business Dashboard**: [http://localhost:3000](http://localhost:3000)
