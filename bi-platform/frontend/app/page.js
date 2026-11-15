@@ -67,6 +67,7 @@ function GrowthIndicator({ value, show }) {
 export default function BusinessOverviewPage() {
   const [days, setDays] = useState(90);
   const [data, setData] = useState(null);
+  const [dataStatus, setDataStatus] = useState(null);
   const [forecast, setForecast] = useState(null);
   const [brands, setBrands] = useState([]);
   const [inventory, setInventory] = useState(null);
@@ -76,13 +77,15 @@ export default function BusinessOverviewPage() {
   const [stockTab, setStockTab] = useState("reorder");
   const [loading, setLoading] = useState(true);
   const [loadingDemo, setLoadingDemo] = useState(false);
+  const [resetting, setResetting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleLoadDemoData = async () => {
+  const handleLoadDemoData = async (force = false) => {
     setLoadingDemo(true);
     setErrorMessage("");
     try {
-      const res = await fetch(`${API_BASE}/api/demo/load`, { method: "POST" });
+      const url = force ? `${API_BASE}/api/demo/load?force=true` : `${API_BASE}/api/demo/load`;
+      const res = await fetch(url, { method: "POST" });
       const resData = await res.json();
       if (!res.ok) {
         throw new Error(resData.detail || "Failed to load demo data");
@@ -94,11 +97,32 @@ export default function BusinessOverviewPage() {
     }
   };
 
+  const handleResetData = async () => {
+    if (!window.confirm("This will clear all loaded data so you can upload your own business files from scratch. Continue?")) return;
+    setResetting(true);
+    setErrorMessage("");
+    try {
+      const res = await fetch(`${API_BASE}/api/data/reset`, { method: "POST" });
+      const resData = await res.json();
+      if (!res.ok) {
+        throw new Error(resData.detail || "Failed to reset data");
+      }
+      window.location.href = "/data";
+    } catch (err) {
+      setErrorMessage(err.message || "Failed to reset data.");
+      setResetting(false);
+    }
+  };
+
   const requestIdRef = useRef(0);
 
   // Fetch static or range-independent datasets
   useEffect(() => {
     let isCurrent = true;
+    fetchEndpoint("/api/data/status")
+      .then((st) => { if (isCurrent) setDataStatus(st); })
+      .catch(() => {});
+
     fetchEndpoint("/api/forecast")
       .then((fc) => { if (isCurrent) setForecast(fc); })
       .catch(() => {});
@@ -146,6 +170,7 @@ export default function BusinessOverviewPage() {
   }, [days]);
 
   const isEmpty = data && data.kpis.orders === 0 && data.kpis.revenue === 0;
+  const isMockData = Boolean(dataStatus?.is_mock_data || (dataStatus?.products?.rows === 54 && dataStatus?.customers?.rows === 420));
 
   return (
     <main className="container">
@@ -194,6 +219,74 @@ export default function BusinessOverviewPage() {
         )}
       </header>
 
+      {/* Data Source Chooser Bar (shown when data is present) */}
+      {!isEmpty && data && (
+        <section
+          style={{
+            background: isMockData ? "rgba(239, 246, 255, 0.6)" : "#ffffff",
+            border: isMockData ? "1px solid #bfdbfe" : "1px solid var(--border-color)",
+            borderRadius: "8px",
+            padding: "10px 16px",
+            marginBottom: "20px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "12px",
+          }}
+        >
+          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <span
+              style={{
+                fontSize: "12px",
+                fontWeight: 700,
+                padding: "3px 9px",
+                borderRadius: "5px",
+                background: isMockData ? "#dbeafe" : "#dcfce7",
+                color: isMockData ? "#1e40af" : "#166534",
+                border: `1px solid ${isMockData ? "#93c5fd" : "#86efac"}`,
+              }}
+            >
+              {isMockData ? "🧪 Mock Demo Data Active" : "📊 Your Custom Business Data Active"}
+            </span>
+            <span style={{ fontSize: "13px", color: "var(--text-muted)" }}>
+              {isMockData
+                ? "Currently checking pre-configured pharmacy data (54 products, 94.6k sales). Want to test with your own store files?"
+                : "Displaying metrics from your uploaded datasets. You can upload more files or switch to sample data."}
+            </span>
+          </div>
+
+          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+            <Link href="/data" className="btn btn-primary btn-sm" style={{ padding: "6px 14px", fontSize: "13px" }}>
+              📤 Upload your own data →
+            </Link>
+            {isMockData ? (
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={handleResetData}
+                disabled={resetting}
+                title="Wipe mock data and start with an empty database to upload your files"
+                style={{ padding: "6px 12px", fontSize: "13px" }}
+              >
+                {resetting ? "Clearing…" : "🧹 Clear & upload own data"}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => handleLoadDemoData(true)}
+                disabled={loadingDemo}
+                title="Reload the 2-year sample pharmacy dataset"
+                style={{ padding: "6px 12px", fontSize: "13px" }}
+              >
+                {loadingDemo ? "Loading…" : "🧪 Check mock data"}
+              </button>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Error state */}
       {errorMessage && (
         <div className="error-banner" role="alert">
@@ -207,27 +300,82 @@ export default function BusinessOverviewPage() {
       {/* Loading state message */}
       {loading && !data && <p className="loading-indicator">Loading your numbers…</p>}
 
-      {/* Empty State */}
+      {/* Empty State: Side-by-side Choice Cards */}
       {isEmpty && (
-        <div className="empty-state-card">
-          <div style={{ fontSize: 44, marginBottom: 12 }}>📊</div>
-          <div className="empty-state-title">No data yet. Upload your files</div>
-          <div className="empty-state-desc">
-            Get started by uploading your products, sales history, and current stock.
-            Or load our pre-configured test dataset to explore the full dashboard instantly.
+        <div style={{ margin: "20px 0" }}>
+          <div style={{ textAlign: "center", marginBottom: "22px" }}>
+            <h2 style={{ fontSize: "22px", fontWeight: 700, color: "var(--text-main)", marginBottom: "6px" }}>
+              Welcome to Company Brain
+            </h2>
+            <p style={{ color: "var(--text-muted)", fontSize: "14px", margin: 0 }}>
+              Choose whether you would like to explore sample mock data or upload your own store records:
+            </p>
           </div>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap", marginTop: 16 }}>
-            <Link href="/data" className="btn btn-primary">
-              Upload your files →
-            </Link>
-            <button
-              type="button"
-              className="btn btn-secondary"
-              onClick={handleLoadDemoData}
-              disabled={loadingDemo}
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "20px" }}>
+            {/* Card 1: Check Mock Data */}
+            <div
+              className="panel"
+              style={{
+                padding: "24px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                border: "2px solid #3b82f6",
+                borderRadius: "10px",
+                background: "linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%)",
+              }}
             >
-              {loadingDemo ? "Loading test data…" : "🧪 Load sample test data"}
-            </button>
+              <div>
+                <div style={{ fontSize: "36px", marginBottom: "10px" }}>🧪</div>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "#1e3a8a", marginBottom: "8px" }}>
+                  Option 1: Check Mock Data
+                </h3>
+                <p style={{ color: "var(--text-muted)", fontSize: "13.5px", lineHeight: "1.6", marginBottom: "16px" }}>
+                  Instantly explore 2 years of simulated pharmacy sales with 54 medicines, profit margins, inventory reordering, anomaly detection, and the AI chatbot.
+                </p>
+              </div>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={() => handleLoadDemoData(false)}
+                disabled={loadingDemo}
+                style={{ width: "100%", justifyContent: "center", padding: "10px" }}
+              >
+                {loadingDemo ? "Loading test data…" : "🚀 Load & Explore Mock Data"}
+              </button>
+            </div>
+
+            {/* Card 2: Upload Own Data */}
+            <div
+              className="panel"
+              style={{
+                padding: "24px",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                border: "2px solid var(--border-color)",
+                borderRadius: "10px",
+                background: "var(--panel-bg)",
+              }}
+            >
+              <div>
+                <div style={{ fontSize: "36px", marginBottom: "10px" }}>📤</div>
+                <h3 style={{ fontSize: "18px", fontWeight: 700, color: "var(--text-main)", marginBottom: "8px" }}>
+                  Option 2: Upload Your Own Data
+                </h3>
+                <p style={{ color: "var(--text-muted)", fontSize: "13.5px", lineHeight: "1.6", marginBottom: "16px" }}>
+                  Import your actual business files (CSV or Excel) for Products, Sales history, Current stock, and Expenses to compute custom insights and reports.
+                </p>
+              </div>
+              <Link
+                href="/data"
+                className="btn btn-secondary"
+                style={{ width: "100%", justifyContent: "center", padding: "10px" }}
+              >
+                📂 Go to Upload Data →
+              </Link>
+            </div>
           </div>
         </div>
       )}

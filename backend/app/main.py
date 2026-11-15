@@ -135,6 +135,12 @@ def data_status(db: Session = Depends(get_db)):
     last_sale = db.execute(text("SELECT MAX(sale_date) FROM sales")).scalar()
     last_closed = db.execute(text("SELECT MAX(date) FROM day_closes")).scalar()
 
+    is_mock = False
+    if p_cnt > 0:
+        p1 = db.query(Product).filter(Product.id == 1).first()
+        if p1 and p1.name and "Metformin" in p1.name:
+            is_mock = True
+
     def _fmt(d):
         if d is None:
             return None
@@ -151,22 +157,48 @@ def data_status(db: Session = Depends(get_db)):
         "first_sale_date": _fmt(first_sale),
         "last_sale_date": _fmt(last_sale),
         "last_closed_date": _fmt(last_closed),
+        "is_mock_data": is_mock,
     }
 
 
 @app.post("/api/demo/load")
-def demo_load(db: Session = Depends(get_db)):
-    """Load sample CSV dataset if products table is empty. Returns 409 otherwise."""
+def demo_load(force: bool = False, db: Session = Depends(get_db)):
+    """Load sample CSV dataset. Pass force=true to clear existing data and reload."""
     if is_snapshot_mode():
         raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
+    if force:
+        db.query(Sale).delete()
+        db.query(DayClose).delete()
+        db.query(Inventory).delete()
+        db.query(Expense).delete()
+        db.query(Customer).delete()
+        db.query(Product).delete()
+        db.commit()
+        A.clear_cache()
     success = load_demo_data(db)
     if not success:
         raise HTTPException(
             status_code=409,
-            detail="Demo data can only be loaded when the database is empty."
+            detail="Demo data can only be loaded when the database is empty. Pass force=true to reload."
         )
     A.clear_cache()
     return {"status": "ok", "message": "Demo data loaded successfully."}
+
+
+@app.post("/api/data/reset")
+def reset_data(db: Session = Depends(get_db)):
+    """Reset all tables to an empty database state so user can upload their own data."""
+    if is_snapshot_mode():
+        raise HTTPException(status_code=403, detail="Write operations are disabled in demo mode.")
+    db.query(Sale).delete()
+    db.query(DayClose).delete()
+    db.query(Inventory).delete()
+    db.query(Expense).delete()
+    db.query(Customer).delete()
+    db.query(Product).delete()
+    db.commit()
+    A.clear_cache()
+    return {"status": "ok", "message": "Database cleared. You can now upload your own business data."}
 
 
 # ---------------------------------------------------------
@@ -686,10 +718,14 @@ def day_status(db: Session = Depends(get_db)):
             "lines": int(r.line_count),
         })
 
+    p1 = db.query(Product).filter(Product.id == 1).first()
+    is_mock = bool(p1 and p1.name and "Metformin" in p1.name)
+
     return {
         "last_closed_date": last_closed.isoformat() if hasattr(last_closed, "isoformat") else str(last_closed) if last_closed else None,
         "open_days": open_days,
         "today": today_tz.isoformat(),
+        "is_mock_data": is_mock,
     }
 
 

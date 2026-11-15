@@ -59,6 +59,7 @@ def get_data_status(db):
         "first_sale_date": _fmt(first_sale),
         "last_sale_date": _fmt(last_sale),
         "last_closed_date": _fmt(last_closed),
+        "is_mock_data": True,
     }
 
 
@@ -97,6 +98,7 @@ def get_day_status(db):
         "last_closed_date": last_closed.isoformat() if hasattr(last_closed, "isoformat") else str(last_closed) if last_closed else None,
         "open_days": open_days,
         "today": date.today().isoformat(),
+        "is_mock_data": True,
     }
 
 

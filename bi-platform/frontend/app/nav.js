@@ -74,7 +74,7 @@ export default function Navigation() {
             </div>
           </div>
           <div className="nav-right" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            {(isSnapshot || config?.demo_mode) && (
+            {(isSnapshot || config?.demo_mode || dayStatus?.is_mock_data) && (
               <span
                 style={{
                   background: "#fef3c7",

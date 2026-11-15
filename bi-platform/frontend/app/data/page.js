@@ -44,19 +44,37 @@ export default function YourDataPage() {
   const [errorMessage, setErrorMessage] = useState("");
   const fileInputRef = useRef(null);
 
-  const handleLoadDemoData = async () => {
+  const handleLoadDemoData = async (force = false) => {
     setLoadingDemo(true);
     setErrorMessage("");
     try {
-      const res = await fetch(`${API_BASE}/api/demo/load`, { method: "POST" });
+      const url = force ? `${API_BASE}/api/demo/load?force=true` : `${API_BASE}/api/demo/load`;
+      const res = await fetch(url, { method: "POST" });
       const resData = await res.json();
       if (!res.ok) {
         throw new Error(resData.detail || "Failed to load demo data");
       }
       fetchStatus();
-      alert("Sample test data loaded successfully! You can now view the Dashboard.");
+      alert("Sample mock data loaded successfully! You can now view the Dashboard.");
     } catch (err) {
       setErrorMessage(err.message || "Failed to load demo data.");
+    } finally {
+      setLoadingDemo(false);
+    }
+  };
+
+  const handleResetData = async () => {
+    if (!window.confirm("Are you sure you want to clear all data? This allows you to upload your own business data from scratch.")) return;
+    setLoadingDemo(true);
+    setErrorMessage("");
+    try {
+      const res = await fetch(`${API_BASE}/api/data/reset`, { method: "POST" });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || "Failed to reset data");
+      fetchStatus();
+      alert("Database cleared! You can now upload your own files.");
+    } catch (err) {
+      setErrorMessage(err.message || "Failed to reset data.");
     } finally {
       setLoadingDemo(false);
     }
@@ -157,7 +175,8 @@ export default function YourDataPage() {
     }
   };
 
-  const isMockLoaded = Boolean(dataStatus?.sales?.loaded && dataStatus?.products?.rows === 54);
+  const isMockLoaded = Boolean(dataStatus?.is_mock_data || (dataStatus?.sales?.loaded && dataStatus?.products?.rows === 54));
+  const hasAnyData = Boolean((dataStatus?.products?.rows || 0) > 0 || (dataStatus?.sales?.rows || 0) > 0);
 
   return (
     <main className="container">
@@ -173,69 +192,98 @@ export default function YourDataPage() {
         </div>
       </header>
 
-      {/* Mock Data Banner */}
+      {/* Data Choice Banner: Option to check mock data or upload own data */}
       <div
         style={{
-          background: isMockLoaded ? "#eff6ff" : "#f0f4f8",
-          border: isMockLoaded ? "1px solid #bfdbfe" : "1px solid var(--border-color)",
-          padding: "14px 18px",
+          background: isMockLoaded ? "#eff6ff" : hasAnyData ? "#f0fdf4" : "#f8fafc",
+          border: isMockLoaded ? "1px solid #bfdbfe" : hasAnyData ? "1px solid #bbf7d0" : "1px solid var(--border-color)",
+          padding: "16px 20px",
           borderRadius: 8,
           marginBottom: 20,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
           flexWrap: "wrap",
-          gap: 12,
+          gap: 16,
         }}
       >
-        <div>
+        <div style={{ maxWidth: "680px" }}>
           <div
             style={{
               fontWeight: 700,
-              fontSize: 14,
-              color: isMockLoaded ? "#1e40af" : "var(--text-main)",
+              fontSize: 14.5,
+              color: isMockLoaded ? "#1e40af" : hasAnyData ? "#15803d" : "var(--text-main)",
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
             }}
           >
-            {isMockLoaded
-              ? "🧪 Currently loaded: Mock pharmacy data"
-              : "Looking to test the platform with mock data?"}
+            <span>{isMockLoaded ? "🧪 Currently Loaded: Mock Pharmacy Data" : hasAnyData ? "📊 Currently Loaded: Your Custom Business Data" : "🚀 Get Started: Choose Mock Data or Upload Your Own"}</span>
           </div>
           <div
             style={{
               fontSize: 13,
-              color: isMockLoaded ? "#2563eb" : "var(--text-muted)",
-              marginTop: 3,
+              color: isMockLoaded ? "#1d4ed8" : hasAnyData ? "#166534" : "var(--text-muted)",
+              marginTop: 4,
+              lineHeight: 1.5,
             }}
           >
             {isMockLoaded
-              ? "The platform is populated with pre-configured mock pharmacy data (54 products, 420 customers, 94,676 sales, 188 expenses, 53 inventory batches). You can replace any dataset below with your own real business files."
-              : "Load the pre-configured mock pharmacy dataset (54 products, stock on hand, 2 years of sales, and expenses) to explore the system."}
+              ? "The platform currently has 2 years of simulated pharmacy sales (54 products, 94.6k sales, stock batches). You can upload your own files below to replace this, or clear the database."
+              : hasAnyData
+              ? "Your uploaded datasets are active. You can upload more files below, or switch back to sample mock data anytime."
+              : "Explore the platform immediately with 2 years of sample pharmacy business data, or upload your own store records (Products, Sales, Stock, Expenses) below."}
           </div>
         </div>
 
-        {isMockLoaded ? (
-          <span
-            className="badge ok"
-            style={{
-              backgroundColor: "#dbeafe",
-              color: "#1e40af",
-              padding: "6px 12px",
-              fontSize: 12.5,
-              fontWeight: 600,
-            }}
-          >
-            Mock data active
-          </span>
-        ) : (
-          <button
-            type="button"
-            className="btn btn-secondary btn-sm"
-            onClick={handleLoadDemoData}
-            disabled={loadingDemo}
-          >
-            {loadingDemo ? "Loading mock data…" : "🧪 Load mock test data"}
-          </button>
-        )}
+        <div style={{ display: "flex", gap: "10px", alignItems: "center", flexWrap: "wrap" }}>
+          {isMockLoaded ? (
+            <>
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={handleResetData}
+                disabled={loadingDemo}
+                title="Wipe mock data and start with a clean database"
+              >
+                {loadingDemo ? "Clearing…" : "🧹 Clear & upload own data"}
+              </button>
+              <Link href="/" className="btn btn-primary btn-sm">
+                📊 View Dashboard →
+              </Link>
+            </>
+          ) : hasAnyData ? (
+            <>
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => handleLoadDemoData(true)}
+                disabled={loadingDemo}
+                title="Switch to 2-year mock pharmacy dataset"
+              >
+                {loadingDemo ? "Loading…" : "🧪 Switch to mock data"}
+              </button>
+              <button
+                type="button"
+                className="btn btn-outline btn-sm"
+                onClick={handleResetData}
+                disabled={loadingDemo}
+                title="Clear all uploaded data"
+              >
+                🧹 Clear data
+              </button>
+            </>
+          ) : (
+            <button
+              type="button"
+              className="btn btn-primary btn-sm"
+              onClick={() => handleLoadDemoData(false)}
+              disabled={loadingDemo}
+            >
+              {loadingDemo ? "Loading mock data…" : "🧪 Load mock pharmacy data"}
+            </button>
+          )}
+        </div>
       </div>
 
       {/* 5 Dataset Cards */}
