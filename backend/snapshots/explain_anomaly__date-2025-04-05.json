@@ -1,0 +1,29 @@
+{
+  "date": "2025-04-05",
+  "type": "spike",
+  "revenue": 60117.0,
+  "baseline_revenue": 39695.5,
+  "diff_pct": 51.4,
+  "invoices": 93,
+  "top_products": [
+    {
+      "product": "Adult Diapers (pack of 10) - Curalife",
+      "units": 8,
+      "revenue": 4800.0,
+      "share_pct": 8.0
+    },
+    {
+      "product": "Pulse Oximeter - PureWell",
+      "units": 3,
+      "revenue": 4500.0,
+      "share_pct": 7.5
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+      "units": 21,
+      "revenue": 4410.0,
+      "share_pct": 7.3
+    }
+  ],
+  "explanation": "On 5 Apr 2025, revenue spiked to \u20b960,117 (+51.4% above the usual Saturday average of \u20b939,696). The spike was driven by strong sales in: Adult Diapers (pack of 10) - Curalife (8 units, \u20b94,800), Pulse Oximeter - PureWell (3 units, \u20b94,500), Levothyroxine 50mcg (100 tabs) - Medora (21 units, \u20b94,410) across 93 orders."
+}

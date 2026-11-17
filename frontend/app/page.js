@@ -16,7 +16,7 @@ import {
   Legend,
 } from "recharts";
 
-const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
+import { API_BASE } from "./api";
 
 const DATE_RANGES = [
   { label: "30 days", value: 30 },

@@ -1,6 +1,6 @@
 import io
-from datetime import datetime, date, timedelta
-from typing import Any, Optional
+from datetime import datetime, timedelta
+from typing import Any
 import openpyxl
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -19,8 +19,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 
 from . import analytics as A
-from .db import SessionLocal, DayClose, engine
-from sqlalchemy import text
+from .db import SessionLocal, DayClose
 
 
 def format_inr(num: float) -> str:

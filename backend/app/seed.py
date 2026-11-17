@@ -1,9 +1,9 @@
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 from pathlib import Path
 import pandas as pd
 from sqlalchemy import func, text
 from sqlalchemy.orm import Session
-from .db import Customer, DayClose, Expense, Inventory, Product, Sale, SessionLocal
+from .db import Customer, DayClose, Expense, Inventory, Product, Sale
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 

@@ -1,537 +1,527 @@
 [
   {
     "period": "2024-11-03",
-    "revenue": 70092.0,
-    "profit": 15789.33
+    "revenue": 68070.0,
+    "profit": 14907.6
   },
   {
     "period": "2024-11-10",
-    "revenue": 233228.0,
-    "profit": 49725.48
+    "revenue": 225284.0,
+    "profit": 50318.64
   },
   {
     "period": "2024-11-17",
-    "revenue": 229913.0,
-    "profit": 49172.74
+    "revenue": 221529.0,
+    "profit": 48567.87
   },
   {
     "period": "2024-11-24",
-    "revenue": 247988.0,
-    "profit": 52650.48
+    "revenue": 250447.0,
+    "profit": 54719.24
   },
   {
     "period": "2024-12-01",
-    "revenue": 272858.0,
-    "profit": 58922.62
+    "revenue": 217947.0,
+    "profit": 48334.91
   },
   {
     "period": "2024-12-08",
-    "revenue": 235020.0,
-    "profit": 50911.77
+    "revenue": 216170.0,
+    "profit": 48269.16
   },
   {
     "period": "2024-12-15",
-    "revenue": 238120.0,
-    "profit": 50974.84
+    "revenue": 241742.0,
+    "profit": 54213.81
   },
   {
     "period": "2024-12-22",
-    "revenue": 244807.0,
-    "profit": 53304.09
+    "revenue": 230366.0,
+    "profit": 50942.03
   },
   {
     "period": "2024-12-29",
-    "revenue": 272268.0,
-    "profit": 59027.93
+    "revenue": 247405.0,
+    "profit": 54698.63
   },
   {
     "period": "2025-01-05",
-    "revenue": 286981.0,
-    "profit": 62219.01
+    "revenue": 220267.0,
+    "profit": 49210.8
   },
   {
     "period": "2025-01-12",
-    "revenue": 238239.0,
-    "profit": 49960.39
+    "revenue": 238218.0,
+    "profit": 53068.39
   },
   {
     "period": "2025-01-19",
-    "revenue": 246211.0,
-    "profit": 54396.24
+    "revenue": 215355.0,
+    "profit": 47571.37
   },
   {
     "period": "2025-01-26",
-    "revenue": 249495.0,
-    "profit": 53947.2
+    "revenue": 254888.0,
+    "profit": 56519.66
   },
   {
     "period": "2025-02-02",
-    "revenue": 248599.0,
-    "profit": 53690.46
+    "revenue": 244719.0,
+    "profit": 55388.13
   },
   {
     "period": "2025-02-09",
-    "revenue": 249546.0,
-    "profit": 54101.88
+    "revenue": 265792.0,
+    "profit": 59683.8
   },
   {
     "period": "2025-02-16",
-    "revenue": 213228.0,
-    "profit": 45963.84
+    "revenue": 222996.0,
+    "profit": 49986.69
   },
   {
     "period": "2025-02-23",
-    "revenue": 200773.0,
-    "profit": 42521.21
+    "revenue": 245308.0,
+    "profit": 54673.63
   },
   {
     "period": "2025-03-02",
-    "revenue": 262508.0,
-    "profit": 56133.73
+    "revenue": 245416.0,
+    "profit": 55021.7
   },
   {
     "period": "2025-03-09",
-    "revenue": 242656.0,
-    "profit": 51608.61
+    "revenue": 231475.0,
+    "profit": 51844.76
   },
   {
     "period": "2025-03-16",
-    "revenue": 238572.0,
-    "profit": 51852.74
+    "revenue": 222831.0,
+    "profit": 48464.16
   },
   {
     "period": "2025-03-23",
-    "revenue": 249055.0,
-    "profit": 53386.79
+    "revenue": 247214.0,
+    "profit": 54413.71
   },
   {
     "period": "2025-03-30",
-    "revenue": 240486.0,
-    "profit": 51407.8
+    "revenue": 235581.0,
+    "profit": 52326.07
   },
   {
     "period": "2025-04-06",
-    "revenue": 242647.0,
-    "profit": 51420.84
+    "revenue": 260659.0,
+    "profit": 57967.59
   },
   {
     "period": "2025-04-13",
-    "revenue": 203468.0,
-    "profit": 43360.05
+    "revenue": 239194.0,
+    "profit": 53005.34
   },
   {
     "period": "2025-04-20",
-    "revenue": 255837.0,
-    "profit": 54073.94
+    "revenue": 226241.0,
+    "profit": 49798.65
   },
   {
     "period": "2025-04-27",
-    "revenue": 230415.0,
-    "profit": 48983.89
+    "revenue": 233282.0,
+    "profit": 51172.31
   },
   {
     "period": "2025-05-04",
-    "revenue": 257988.0,
-    "profit": 56467.8
+    "revenue": 249412.0,
+    "profit": 55421.27
   },
   {
     "period": "2025-05-11",
-    "revenue": 257277.0,
-    "profit": 55031.98
+    "revenue": 221486.0,
+    "profit": 48345.88
   },
   {
     "period": "2025-05-18",
-    "revenue": 261515.0,
-    "profit": 55926.28
+    "revenue": 220304.0,
+    "profit": 48254.83
   },
   {
     "period": "2025-05-25",
-    "revenue": 243744.0,
-    "profit": 51804.37
+    "revenue": 218877.0,
+    "profit": 47184.37
   },
   {
     "period": "2025-06-01",
-    "revenue": 247629.0,
-    "profit": 53322.15
+    "revenue": 253912.0,
+    "profit": 55664.94
   },
   {
     "period": "2025-06-08",
-    "revenue": 247942.0,
-    "profit": 52610.64
+    "revenue": 227967.0,
+    "profit": 51214.94
   },
   {
     "period": "2025-06-15",
-    "revenue": 245617.0,
-    "profit": 53005.5
+    "revenue": 242987.0,
+    "profit": 53433.67
   },
   {
     "period": "2025-06-22",
-    "revenue": 290258.0,
-    "profit": 62571.99
+    "revenue": 265231.0,
+    "profit": 58579.09
   },
   {
     "period": "2025-06-29",
-    "revenue": 246535.0,
-    "profit": 53788.25
+    "revenue": 223988.0,
+    "profit": 49855.55
   },
   {
     "period": "2025-07-06",
-    "revenue": 250871.0,
-    "profit": 54275.37
+    "revenue": 219773.0,
+    "profit": 48342.86
   },
   {
     "period": "2025-07-13",
-    "revenue": 269903.0,
-    "profit": 58958.9
+    "revenue": 222419.0,
+    "profit": 48444.8
   },
   {
     "period": "2025-07-20",
-    "revenue": 240044.0,
-    "profit": 52429.86
+    "revenue": 231141.0,
+    "profit": 50795.93
   },
   {
     "period": "2025-07-27",
-    "revenue": 240214.0,
-    "profit": 50972.5
+    "revenue": 220089.0,
+    "profit": 49189.75
   },
   {
     "period": "2025-08-03",
-    "revenue": 245023.0,
-    "profit": 52088.07
+    "revenue": 240504.0,
+    "profit": 53468.28
   },
   {
     "period": "2025-08-10",
-    "revenue": 240002.0,
-    "profit": 50181.82
+    "revenue": 225587.0,
+    "profit": 49516.94
   },
   {
     "period": "2025-08-17",
-    "revenue": 211523.0,
-    "profit": 45229.22
+    "revenue": 251118.0,
+    "profit": 55274.83
   },
   {
     "period": "2025-08-24",
-    "revenue": 239685.0,
-    "profit": 51406.44
+    "revenue": 227782.0,
+    "profit": 50019.12
   },
   {
     "period": "2025-08-31",
-    "revenue": 240256.0,
-    "profit": 50526.59
+    "revenue": 239798.0,
+    "profit": 53214.53
   },
   {
     "period": "2025-09-07",
-    "revenue": 234291.0,
-    "profit": 49820.86
+    "revenue": 203962.0,
+    "profit": 44177.2
   },
   {
     "period": "2025-09-14",
-    "revenue": 237446.0,
-    "profit": 50522.53
+    "revenue": 216630.0,
+    "profit": 48598.84
   },
   {
     "period": "2025-09-21",
-    "revenue": 255147.0,
-    "profit": 54493.28
+    "revenue": 254512.0,
+    "profit": 56466.73
   },
   {
     "period": "2025-09-28",
-    "revenue": 219252.0,
-    "profit": 46532.06
+    "revenue": 242889.0,
+    "profit": 53592.53
   },
   {
     "period": "2025-10-05",
-    "revenue": 249030.0,
-    "profit": 53502.69
+    "revenue": 243338.0,
+    "profit": 52247.94
   },
   {
     "period": "2025-10-12",
-    "revenue": 238403.0,
-    "profit": 50474.78
+    "revenue": 226795.0,
+    "profit": 50030.5
   },
   {
     "period": "2025-10-19",
-    "revenue": 260642.0,
-    "profit": 55477.37
+    "revenue": 241706.0,
+    "profit": 52214.67
   },
   {
     "period": "2025-10-26",
-    "revenue": 244891.0,
-    "profit": 51419.86
+    "revenue": 249099.0,
+    "profit": 54528.43
   },
   {
     "period": "2025-11-02",
-    "revenue": 242874.0,
-    "profit": 51929.55
+    "revenue": 221991.0,
+    "profit": 49030.44
   },
   {
     "period": "2025-11-09",
-    "revenue": 263963.0,
-    "profit": 56480.73
+    "revenue": 235983.0,
+    "profit": 51870.2
   },
   {
     "period": "2025-11-16",
-    "revenue": 260099.0,
-    "profit": 57437.51
+    "revenue": 251387.0,
+    "profit": 55332.87
   },
   {
     "period": "2025-11-23",
-    "revenue": 228771.0,
-    "profit": 48815.78
+    "revenue": 263556.0,
+    "profit": 59424.15
   },
   {
     "period": "2025-11-30",
-    "revenue": 284166.0,
-    "profit": 61362.96
+    "revenue": 271919.0,
+    "profit": 58809.34
   },
   {
     "period": "2025-12-07",
-    "revenue": 224729.0,
-    "profit": 49164.57
+    "revenue": 258067.0,
+    "profit": 58170.75
   },
   {
     "period": "2025-12-14",
-    "revenue": 277258.0,
-    "profit": 60239.02
+    "revenue": 214921.0,
+    "profit": 46719.22
   },
   {
     "period": "2025-12-21",
-    "revenue": 255427.0,
-    "profit": 54897.01
+    "revenue": 248350.0,
+    "profit": 54105.53
   },
   {
     "period": "2025-12-28",
-    "revenue": 280078.0,
-    "profit": 61097.13
+    "revenue": 236893.0,
+    "profit": 51806.72
   },
   {
     "period": "2026-01-04",
-    "revenue": 258433.0,
-    "profit": 56132.28
+    "revenue": 270709.0,
+    "profit": 60123.21
   },
   {
     "period": "2026-01-11",
-    "revenue": 247153.0,
-    "profit": 52547.91
+    "revenue": 275655.0,
+    "profit": 61505.49
   },
   {
     "period": "2026-01-18",
-    "revenue": 248821.0,
-    "profit": 53195.18
+    "revenue": 257322.0,
+    "profit": 57392.87
   },
   {
     "period": "2026-01-25",
-    "revenue": 267545.0,
-    "profit": 59037.46
+    "revenue": 264591.0,
+    "profit": 59142.31
   },
   {
     "period": "2026-02-01",
-    "revenue": 218528.0,
-    "profit": 47395.88
+    "revenue": 230171.0,
+    "profit": 50741.38
   },
   {
     "period": "2026-02-08",
-    "revenue": 226774.0,
-    "profit": 48507.47
+    "revenue": 235326.0,
+    "profit": 53434.41
   },
   {
     "period": "2026-02-15",
-    "revenue": 262780.0,
-    "profit": 56347.32
+    "revenue": 234617.0,
+    "profit": 51734.61
   },
   {
     "period": "2026-02-22",
-    "revenue": 239583.0,
-    "profit": 51463.98
+    "revenue": 215108.0,
+    "profit": 47974.47
   },
   {
     "period": "2026-03-01",
-    "revenue": 222923.0,
-    "profit": 48840.54
+    "revenue": 227457.0,
+    "profit": 50196.26
   },
   {
     "period": "2026-03-08",
-    "revenue": 278788.0,
-    "profit": 60873.95
+    "revenue": 243567.0,
+    "profit": 53660.47
   },
   {
     "period": "2026-03-15",
-    "revenue": 257374.0,
-    "profit": 55156.6
+    "revenue": 250889.0,
+    "profit": 55228.45
   },
   {
     "period": "2026-03-22",
-    "revenue": 293943.0,
-    "profit": 65302.18
+    "revenue": 286839.0,
+    "profit": 64863.7
   },
   {
     "period": "2026-03-29",
-    "revenue": 260180.0,
-    "profit": 56267.57
+    "revenue": 257646.0,
+    "profit": 58051.98
   },
   {
     "period": "2026-04-05",
-    "revenue": 241768.0,
-    "profit": 52429.51
+    "revenue": 273940.0,
+    "profit": 59653.33
   },
   {
     "period": "2026-04-12",
-    "revenue": 257921.0,
-    "profit": 56034.46
+    "revenue": 267017.0,
+    "profit": 59669.85
   },
   {
     "period": "2026-04-19",
-    "revenue": 269487.0,
-    "profit": 58848.84
+    "revenue": 284670.0,
+    "profit": 63227.31
   },
   {
     "period": "2026-04-26",
-    "revenue": 249844.0,
-    "profit": 53950.2
+    "revenue": 238614.0,
+    "profit": 52281.83
   },
   {
     "period": "2026-05-03",
-    "revenue": 245014.0,
-    "profit": 53223.16
+    "revenue": 225332.0,
+    "profit": 49695.06
   },
   {
     "period": "2026-05-10",
-    "revenue": 251028.0,
-    "profit": 53914.5
+    "revenue": 275700.0,
+    "profit": 60043.23
   },
   {
     "period": "2026-05-17",
-    "revenue": 234106.0,
-    "profit": 51020.21
+    "revenue": 261186.0,
+    "profit": 58884.11
   },
   {
     "period": "2026-05-24",
-    "revenue": 261538.0,
-    "profit": 55561.25
+    "revenue": 259869.0,
+    "profit": 56356.57
   },
   {
     "period": "2026-05-31",
-    "revenue": 287727.0,
-    "profit": 62962.41
+    "revenue": 280047.0,
+    "profit": 61541.06
   },
   {
     "period": "2026-06-07",
-    "revenue": 251452.0,
-    "profit": 53989.62
+    "revenue": 250920.0,
+    "profit": 55186.57
   },
   {
     "period": "2026-06-14",
-    "revenue": 259648.0,
-    "profit": 56065.82
+    "revenue": 236612.0,
+    "profit": 52553.5
   },
   {
     "period": "2026-06-21",
-    "revenue": 257525.0,
-    "profit": 55324.75
+    "revenue": 266014.0,
+    "profit": 58671.68
   },
   {
     "period": "2026-06-28",
-    "revenue": 268433.0,
-    "profit": 57081.73
+    "revenue": 278534.0,
+    "profit": 62638.01
   },
   {
     "period": "2026-07-05",
-    "revenue": 269849.0,
-    "profit": 57972.82
+    "revenue": 234615.0,
+    "profit": 50996.17
   },
   {
     "period": "2026-07-12",
-    "revenue": 270345.0,
-    "profit": 58126.03
+    "revenue": 219090.0,
+    "profit": 49025.09
   },
   {
     "period": "2026-07-19",
-    "revenue": 250267.0,
-    "profit": 53314.9
+    "revenue": 295087.0,
+    "profit": 64731.6
   },
   {
     "period": "2026-07-26",
-    "revenue": 229065.0,
-    "profit": 49177.42
+    "revenue": 238269.0,
+    "profit": 52494.37
   },
   {
     "period": "2026-08-02",
-    "revenue": 242299.0,
-    "profit": 52041.02
+    "revenue": 282830.0,
+    "profit": 62689.92
   },
   {
     "period": "2026-08-09",
-    "revenue": 254364.0,
-    "profit": 54150.66
+    "revenue": 242742.0,
+    "profit": 54136.27
   },
   {
     "period": "2026-08-16",
-    "revenue": 374045.0,
-    "profit": 78527.09
+    "revenue": 378905.0,
+    "profit": 83704.07
   },
   {
     "period": "2026-08-23",
-    "revenue": 242582.0,
-    "profit": 51029.81
+    "revenue": 283605.0,
+    "profit": 63167.91
   },
   {
     "period": "2026-08-30",
-    "revenue": 264289.0,
-    "profit": 57111.38
+    "revenue": 266540.0,
+    "profit": 59790.48
   },
   {
     "period": "2026-09-06",
-    "revenue": 249146.0,
-    "profit": 52310.5
+    "revenue": 253457.0,
+    "profit": 56305.77
   },
   {
     "period": "2026-09-13",
-    "revenue": 257507.0,
-    "profit": 54885.8
+    "revenue": 260912.0,
+    "profit": 59040.82
   },
   {
     "period": "2026-09-20",
-    "revenue": 243623.0,
-    "profit": 52964.99
+    "revenue": 234071.0,
+    "profit": 51317.69
   },
   {
     "period": "2026-09-27",
-    "revenue": 271581.0,
-    "profit": 58726.41
+    "revenue": 244661.0,
+    "profit": 54667.17
   },
   {
     "period": "2026-10-04",
-    "revenue": 218611.0,
-    "profit": 46578.79
+    "revenue": 275454.0,
+    "profit": 61248.85
   },
   {
     "period": "2026-10-11",
-    "revenue": 302902.0,
-    "profit": 64557.82
+    "revenue": 255551.0,
+    "profit": 56406.54
   },
   {
     "period": "2026-10-18",
-    "revenue": 291718.0,
-    "profit": 63175.0
+    "revenue": 270043.0,
+    "profit": 61142.37
   },
   {
     "period": "2026-10-25",
-    "revenue": 282555.0,
-    "profit": 60141.72
+    "revenue": 258623.0,
+    "profit": 57082.88
   },
   {
     "period": "2026-11-01",
-    "revenue": 237094.0,
-    "profit": 51192.03
-  },
-  {
-    "period": "2026-11-08",
-    "revenue": 0.0,
-    "profit": 0.0
-  },
-  {
-    "period": "2026-11-15",
-    "revenue": 38.0,
-    "profit": 5.32
+    "revenue": 226544.0,
+    "profit": 50297.45
   }
 ]

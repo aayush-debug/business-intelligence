@@ -1,249 +1,246 @@
 {
   "series": [
     {
-      "date": "2026-10-17",
-      "revenue": 38894.0,
-      "z": -0.5,
+      "date": "2026-10-02",
+      "revenue": 1042.0,
+      "z": -5.44,
+      "is_anomaly": true,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-03",
+      "revenue": 68306.0,
+      "z": 2.54,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-04",
+      "revenue": 35957.0,
+      "z": 0.91,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-05",
+      "revenue": 28472.0,
+      "z": -0.64,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-10-18",
-      "revenue": 36167.0,
+      "date": "2026-10-06",
+      "revenue": 44245.0,
+      "z": 0.8,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-07",
+      "revenue": 35666.0,
+      "z": -0.01,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-08",
+      "revenue": 28976.0,
+      "z": -0.75,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-09",
+      "revenue": 46422.0,
       "z": 0.76,
       "is_anomaly": false,
       "type": "spike"
     },
     {
-      "date": "2026-10-19",
-      "revenue": 42801.0,
+      "date": "2026-10-10",
+      "revenue": 39742.0,
+      "z": -0.22,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-11",
+      "revenue": 32028.0,
+      "z": 0.41,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-12",
+      "revenue": 36753.0,
+      "z": 0.21,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-13",
+      "revenue": 46278.0,
+      "z": 0.98,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-14",
+      "revenue": 44069.0,
+      "z": 0.75,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-15",
+      "revenue": 35894.0,
+      "z": -0.22,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-16",
+      "revenue": 42276.0,
       "z": 0.28,
       "is_anomaly": false,
       "type": "spike"
     },
     {
+      "date": "2026-10-17",
+      "revenue": 39218.0,
+      "z": -0.41,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-18",
+      "revenue": 25555.0,
+      "z": -0.54,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-19",
+      "revenue": 25657.0,
+      "z": -1.05,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
       "date": "2026-10-20",
-      "revenue": 28062.0,
-      "z": -1.23,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-21",
-      "revenue": 33708.0,
-      "z": -0.5,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-22",
-      "revenue": 51945.0,
-      "z": 1.59,
+      "revenue": 39276.0,
+      "z": 0.19,
       "is_anomaly": false,
       "type": "spike"
     },
     {
+      "date": "2026-10-21",
+      "revenue": 41000.0,
+      "z": 0.42,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-22",
+      "revenue": 26284.0,
+      "z": -1.1,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
       "date": "2026-10-23",
-      "revenue": 45773.0,
-      "z": 0.56,
+      "revenue": 43397.0,
+      "z": 0.41,
       "is_anomaly": false,
       "type": "spike"
     },
     {
       "date": "2026-10-24",
-      "revenue": 43570.0,
-      "z": -0.06,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-25",
-      "revenue": 36696.0,
-      "z": 0.71,
+      "revenue": 52995.0,
+      "z": 0.73,
       "is_anomaly": false,
       "type": "spike"
     },
     {
+      "date": "2026-10-25",
+      "revenue": 30014.0,
+      "z": -0.02,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
       "date": "2026-10-26",
-      "revenue": 39904.0,
-      "z": -0.09,
+      "revenue": 31450.0,
+      "z": -0.48,
       "is_anomaly": false,
       "type": "drop"
     },
     {
       "date": "2026-10-27",
-      "revenue": 31929.0,
-      "z": -0.73,
+      "revenue": 41629.0,
+      "z": 0.39,
       "is_anomaly": false,
-      "type": "drop"
+      "type": "spike"
     },
     {
       "date": "2026-10-28",
-      "revenue": 31704.0,
-      "z": -0.76,
+      "revenue": 37009.0,
+      "z": -0.04,
       "is_anomaly": false,
       "type": "drop"
     },
     {
       "date": "2026-10-29",
-      "revenue": 51393.0,
-      "z": 1.38,
+      "revenue": 42550.0,
+      "z": 0.39,
       "is_anomaly": false,
       "type": "spike"
     },
     {
       "date": "2026-10-30",
-      "revenue": 48084.0,
-      "z": 0.69,
+      "revenue": 34054.0,
+      "z": -0.48,
       "is_anomaly": false,
-      "type": "spike"
+      "type": "drop"
     },
     {
       "date": "2026-10-31",
-      "revenue": 34080.0,
-      "z": -1.91,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-01",
-      "revenue": 0.0,
-      "z": -6.63,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-02",
-      "revenue": 0.0,
-      "z": -4.0,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-03",
-      "revenue": 0.0,
-      "z": -3.09,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-04",
-      "revenue": 0.0,
-      "z": -2.57,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-05",
-      "revenue": 0.0,
-      "z": -2.23,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-06",
-      "revenue": 0.0,
-      "z": -1.98,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-07",
-      "revenue": 0.0,
-      "z": -1.78,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-08",
-      "revenue": 0.0,
-      "z": -1.62,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-09",
-      "revenue": 0.0,
-      "z": -1.48,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-10",
-      "revenue": 0.0,
-      "z": -1.37,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-11",
-      "revenue": 0.0,
-      "z": -1.27,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-12",
-      "revenue": 0.0,
-      "z": -1.18,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-13",
-      "revenue": 0.0,
-      "z": -1.09,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-14",
-      "revenue": 0.0,
-      "z": -1.02,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-15",
-      "revenue": 38.0,
-      "z": -0.95,
+      "revenue": 39852.0,
+      "z": -0.62,
       "is_anomaly": false,
       "type": "drop"
     }
   ],
   "flagged": [
     {
-      "date": "2026-11-01",
-      "revenue": 0.0,
-      "z": -6.63,
+      "date": "2026-10-02",
+      "revenue": 1042.0,
+      "z": -5.44,
       "is_anomaly": true,
       "type": "drop",
-      "explanation": "On 1 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Sunday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 34856.0,
-      "diff_pct": -100.0
-    },
-    {
-      "date": "2026-11-02",
-      "revenue": 0.0,
-      "z": -4.0,
-      "is_anomaly": true,
-      "type": "drop",
-      "explanation": "On 2 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Monday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 42351.25,
-      "diff_pct": -100.0
-    },
-    {
-      "date": "2026-11-03",
-      "revenue": 0.0,
-      "z": -3.09,
-      "is_anomaly": true,
-      "type": "drop",
-      "explanation": "On 3 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Tuesday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 37799.0,
-      "diff_pct": -100.0
+      "explanation": "On 2 Oct 2026, revenue dropped to \u20b91,042 (-97.3% below the usual Friday average of \u20b938,344). Only 2 orders were billed, with top sales from Pain Relief Gel 30g - NovaCare (3 units, \u20b9609), Pantoprazole 40mg (10 tabs) - Medora (2 units, \u20b9262), Pantoprazole 40mg (10 tabs) - PureWell (1 units, \u20b9140).",
+      "top_products": [
+        {
+          "product": "Pain Relief Gel 30g - NovaCare",
+          "units": 3,
+          "revenue": 609.0,
+          "share_pct": 58.4
+        },
+        {
+          "product": "Pantoprazole 40mg (10 tabs) - Medora",
+          "units": 2,
+          "revenue": 262.0,
+          "share_pct": 25.1
+        },
+        {
+          "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+          "units": 1,
+          "revenue": 140.0,
+          "share_pct": 13.4
+        }
+      ],
+      "baseline_revenue": 38343.5,
+      "diff_pct": -97.3
     }
   ]
 }

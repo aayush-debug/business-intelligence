@@ -1,30 +1,41 @@
 {
-  "date": "2026-11-15",
-  "revenue": 38.0,
-  "invoices": 1,
-  "aov": 38.0,
-  "gross_profit": 5.32,
-  "margin_pct": 14.0,
-  "vs_usual_pct": -99.9,
+  "date": "2026-10-31",
+  "revenue": 39852.0,
+  "invoices": 73,
+  "aov": 545.92,
+  "gross_profit": 9113.83,
+  "margin_pct": 22.87,
+  "vs_usual_pct": -20.4,
   "top_products": [
     {
-      "product": "Metformin 500mg (10 tabs)",
-      "units": 1,
-      "revenue": 38.0
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "units": 13,
+      "revenue": 4550.0
+    },
+    {
+      "product": "Baby Diapers (pack of 36) - Curalife",
+      "units": 5,
+      "revenue": 3250.0
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+      "units": 14,
+      "revenue": 2940.0
     }
   ],
-  "top_category": "Chronic Care (Rx)",
+  "top_category": "Vitamins & Supplements",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
-  "refills_due_tomorrow": 17,
-  "summary_text": "Daily summary, Sun 15 Nov 2026\nSales: \u20b938 from 1 bills (100% below a usual Sun)\nGross profit: \u20b95 (14.0%)\nBest sellers: Metformin 500mg (10 tabs) (1)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 17"
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Sat 31 Oct 2026\nSales: \u20b939,852 from 73 bills (20% below a usual Sat)\nGross profit: \u20b99,114 (22.87%)\nBest sellers: Multivitamin (30 tabs) - Zenith (13), Baby Diapers (pack of 36) - Curalife (5), Levothyroxine 50mcg (100 tabs) - Medora (14)\nTop category: Vitamins & Supplements\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

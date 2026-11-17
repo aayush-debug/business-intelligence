@@ -1,699 +1,786 @@
 {
   "series": [
     {
-      "date": "2026-08-18",
-      "revenue": 37476.0,
-      "z": -0.12,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-19",
-      "revenue": 42050.0,
-      "z": 0.23,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-08-20",
-      "revenue": 18995.0,
-      "z": -1.75,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-21",
-      "revenue": 42934.0,
-      "z": 0.12,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-08-22",
-      "revenue": 41543.0,
-      "z": -0.26,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-23",
-      "revenue": 22297.0,
+      "date": "2026-08-03",
+      "revenue": 28007.0,
       "z": -1.0,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-08-24",
-      "revenue": 44558.0,
-      "z": 0.25,
+      "date": "2026-08-04",
+      "revenue": 39739.0,
+      "z": 0.32,
       "is_anomaly": false,
       "type": "spike"
     },
     {
+      "date": "2026-08-05",
+      "revenue": 34160.0,
+      "z": -0.38,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-06",
+      "revenue": 43954.0,
+      "z": 0.8,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-07",
+      "revenue": 30074.0,
+      "z": -1.33,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-08",
+      "revenue": 41867.0,
+      "z": -0.29,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-09",
+      "revenue": 24941.0,
+      "z": -1.0,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-10",
+      "revenue": 25336.0,
+      "z": -1.64,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-11",
+      "revenue": 47828.0,
+      "z": 1.43,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-12",
+      "revenue": 67245.0,
+      "z": 4.04,
+      "is_anomaly": true,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-13",
+      "revenue": 78454.0,
+      "z": 4.09,
+      "is_anomaly": true,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-14",
+      "revenue": 99982.0,
+      "z": 4.68,
+      "is_anomaly": true,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-15",
+      "revenue": 33054.0,
+      "z": -0.86,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-16",
+      "revenue": 27006.0,
+      "z": -0.45,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-17",
+      "revenue": 44809.0,
+      "z": 0.37,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-18",
+      "revenue": 46422.0,
+      "z": 0.33,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-19",
+      "revenue": 37749.0,
+      "z": -0.21,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-20",
+      "revenue": 38768.0,
+      "z": -0.24,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-21",
+      "revenue": 42093.0,
+      "z": -0.12,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-22",
+      "revenue": 38576.0,
+      "z": -0.6,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-23",
+      "revenue": 35188.0,
+      "z": 0.13,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-24",
+      "revenue": 31602.0,
+      "z": -0.62,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
       "date": "2026-08-25",
-      "revenue": 34698.0,
-      "z": -0.36,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-26",
-      "revenue": 35565.0,
-      "z": -0.31,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-27",
-      "revenue": 36544.0,
-      "z": -0.27,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-28",
-      "revenue": 42583.0,
+      "revenue": 42656.0,
       "z": 0.05,
       "is_anomaly": false,
       "type": "spike"
     },
     {
+      "date": "2026-08-26",
+      "revenue": 26545.0,
+      "z": -0.99,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-27",
+      "revenue": 40990.0,
+      "z": -0.1,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-08-28",
+      "revenue": 38546.0,
+      "z": -0.3,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
       "date": "2026-08-29",
-      "revenue": 38430.0,
-      "z": -0.53,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-30",
-      "revenue": 31911.0,
-      "z": -0.08,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-08-31",
-      "revenue": 46951.0,
-      "z": 0.38,
+      "revenue": 48733.0,
+      "z": 0.02,
       "is_anomaly": false,
       "type": "spike"
     },
     {
-      "date": "2026-09-01",
-      "revenue": 38406.0,
-      "z": -0.16,
+      "date": "2026-08-30",
+      "revenue": 37468.0,
+      "z": 0.34,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-08-31",
+      "revenue": 38111.0,
+      "z": -0.14,
       "is_anomaly": false,
       "type": "drop"
     },
     {
+      "date": "2026-09-01",
+      "revenue": 42444.0,
+      "z": 0.01,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
       "date": "2026-09-02",
-      "revenue": 24308.0,
-      "z": -1.37,
+      "revenue": 38685.0,
+      "z": -0.21,
       "is_anomaly": false,
       "type": "drop"
     },
     {
       "date": "2026-09-03",
-      "revenue": 45573.0,
-      "z": 0.39,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-04",
-      "revenue": 28779.0,
-      "z": -1.08,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-05",
-      "revenue": 40912.0,
-      "z": -0.35,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-06",
-      "revenue": 24217.0,
-      "z": -0.84,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-07",
-      "revenue": 45920.0,
-      "z": 0.31,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-08",
-      "revenue": 44331.0,
-      "z": 0.36,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-09",
-      "revenue": 30219.0,
-      "z": -0.76,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-10",
-      "revenue": 32120.0,
-      "z": -0.58,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-11",
-      "revenue": 39035.0,
-      "z": 0.01,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-12",
-      "revenue": 38591.0,
-      "z": -0.34,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-09-13",
-      "revenue": 27291.0,
+      "revenue": 37518.0,
       "z": -0.37,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-14",
-      "revenue": 42180.0,
-      "z": 0.69,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-15",
-      "revenue": 29940.0,
-      "z": -0.89,
+      "date": "2026-09-04",
+      "revenue": 32036.0,
+      "z": -0.78,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-16",
-      "revenue": 35375.0,
-      "z": -0.04,
+      "date": "2026-09-05",
+      "revenue": 39351.0,
+      "z": -0.59,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-17",
-      "revenue": 39640.0,
-      "z": 0.6,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-18",
-      "revenue": 29507.0,
-      "z": -1.45,
+      "date": "2026-09-06",
+      "revenue": 25312.0,
+      "z": -0.7,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-19",
-      "revenue": 43914.0,
-      "z": 0.45,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-20",
-      "revenue": 23067.0,
-      "z": -1.29,
+      "date": "2026-09-07",
+      "revenue": 36379.0,
+      "z": -0.29,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-21",
-      "revenue": 43329.0,
-      "z": 0.97,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-22",
-      "revenue": 40648.0,
-      "z": 0.91,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-23",
-      "revenue": 38879.0,
-      "z": 0.51,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-24",
-      "revenue": 37197.0,
-      "z": 0.14,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-25",
-      "revenue": 41858.0,
-      "z": 0.61,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-26",
-      "revenue": 39929.0,
-      "z": -0.22,
+      "date": "2026-09-08",
+      "revenue": 37516.0,
+      "z": -0.36,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-09-27",
-      "revenue": 29741.0,
-      "z": 0.06,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-28",
-      "revenue": 44448.0,
-      "z": 1.11,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-29",
-      "revenue": 35783.0,
-      "z": 0.01,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-09-30",
-      "revenue": 24034.0,
-      "z": -2.11,
+      "date": "2026-09-09",
+      "revenue": 32089.0,
+      "z": -0.67,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-10-01",
-      "revenue": 39187.0,
-      "z": 0.54,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-02",
-      "revenue": 3978.0,
-      "z": -5.95,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-03",
-      "revenue": 40530.0,
-      "z": 0.07,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-04",
-      "revenue": 30651.0,
-      "z": 0.36,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-05",
-      "revenue": 38299.0,
-      "z": 0.19,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-06",
-      "revenue": 46753.0,
-      "z": 1.59,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-07",
-      "revenue": 46600.0,
-      "z": 1.5,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-08",
-      "revenue": 39602.0,
-      "z": 0.47,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-09",
-      "revenue": 47659.0,
-      "z": 1.17,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-10",
-      "revenue": 48079.0,
-      "z": 0.71,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-11",
-      "revenue": 35910.0,
-      "z": 0.93,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-12",
-      "revenue": 48401.0,
-      "z": 1.12,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-13",
-      "revenue": 44452.0,
-      "z": 0.91,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-14",
-      "revenue": 42030.0,
-      "z": 0.54,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-15",
-      "revenue": 39760.0,
-      "z": 0.21,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-16",
-      "revenue": 42014.0,
-      "z": 0.25,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-17",
-      "revenue": 38894.0,
-      "z": -0.5,
+      "date": "2026-09-10",
+      "revenue": 30180.0,
+      "z": -0.81,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-10-18",
-      "revenue": 36167.0,
-      "z": 0.76,
+      "date": "2026-09-11",
+      "revenue": 49905.0,
+      "z": 0.67,
       "is_anomaly": false,
       "type": "spike"
     },
     {
-      "date": "2026-10-19",
-      "revenue": 42801.0,
-      "z": 0.28,
+      "date": "2026-09-12",
+      "revenue": 49204.0,
+      "z": 0.72,
       "is_anomaly": false,
       "type": "spike"
     },
     {
-      "date": "2026-10-20",
-      "revenue": 28062.0,
-      "z": -1.23,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-21",
-      "revenue": 33708.0,
-      "z": -0.5,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-22",
-      "revenue": 51945.0,
-      "z": 1.59,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-23",
-      "revenue": 45773.0,
-      "z": 0.56,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-24",
-      "revenue": 43570.0,
-      "z": -0.06,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-25",
-      "revenue": 36696.0,
-      "z": 0.71,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-26",
-      "revenue": 39904.0,
-      "z": -0.09,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-27",
-      "revenue": 31929.0,
-      "z": -0.73,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-28",
-      "revenue": 31704.0,
-      "z": -0.76,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-10-29",
-      "revenue": 51393.0,
-      "z": 1.38,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-30",
-      "revenue": 48084.0,
-      "z": 0.69,
-      "is_anomaly": false,
-      "type": "spike"
-    },
-    {
-      "date": "2026-10-31",
-      "revenue": 34080.0,
-      "z": -1.91,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-01",
-      "revenue": 0.0,
-      "z": -6.63,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-02",
-      "revenue": 0.0,
-      "z": -4.0,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-03",
-      "revenue": 0.0,
-      "z": -3.09,
-      "is_anomaly": true,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-04",
-      "revenue": 0.0,
-      "z": -2.57,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-05",
-      "revenue": 0.0,
-      "z": -2.23,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-06",
-      "revenue": 0.0,
-      "z": -1.98,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-07",
-      "revenue": 0.0,
-      "z": -1.78,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-08",
-      "revenue": 0.0,
-      "z": -1.62,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-09",
-      "revenue": 0.0,
-      "z": -1.48,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-10",
-      "revenue": 0.0,
-      "z": -1.37,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-11",
-      "revenue": 0.0,
-      "z": -1.27,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-12",
-      "revenue": 0.0,
-      "z": -1.18,
-      "is_anomaly": false,
-      "type": "drop"
-    },
-    {
-      "date": "2026-11-13",
-      "revenue": 0.0,
+      "date": "2026-09-13",
+      "revenue": 25639.0,
       "z": -1.09,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-11-14",
-      "revenue": 0.0,
-      "z": -1.02,
+      "date": "2026-09-14",
+      "revenue": 36791.0,
+      "z": 0.04,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-15",
+      "revenue": 22458.0,
+      "z": -2.85,
       "is_anomaly": false,
       "type": "drop"
     },
     {
-      "date": "2026-11-15",
-      "revenue": 38.0,
-      "z": -0.95,
+      "date": "2026-09-16",
+      "revenue": 29997.0,
+      "z": -1.12,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-17",
+      "revenue": 35848.0,
+      "z": -0.24,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-18",
+      "revenue": 40457.0,
+      "z": 0.33,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-19",
+      "revenue": 41450.0,
+      "z": -0.2,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-20",
+      "revenue": 27070.0,
+      "z": -0.46,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-21",
+      "revenue": 31765.0,
+      "z": -0.55,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-22",
+      "revenue": 39204.0,
+      "z": 0.5,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-23",
+      "revenue": 38365.0,
+      "z": 0.48,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-24",
+      "revenue": 34605.0,
+      "z": -0.47,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-25",
+      "revenue": 30976.0,
+      "z": -1.27,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-26",
+      "revenue": 40799.0,
+      "z": -0.24,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-27",
+      "revenue": 28947.0,
+      "z": 0.07,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-28",
+      "revenue": 42571.0,
+      "z": 1.8,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-09-29",
+      "revenue": 30154.0,
+      "z": -1.07,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-09-30",
+      "revenue": 41132.0,
+      "z": 1.27,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-01",
+      "revenue": 56292.0,
+      "z": 3.87,
+      "is_anomaly": true,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-02",
+      "revenue": 1042.0,
+      "z": -5.44,
+      "is_anomaly": true,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-03",
+      "revenue": 68306.0,
+      "z": 2.54,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-04",
+      "revenue": 35957.0,
+      "z": 0.91,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-05",
+      "revenue": 28472.0,
+      "z": -0.64,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-06",
+      "revenue": 44245.0,
+      "z": 0.8,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-07",
+      "revenue": 35666.0,
+      "z": -0.01,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-08",
+      "revenue": 28976.0,
+      "z": -0.75,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-09",
+      "revenue": 46422.0,
+      "z": 0.76,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-10",
+      "revenue": 39742.0,
+      "z": -0.22,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-11",
+      "revenue": 32028.0,
+      "z": 0.41,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-12",
+      "revenue": 36753.0,
+      "z": 0.21,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-13",
+      "revenue": 46278.0,
+      "z": 0.98,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-14",
+      "revenue": 44069.0,
+      "z": 0.75,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-15",
+      "revenue": 35894.0,
+      "z": -0.22,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-16",
+      "revenue": 42276.0,
+      "z": 0.28,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-17",
+      "revenue": 39218.0,
+      "z": -0.41,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-18",
+      "revenue": 25555.0,
+      "z": -0.54,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-19",
+      "revenue": 25657.0,
+      "z": -1.05,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-20",
+      "revenue": 39276.0,
+      "z": 0.19,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-21",
+      "revenue": 41000.0,
+      "z": 0.42,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-22",
+      "revenue": 26284.0,
+      "z": -1.1,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-23",
+      "revenue": 43397.0,
+      "z": 0.41,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-24",
+      "revenue": 52995.0,
+      "z": 0.73,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-25",
+      "revenue": 30014.0,
+      "z": -0.02,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-26",
+      "revenue": 31450.0,
+      "z": -0.48,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-27",
+      "revenue": 41629.0,
+      "z": 0.39,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-28",
+      "revenue": 37009.0,
+      "z": -0.04,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-29",
+      "revenue": 42550.0,
+      "z": 0.39,
+      "is_anomaly": false,
+      "type": "spike"
+    },
+    {
+      "date": "2026-10-30",
+      "revenue": 34054.0,
+      "z": -0.48,
+      "is_anomaly": false,
+      "type": "drop"
+    },
+    {
+      "date": "2026-10-31",
+      "revenue": 39852.0,
+      "z": -0.62,
       "is_anomaly": false,
       "type": "drop"
     }
   ],
   "flagged": [
     {
-      "date": "2026-10-02",
-      "revenue": 3978.0,
-      "z": -5.95,
+      "date": "2026-08-12",
+      "revenue": 67245.0,
+      "z": 4.04,
       "is_anomaly": true,
-      "type": "drop",
-      "explanation": "On 2 Oct 2026, revenue dropped to \u20b93,978 (-88.6% below the usual Friday average of \u20b934,795). Only 6 orders were billed, with top sales from Baby Diapers (pack of 36) (2 units, \u20b91,300), Montelukast-Levocetirizine (10 tabs) (4 units, \u20b9640), Steam Inhaler (1 units, \u20b9550).",
+      "type": "spike",
+      "explanation": "On 12 Aug 2026, revenue spiked to \u20b967,245 (+89.0% above the usual Wednesday average of \u20b935,579). The spike was driven by strong sales in: Baby Diapers (pack of 36) - PureWell (6 units, \u20b94,182), Baby Diapers (pack of 36) - Curalife (6 units, \u20b93,900), Baby Diapers (pack of 36) - Helix (5 units, \u20b93,505) across 122 orders.",
       "top_products": [
         {
-          "product": "Baby Diapers (pack of 36)",
-          "units": 2,
-          "revenue": 1300.0,
-          "share_pct": 32.7
+          "product": "Baby Diapers (pack of 36) - PureWell",
+          "units": 6,
+          "revenue": 4182.0,
+          "share_pct": 6.2
         },
         {
-          "product": "Montelukast-Levocetirizine (10 tabs)",
-          "units": 4,
-          "revenue": 640.0,
-          "share_pct": 16.1
+          "product": "Baby Diapers (pack of 36) - Curalife",
+          "units": 6,
+          "revenue": 3900.0,
+          "share_pct": 5.8
         },
         {
-          "product": "Steam Inhaler",
-          "units": 1,
-          "revenue": 550.0,
-          "share_pct": 13.8
+          "product": "Baby Diapers (pack of 36) - Helix",
+          "units": 5,
+          "revenue": 3505.0,
+          "share_pct": 5.2
         }
       ],
-      "baseline_revenue": 34794.75,
-      "diff_pct": -88.6
+      "baseline_revenue": 35578.75,
+      "diff_pct": 89.0
     },
     {
-      "date": "2026-11-01",
-      "revenue": 0.0,
-      "z": -6.63,
+      "date": "2026-08-13",
+      "revenue": 78454.0,
+      "z": 4.09,
       "is_anomaly": true,
-      "type": "drop",
-      "explanation": "On 1 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Sunday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 34856.0,
-      "diff_pct": -100.0
+      "type": "spike",
+      "explanation": "On 13 Aug 2026, revenue spiked to \u20b978,454 (+83.1% above the usual Thursday average of \u20b942,839). The spike was driven by strong sales in: Multivitamin (30 tabs) - Zenith (12 units, \u20b94,200), Baby Diapers (pack of 36) - Curalife (6 units, \u20b93,900), Amoxicillin-Clav 625 (10 tabs) - Brightday (17 units, \u20b93,570) across 161 orders.",
+      "top_products": [
+        {
+          "product": "Multivitamin (30 tabs) - Zenith",
+          "units": 12,
+          "revenue": 4200.0,
+          "share_pct": 5.4
+        },
+        {
+          "product": "Baby Diapers (pack of 36) - Curalife",
+          "units": 6,
+          "revenue": 3900.0,
+          "share_pct": 5.0
+        },
+        {
+          "product": "Amoxicillin-Clav 625 (10 tabs) - Brightday",
+          "units": 17,
+          "revenue": 3570.0,
+          "share_pct": 4.6
+        }
+      ],
+      "baseline_revenue": 42839.25,
+      "diff_pct": 83.1
     },
     {
-      "date": "2026-11-02",
-      "revenue": 0.0,
-      "z": -4.0,
+      "date": "2026-08-14",
+      "revenue": 99982.0,
+      "z": 4.68,
       "is_anomaly": true,
-      "type": "drop",
-      "explanation": "On 2 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Monday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 42351.25,
-      "diff_pct": -100.0
+      "type": "spike",
+      "explanation": "On 14 Aug 2026, revenue spiked to \u20b999,982 (+144.7% above the usual Friday average of \u20b940,859). The spike was driven by strong sales in: Baby Diapers (pack of 36) - Curalife (12 units, \u20b97,800), Pain Relief Gel 30g - Apex (29 units, \u20b95,510), BP Monitor (Digital) - Medora (3 units, \u20b95,400) across 169 orders.",
+      "top_products": [
+        {
+          "product": "Baby Diapers (pack of 36) - Curalife",
+          "units": 12,
+          "revenue": 7800.0,
+          "share_pct": 7.8
+        },
+        {
+          "product": "Pain Relief Gel 30g - Apex",
+          "units": 29,
+          "revenue": 5510.0,
+          "share_pct": 5.5
+        },
+        {
+          "product": "BP Monitor (Digital) - Medora",
+          "units": 3,
+          "revenue": 5400.0,
+          "share_pct": 5.4
+        }
+      ],
+      "baseline_revenue": 40858.75,
+      "diff_pct": 144.7
     },
     {
-      "date": "2026-11-03",
-      "revenue": 0.0,
-      "z": -3.09,
+      "date": "2026-10-01",
+      "revenue": 56292.0,
+      "z": 3.87,
+      "is_anomaly": true,
+      "type": "spike",
+      "explanation": "On 1 Oct 2026, revenue spiked to \u20b956,292 (+63.0% above the usual Thursday average of \u20b934,538). The spike was driven by strong sales in: Multivitamin (30 tabs) - Zenith (13 units, \u20b94,550), Adult Diapers (pack of 10) - Curalife (7 units, \u20b94,200), Omega-3 Fish Oil (30 caps) - Helix (9 units, \u20b94,050) across 82 orders.",
+      "top_products": [
+        {
+          "product": "Multivitamin (30 tabs) - Zenith",
+          "units": 13,
+          "revenue": 4550.0,
+          "share_pct": 8.1
+        },
+        {
+          "product": "Adult Diapers (pack of 10) - Curalife",
+          "units": 7,
+          "revenue": 4200.0,
+          "share_pct": 7.5
+        },
+        {
+          "product": "Omega-3 Fish Oil (30 caps) - Helix",
+          "units": 9,
+          "revenue": 4050.0,
+          "share_pct": 7.2
+        }
+      ],
+      "baseline_revenue": 34537.75,
+      "diff_pct": 63.0
+    },
+    {
+      "date": "2026-10-02",
+      "revenue": 1042.0,
+      "z": -5.44,
       "is_anomaly": true,
       "type": "drop",
-      "explanation": "On 3 Nov 2026, revenue dropped to \u20b90 (-100.0% below usual Tuesday average) with only 0 orders.",
-      "top_products": [],
-      "baseline_revenue": 37799.0,
-      "diff_pct": -100.0
+      "explanation": "On 2 Oct 2026, revenue dropped to \u20b91,042 (-97.3% below the usual Friday average of \u20b938,344). Only 2 orders were billed, with top sales from Pain Relief Gel 30g - NovaCare (3 units, \u20b9609), Pantoprazole 40mg (10 tabs) - Medora (2 units, \u20b9262), Pantoprazole 40mg (10 tabs) - PureWell (1 units, \u20b9140).",
+      "top_products": [
+        {
+          "product": "Pain Relief Gel 30g - NovaCare",
+          "units": 3,
+          "revenue": 609.0,
+          "share_pct": 58.4
+        },
+        {
+          "product": "Pantoprazole 40mg (10 tabs) - Medora",
+          "units": 2,
+          "revenue": 262.0,
+          "share_pct": 25.1
+        },
+        {
+          "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+          "units": 1,
+          "revenue": 140.0,
+          "share_pct": 13.4
+        }
+      ],
+      "baseline_revenue": 38343.5,
+      "diff_pct": -97.3
     }
   ]
 }

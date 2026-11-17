@@ -1,66 +1,66 @@
 [
   {
-    "product": "Multivitamin (30 tabs)",
+    "product": "Multivitamin (30 tabs) - Zenith",
     "category": "Vitamins & Supplements",
-    "revenue": 35350.0,
-    "units": 101,
-    "profit": 10605.0,
+    "revenue": 51450.0,
+    "units": 147,
+    "profit": 15435.0,
     "margin_pct": 30.0
   },
   {
-    "product": "Baby Diapers (pack of 36)",
-    "category": "Personal & Baby Care",
-    "revenue": 35100.0,
-    "units": 54,
-    "profit": 5616.0,
-    "margin_pct": 16.0
-  },
-  {
-    "product": "Pantoprazole 40mg (10 tabs)",
+    "product": "Levothyroxine 50mcg (100 tabs) - Medora",
     "category": "Chronic Care (Rx)",
-    "revenue": 32200.0,
-    "units": 230,
-    "profit": 5796.0,
-    "margin_pct": 18.0
-  },
-  {
-    "product": "Levothyroxine 50mcg (100 tabs)",
-    "category": "Chronic Care (Rx)",
-    "revenue": 25200.0,
-    "units": 120,
-    "profit": 3528.0,
+    "revenue": 51240.0,
+    "units": 244,
+    "profit": 7173.6,
     "margin_pct": 14.0
   },
   {
-    "product": "Amoxicillin-Clav 625 (10 tabs)",
-    "category": "Antibiotics & Acute (Rx)",
-    "revenue": 24360.0,
-    "units": 116,
-    "profit": 4384.8,
+    "product": "Baby Diapers (pack of 36) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 46800.0,
+    "units": 72,
+    "profit": 7488.0,
+    "margin_pct": 16.0
+  },
+  {
+    "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+    "category": "Chronic Care (Rx)",
+    "revenue": 39060.0,
+    "units": 279,
+    "profit": 7030.8,
     "margin_pct": 18.0
   },
   {
-    "product": "Omega-3 Fish Oil (30 caps)",
-    "category": "Vitamins & Supplements",
-    "revenue": 24300.0,
+    "product": "Adult Diapers (pack of 10) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 32400.0,
     "units": 54,
-    "profit": 7290.0,
-    "margin_pct": 30.0
-  },
-  {
-    "product": "Atorvastatin 10mg (10 tabs)",
-    "category": "Chronic Care (Rx)",
-    "revenue": 20640.0,
-    "units": 172,
-    "profit": 3508.8,
+    "profit": 5508.0,
     "margin_pct": 17.0
   },
   {
-    "product": "Vitamin D3 60K (4 caps)",
+    "product": "Omega-3 Fish Oil (30 caps) - Helix",
     "category": "Vitamins & Supplements",
-    "revenue": 20100.0,
-    "units": 134,
-    "profit": 5628.0,
+    "revenue": 31950.0,
+    "units": 71,
+    "profit": 9585.0,
+    "margin_pct": 30.0
+  },
+  {
+    "product": "Vitamin D3 60K (4 caps) - Apex",
+    "category": "Vitamins & Supplements",
+    "revenue": 31650.0,
+    "units": 211,
+    "profit": 8862.0,
     "margin_pct": 28.0
+  },
+  {
+    "product": "Pain Relief Gel 30g - Apex",
+    "category": "OTC Cold & Pain",
+    "revenue": 30970.0,
+    "units": 163,
+    "profit": 7432.8,
+    "margin_pct": 24.0
   }
 ]

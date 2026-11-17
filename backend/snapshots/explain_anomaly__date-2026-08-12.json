@@ -1,29 +1,29 @@
 {
   "date": "2026-08-12",
   "type": "spike",
-  "revenue": 65996.0,
-  "baseline_revenue": 36445.5,
-  "diff_pct": 81.1,
-  "invoices": 128,
+  "revenue": 67245.0,
+  "baseline_revenue": 35578.75,
+  "diff_pct": 89.0,
+  "invoices": 122,
   "top_products": [
     {
-      "product": "Baby Diapers (pack of 36)",
+      "product": "Baby Diapers (pack of 36) - PureWell",
+      "units": 6,
+      "revenue": 4182.0,
+      "share_pct": 6.2
+    },
+    {
+      "product": "Baby Diapers (pack of 36) - Curalife",
       "units": 6,
       "revenue": 3900.0,
-      "share_pct": 5.9
+      "share_pct": 5.8
     },
     {
-      "product": "Baby Lotion 200ml",
-      "units": 13,
-      "revenue": 3640.0,
-      "share_pct": 5.5
-    },
-    {
-      "product": "Levothyroxine 50mcg (100 tabs)",
-      "units": 17,
-      "revenue": 3570.0,
-      "share_pct": 5.4
+      "product": "Baby Diapers (pack of 36) - Helix",
+      "units": 5,
+      "revenue": 3505.0,
+      "share_pct": 5.2
     }
   ],
-  "explanation": "On 12 Aug 2026, revenue spiked to \u20b965,996 (+81.1% above the usual Wednesday average of \u20b936,446). The spike was driven by strong sales in: Baby Diapers (pack of 36) (6 units, \u20b93,900), Baby Lotion 200ml (13 units, \u20b93,640), Levothyroxine 50mcg (100 tabs) (17 units, \u20b93,570) across 128 orders."
+  "explanation": "On 12 Aug 2026, revenue spiked to \u20b967,245 (+89.0% above the usual Wednesday average of \u20b935,579). The spike was driven by strong sales in: Baby Diapers (pack of 36) - PureWell (6 units, \u20b94,182), Baby Diapers (pack of 36) - Curalife (6 units, \u20b93,900), Baby Diapers (pack of 36) - Helix (5 units, \u20b93,505) across 122 orders."
 }

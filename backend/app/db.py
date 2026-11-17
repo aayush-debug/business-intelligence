@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from sqlalchemy import (
     Column,
     Date,
@@ -15,8 +16,11 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 
 def get_database_url() -> str:
     """Resolve database URL from environment, converting Postgres schemes to psycopg2."""
-    url = os.getenv("DATABASE_URL", "sqlite:///./company_brain.db").strip()
-    if url.startswith("postgres://"):
+    url = os.getenv("DATABASE_URL", "").strip()
+    if not url:
+        default_db = Path(__file__).resolve().parent.parent / "company_brain.db"
+        url = f"sqlite:///{default_db}"
+    elif url.startswith("postgres://"):
         url = "postgresql+psycopg2://" + url[len("postgres://"):]
     elif url.startswith("postgresql://"):
         url = "postgresql+psycopg2://" + url[len("postgresql://"):]

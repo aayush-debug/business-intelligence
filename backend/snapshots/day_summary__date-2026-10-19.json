@@ -1,26 +1,26 @@
 {
   "date": "2026-10-19",
-  "revenue": 42801.0,
-  "invoices": 70,
-  "aov": 611.44,
-  "gross_profit": 9193.5,
-  "margin_pct": 21.48,
-  "vs_usual_pct": -1.9,
+  "revenue": 25657.0,
+  "invoices": 55,
+  "aov": 466.49,
+  "gross_profit": 5536.73,
+  "margin_pct": 21.58,
+  "vs_usual_pct": -26.5,
   "top_products": [
     {
-      "product": "BP Monitor (Digital)",
-      "units": 2,
-      "revenue": 3600.0
-    },
-    {
-      "product": "Nebulizer",
+      "product": "Nebulizer - Apex",
       "units": 1,
       "revenue": 2200.0
     },
     {
-      "product": "Multivitamin (30 tabs)",
-      "units": 6,
-      "revenue": 2100.0
+      "product": "Baby Diapers (pack of 36) - Curalife",
+      "units": 3,
+      "revenue": 1950.0
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+      "units": 9,
+      "revenue": 1890.0
     }
   ],
   "top_category": "Chronic Care (Rx)",
@@ -29,12 +29,13 @@
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Mon 19 Oct 2026\nSales: \u20b942,801 from 70 bills (2% below a usual Mon)\nGross profit: \u20b99,194 (21.48%)\nBest sellers: BP Monitor (Digital) (2), Nebulizer (1), Multivitamin (30 tabs) (6)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Mon 19 Oct 2026\nSales: \u20b925,657 from 55 bills (26% below a usual Mon)\nGross profit: \u20b95,537 (21.58%)\nBest sellers: Nebulizer - Apex (1), Baby Diapers (pack of 36) - Curalife (3), Levothyroxine 50mcg (100 tabs) - Medora (9)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

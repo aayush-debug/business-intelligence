@@ -1,114 +1,114 @@
 [
   {
-    "date": "2026-11-15",
-    "revenue": 38.0,
-    "invoices": 1,
-    "vs_usual_pct": -99.9,
-    "gross_profit": 5.32,
-    "margin_pct": 14.0
-  },
-  {
     "date": "2026-10-31",
-    "revenue": 34080.0,
-    "invoices": 84,
-    "vs_usual_pct": -20.3,
-    "gross_profit": 7282.59,
-    "margin_pct": 21.37
+    "revenue": 39852.0,
+    "invoices": 73,
+    "vs_usual_pct": -20.4,
+    "gross_profit": 9113.83,
+    "margin_pct": 22.87
   },
   {
     "date": "2026-10-30",
-    "revenue": 48084.0,
-    "invoices": 81,
-    "vs_usual_pct": 38.0,
-    "gross_profit": 10082.56,
-    "margin_pct": 20.97
+    "revenue": 34054.0,
+    "invoices": 72,
+    "vs_usual_pct": 2.3,
+    "gross_profit": 7052.91,
+    "margin_pct": 20.71
   },
   {
     "date": "2026-10-29",
-    "revenue": 51393.0,
-    "invoices": 82,
-    "vs_usual_pct": 20.6,
-    "gross_profit": 11387.1,
-    "margin_pct": 22.16
+    "revenue": 42550.0,
+    "invoices": 81,
+    "vs_usual_pct": 15.4,
+    "gross_profit": 9073.67,
+    "margin_pct": 21.32
   },
   {
     "date": "2026-10-28",
-    "revenue": 31704.0,
-    "invoices": 67,
-    "vs_usual_pct": -13.4,
-    "gross_profit": 6742.77,
-    "margin_pct": 21.27
+    "revenue": 37009.0,
+    "invoices": 68,
+    "vs_usual_pct": -8.5,
+    "gross_profit": 8407.54,
+    "margin_pct": 22.72
   },
   {
     "date": "2026-10-27",
-    "revenue": 31929.0,
-    "invoices": 60,
-    "vs_usual_pct": -17.6,
-    "gross_profit": 6786.38,
-    "margin_pct": 21.25
+    "revenue": 41629.0,
+    "invoices": 68,
+    "vs_usual_pct": 4.1,
+    "gross_profit": 9673.78,
+    "margin_pct": 23.24
   },
   {
     "date": "2026-10-26",
-    "revenue": 39904.0,
-    "invoices": 73,
-    "vs_usual_pct": -8.2,
-    "gross_profit": 8910.63,
-    "margin_pct": 22.33
+    "revenue": 31450.0,
+    "invoices": 67,
+    "vs_usual_pct": -5.7,
+    "gross_profit": 6975.72,
+    "margin_pct": 22.18
   },
   {
     "date": "2026-10-25",
-    "revenue": 36696.0,
-    "invoices": 55,
-    "vs_usual_pct": 10.8,
-    "gross_profit": 7588.67,
-    "margin_pct": 20.68
+    "revenue": 30014.0,
+    "invoices": 53,
+    "vs_usual_pct": -2.0,
+    "gross_profit": 7111.97,
+    "margin_pct": 23.7
   },
   {
     "date": "2026-10-24",
-    "revenue": 43570.0,
-    "invoices": 76,
-    "vs_usual_pct": 4.1,
-    "gross_profit": 9181.59,
-    "margin_pct": 21.07
+    "revenue": 52995.0,
+    "invoices": 87,
+    "vs_usual_pct": 12.7,
+    "gross_profit": 11387.1,
+    "margin_pct": 21.49
   },
   {
     "date": "2026-10-23",
-    "revenue": 45773.0,
-    "invoices": 64,
-    "vs_usual_pct": 35.1,
-    "gross_profit": 9946.16,
-    "margin_pct": 21.73
+    "revenue": 43397.0,
+    "invoices": 70,
+    "vs_usual_pct": 43.8,
+    "gross_profit": 9843.7,
+    "margin_pct": 22.68
   },
   {
     "date": "2026-10-22",
-    "revenue": 51945.0,
-    "invoices": 79,
-    "vs_usual_pct": 33.4,
-    "gross_profit": 11024.35,
-    "margin_pct": 21.22
+    "revenue": 26284.0,
+    "invoices": 43,
+    "vs_usual_pct": -32.5,
+    "gross_profit": 5668.46,
+    "margin_pct": 21.57
   },
   {
     "date": "2026-10-21",
-    "revenue": 33708.0,
-    "invoices": 65,
-    "vs_usual_pct": -11.0,
-    "gross_profit": 7451.47,
-    "margin_pct": 22.11
+    "revenue": 41000.0,
+    "invoices": 70,
+    "vs_usual_pct": 3.0,
+    "gross_profit": 8776.55,
+    "margin_pct": 21.41
   },
   {
     "date": "2026-10-20",
-    "revenue": 28062.0,
-    "invoices": 61,
-    "vs_usual_pct": -33.0,
-    "gross_profit": 5755.98,
-    "margin_pct": 20.51
+    "revenue": 39276.0,
+    "invoices": 66,
+    "vs_usual_pct": -1.7,
+    "gross_profit": 8758.37,
+    "margin_pct": 22.3
   },
   {
     "date": "2026-10-19",
-    "revenue": 42801.0,
-    "invoices": 70,
-    "vs_usual_pct": -1.9,
-    "gross_profit": 9193.5,
-    "margin_pct": 21.48
+    "revenue": 25657.0,
+    "invoices": 55,
+    "vs_usual_pct": -26.5,
+    "gross_profit": 5536.73,
+    "margin_pct": 21.58
+  },
+  {
+    "date": "2026-10-18",
+    "revenue": 25555.0,
+    "invoices": 42,
+    "vs_usual_pct": -17.6,
+    "gross_profit": 5679.54,
+    "margin_pct": 22.22
   }
 ]

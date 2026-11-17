@@ -143,21 +143,21 @@ company-brain/
 │   │   └── *.json             # Endpoint snapshot files (< 1 MB total)
 │   ├── requirements.txt       # Python dependencies
 │   └── Dockerfile             # Multi-stage production Docker container
-├── bi-platform/
-│   └── frontend/              # Next.js 14 frontend (static export ready)
-│       ├── app/
-│       │   ├── globals.css    # Clean typography & responsive layout styling
-│       │   ├── layout.js      # Global layout wrapper
-│       │   ├── nav.js         # Top navbar with mock data badge & day closing banner
-│       │   ├── page.js        # Business Overview Dashboard
-│       │   ├── billing/       # POS checkout with companion chips & Day Close modal
-│       │   ├── chat/          # AI conversational business intelligence assistant
-│       │   ├── data/          # File upload wizard, column mapping & data reset
-│       │   ├── refills/       # Chronic care patient refill predictions & WhatsApp
-│       │   ├── reorder/       # Restock suggestions by manufacturer & purchase export
-│       │   └── summary/       # 14-day closed history and daily performance reports
-│       ├── next.config.js     # Configured for static export (output: "export")
-│       └── .env.example       # Example environment variables (NEXT_PUBLIC_API_URL)
+├── frontend/                  # Next.js 14 frontend (static export ready)
+│   ├── app/
+│   │   ├── api.js             # Centralized API client base URL configuration
+│   │   ├── globals.css        # Clean typography & responsive layout styling
+│   │   ├── layout.js          # Global layout wrapper
+│   │   ├── nav.js             # Top navbar with data status badge & day closing banner
+│   │   ├── page.js            # Business Overview Dashboard
+│   │   ├── billing/           # POS checkout with companion chips & Day Close modal
+│   │   ├── chat/              # AI conversational business intelligence assistant
+│   │   ├── data/              # File upload wizard, column mapping & data reset
+│   │   ├── refills/           # Chronic care patient refill predictions & WhatsApp
+│   │   ├── reorder/           # Restock suggestions by manufacturer & purchase export
+│   │   └── summary/           # 14-day closed history and daily performance reports
+│   ├── next.config.js         # Configured for static export (output: "export")
+│   └── .env.example           # Example environment variables (NEXT_PUBLIC_API_URL)
 └── scripts/
     ├── build_snapshots.py     # Generates precomputed snapshot JSONs from database
     └── check_snapshots.py     # Verification suite (live comparison, empty DB, memory check)
@@ -209,7 +209,7 @@ Runs FastAPI with SQLite or PostgreSQL and live Next.js:
 ### Mode 2: Static Export (Frontend)
 The frontend is deployable as a 100% static site to Cloudflare Pages, Vercel, Netlify, AWS S3, or Nginx:
 ```bash
-cd bi-platform/frontend
+cd frontend
 npm run build
 npx serve out
 ```

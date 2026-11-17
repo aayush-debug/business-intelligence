@@ -14,7 +14,7 @@ lsof -ti :3000 | xargs kill -9 2>/dev/null || true
 
 # 2. Clear stale Next.js cache to avoid webpack module errors
 echo "  [2/4] Cleaning build cache..."
-rm -rf bi-platform/frontend/.next
+rm -rf frontend/.next
 
 # Create logs directory
 mkdir -p logs
@@ -26,7 +26,7 @@ BACKEND_PID=$!
 
 # 4. Start Frontend
 echo "  [4/4] Starting Next.js Frontend on port 3000..."
-(cd bi-platform/frontend && npm run dev > ../../logs/frontend.log 2>&1) &
+(cd frontend && npm run dev > ../logs/frontend.log 2>&1) &
 FRONTEND_PID=$!
 
 # Graceful cleanup on Ctrl+C or termination

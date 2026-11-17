@@ -16,14 +16,14 @@ for /f "tokens=5" %%a in ('netstat -aon ^| findstr :8000 ^| findstr LISTENING 2^
 for /f "tokens=5" %%a in ('netstat -aon ^| findstr :3000 ^| findstr LISTENING 2^>nul') do taskkill /f /pid %%a >nul 2>&1
 
 echo [2/4] Cleaning build cache...
-if exist "bi-platform\frontend\.next" rd /s /q "bi-platform\frontend\.next" >nul 2>&1
+if exist "frontend\.next" rd /s /q "frontend\.next" >nul 2>&1
 if not exist "logs" mkdir "logs"
 
 echo [3/4] Starting FastAPI Backend on port 8000...
 start /b "Backend" cmd /c "cd backend && set PYTHONPATH=. && python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload > ..\logs\backend.log 2>&1"
 
 echo [4/4] Starting Next.js Frontend on port 3000...
-start /b "Frontend" cmd /c "cd bi-platform\frontend && npm run dev > ..\..\logs\frontend.log 2>&1"
+start /b "Frontend" cmd /c "cd frontend && npm run dev > ..\logs\frontend.log 2>&1"
 
 echo Waiting for servers to initialize...
 timeout /t 3 /nobreak >nul

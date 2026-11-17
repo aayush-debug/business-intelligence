@@ -2,11 +2,10 @@ import os
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from datetime import datetime, date
+from datetime import date
 from typing import Any, Optional
 from pathlib import Path
 from . import analytics as A
-from .db import SessionLocal, DayClose
 
 
 OWNER_EMAIL = os.getenv("OWNER_EMAIL", "owner@companybrain.local")

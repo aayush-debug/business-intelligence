@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-24",
+  "type": "spike",
+  "revenue": 43940.0,
+  "baseline_revenue": 32959.25,
+  "diff_pct": 33.3,
+  "invoices": 58,
+  "top_products": [
+    {
+      "product": "Baby Diapers (pack of 36) - Helix",
+      "units": 6,
+      "revenue": 4206.0,
+      "share_pct": 9.6
+    },
+    {
+      "product": "BP Monitor (Digital) - Medora",
+      "units": 2,
+      "revenue": 3600.0,
+      "share_pct": 8.2
+    },
+    {
+      "product": "Baby Diapers (pack of 36) - Curalife",
+      "units": 5,
+      "revenue": 3250.0,
+      "share_pct": 7.4
+    }
+  ],
+  "explanation": "On 24 May 2026, revenue spiked to \u20b943,940 (+33.3% above the usual Sunday average of \u20b932,959). The spike was driven by strong sales in: Baby Diapers (pack of 36) - Helix (6 units, \u20b94,206), BP Monitor (Digital) - Medora (2 units, \u20b93,600), Baby Diapers (pack of 36) - Curalife (5 units, \u20b93,250) across 58 orders."
+}

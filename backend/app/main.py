@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from datetime import date, datetime
 import logging
 import os
-from typing import Any, Optional
+from typing import Optional
 from zoneinfo import ZoneInfo
 from fastapi import (
     Depends,

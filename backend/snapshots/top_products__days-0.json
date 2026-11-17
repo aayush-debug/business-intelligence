@@ -1,66 +1,66 @@
 [
   {
-    "product": "Protein Powder 500g",
-    "category": "Vitamins & Supplements",
-    "revenue": 1586400.0,
-    "units": 1322,
-    "profit": 396600.0,
-    "margin_pct": 25.0
-  },
-  {
-    "product": "Baby Diapers (pack of 36)",
-    "category": "Personal & Baby Care",
-    "revenue": 1326000.0,
-    "units": 2040,
-    "profit": 212160.0,
-    "margin_pct": 16.0
-  },
-  {
-    "product": "Multivitamin (30 tabs)",
-    "category": "Vitamins & Supplements",
-    "revenue": 1211000.0,
-    "units": 3460,
-    "profit": 363300.0,
-    "margin_pct": 30.0
-  },
-  {
-    "product": "Pantoprazole 40mg (10 tabs)",
+    "product": "Levothyroxine 50mcg (100 tabs) - Medora",
     "category": "Chronic Care (Rx)",
-    "revenue": 1152760.0,
-    "units": 8234,
-    "profit": 207496.8,
-    "margin_pct": 18.0
-  },
-  {
-    "product": "Levothyroxine 50mcg (100 tabs)",
-    "category": "Chronic Care (Rx)",
-    "revenue": 980700.0,
-    "units": 4670,
-    "profit": 137298.0,
+    "revenue": 1057140.0,
+    "units": 5034,
+    "profit": 147999.6,
     "margin_pct": 14.0
   },
   {
-    "product": "Amoxicillin-Clav 625 (10 tabs)",
-    "category": "Antibiotics & Acute (Rx)",
-    "revenue": 941430.0,
-    "units": 4483,
-    "profit": 169457.4,
-    "margin_pct": 18.0
-  },
-  {
-    "product": "Omega-3 Fish Oil (30 caps)",
+    "product": "Multivitamin (30 tabs) - Zenith",
     "category": "Vitamins & Supplements",
-    "revenue": 934200.0,
-    "units": 2076,
-    "profit": 280260.0,
+    "revenue": 1039150.0,
+    "units": 2969,
+    "profit": 311745.0,
     "margin_pct": 30.0
   },
   {
-    "product": "Atorvastatin 10mg (10 tabs)",
+    "product": "Baby Diapers (pack of 36) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 924950.0,
+    "units": 1423,
+    "profit": 147992.0,
+    "margin_pct": 16.0
+  },
+  {
+    "product": "Pantoprazole 40mg (10 tabs) - PureWell",
     "category": "Chronic Care (Rx)",
-    "revenue": 905520.0,
-    "units": 7546,
-    "profit": 153938.4,
+    "revenue": 903140.0,
+    "units": 6451,
+    "profit": 162565.2,
+    "margin_pct": 18.0
+  },
+  {
+    "product": "Pain Relief Gel 30g - Apex",
+    "category": "OTC Cold & Pain",
+    "revenue": 765130.0,
+    "units": 4027,
+    "profit": 183631.2,
+    "margin_pct": 24.0
+  },
+  {
+    "product": "Adult Diapers (pack of 10) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 753600.0,
+    "units": 1256,
+    "profit": 128112.0,
     "margin_pct": 17.0
+  },
+  {
+    "product": "Atorvastatin 10mg (10 tabs) - Helix",
+    "category": "Chronic Care (Rx)",
+    "revenue": 751200.0,
+    "units": 6260,
+    "profit": 127704.0,
+    "margin_pct": 17.0
+  },
+  {
+    "product": "Omega-3 Fish Oil (30 caps) - Helix",
+    "category": "Vitamins & Supplements",
+    "revenue": 733950.0,
+    "units": 1631,
+    "profit": 220185.0,
+    "margin_pct": 30.0
   }
 ]

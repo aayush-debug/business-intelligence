@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-01",
+  "type": "spike",
+  "revenue": 56292.0,
+  "baseline_revenue": 34537.75,
+  "diff_pct": 63.0,
+  "invoices": 82,
+  "top_products": [
+    {
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "units": 13,
+      "revenue": 4550.0,
+      "share_pct": 8.1
+    },
+    {
+      "product": "Adult Diapers (pack of 10) - Curalife",
+      "units": 7,
+      "revenue": 4200.0,
+      "share_pct": 7.5
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps) - Helix",
+      "units": 9,
+      "revenue": 4050.0,
+      "share_pct": 7.2
+    }
+  ],
+  "explanation": "On 1 Oct 2026, revenue spiked to \u20b956,292 (+63.0% above the usual Thursday average of \u20b934,538). The spike was driven by strong sales in: Multivitamin (30 tabs) - Zenith (13 units, \u20b94,550), Adult Diapers (pack of 10) - Curalife (7 units, \u20b94,200), Omega-3 Fish Oil (30 caps) - Helix (9 units, \u20b94,050) across 82 orders."
+}

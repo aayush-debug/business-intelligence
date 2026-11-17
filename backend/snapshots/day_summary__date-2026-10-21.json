@@ -1,40 +1,41 @@
 {
   "date": "2026-10-21",
-  "revenue": 33708.0,
-  "invoices": 65,
-  "aov": 518.58,
-  "gross_profit": 7451.47,
-  "margin_pct": 22.11,
-  "vs_usual_pct": -11.0,
+  "revenue": 41000.0,
+  "invoices": 70,
+  "aov": 585.71,
+  "gross_profit": 8776.55,
+  "margin_pct": 21.41,
+  "vs_usual_pct": 3.0,
   "top_products": [
     {
-      "product": "Multivitamin (30 tabs)",
-      "units": 10,
-      "revenue": 3500.0
+      "product": "Pulse Oximeter - PureWell",
+      "units": 3,
+      "revenue": 4500.0
     },
     {
-      "product": "Pantoprazole 40mg (10 tabs)",
-      "units": 14,
-      "revenue": 1960.0
+      "product": "Adult Diapers (pack of 10) - Curalife",
+      "units": 5,
+      "revenue": 3000.0
     },
     {
-      "product": "Cefixime 200mg (10 tabs)",
+      "product": "Pain Relief Gel 30g - Apex",
       "units": 14,
-      "revenue": 1820.0
+      "revenue": 2660.0
     }
   ],
-  "top_category": "Vitamins & Supplements",
+  "top_category": "Chronic Care (Rx)",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Wed 21 Oct 2026\nSales: \u20b933,708 from 65 bills (11% below a usual Wed)\nGross profit: \u20b97,451 (22.11%)\nBest sellers: Multivitamin (30 tabs) (10), Pantoprazole 40mg (10 tabs) (14), Cefixime 200mg (10 tabs) (14)\nTop category: Vitamins & Supplements\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Wed 21 Oct 2026\nSales: \u20b941,000 from 70 bills (3% above a usual Wed)\nGross profit: \u20b98,777 (21.41%)\nBest sellers: Pulse Oximeter - PureWell (3), Adult Diapers (pack of 10) - Curalife (5), Pain Relief Gel 30g - Apex (14)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

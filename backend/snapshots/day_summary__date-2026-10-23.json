@@ -1,40 +1,41 @@
 {
   "date": "2026-10-23",
-  "revenue": 45773.0,
-  "invoices": 64,
-  "aov": 715.2,
-  "gross_profit": 9946.16,
-  "margin_pct": 21.73,
-  "vs_usual_pct": 35.1,
+  "revenue": 43397.0,
+  "invoices": 70,
+  "aov": 619.96,
+  "gross_profit": 9843.7,
+  "margin_pct": 22.68,
+  "vs_usual_pct": 43.8,
   "top_products": [
     {
-      "product": "Multivitamin (30 tabs)",
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "units": 9,
+      "revenue": 3150.0
+    },
+    {
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
       "units": 11,
-      "revenue": 3850.0
+      "revenue": 2310.0
     },
     {
-      "product": "Protein Powder 500g",
-      "units": 3,
-      "revenue": 3600.0
-    },
-    {
-      "product": "Baby Diapers (pack of 36)",
-      "units": 5,
-      "revenue": 3250.0
+      "product": "Vitamin D3 60K (4 caps) - Apex",
+      "units": 15,
+      "revenue": 2250.0
     }
   ],
-  "top_category": "Vitamins & Supplements",
+  "top_category": "Chronic Care (Rx)",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Fri 23 Oct 2026\nSales: \u20b945,773 from 64 bills (35% above a usual Fri)\nGross profit: \u20b99,946 (21.73%)\nBest sellers: Multivitamin (30 tabs) (11), Protein Powder 500g (3), Baby Diapers (pack of 36) (5)\nTop category: Vitamins & Supplements\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Fri 23 Oct 2026\nSales: \u20b943,397 from 70 bills (44% above a usual Fri)\nGross profit: \u20b99,844 (22.68%)\nBest sellers: Multivitamin (30 tabs) - Zenith (9), Levothyroxine 50mcg (100 tabs) - Medora (11), Vitamin D3 60K (4 caps) - Apex (15)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

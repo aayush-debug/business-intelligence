@@ -1,40 +1,41 @@
 {
   "date": "2026-10-26",
-  "revenue": 39904.0,
-  "invoices": 73,
-  "aov": 546.63,
-  "gross_profit": 8910.63,
-  "margin_pct": 22.33,
-  "vs_usual_pct": -8.2,
+  "revenue": 31450.0,
+  "invoices": 67,
+  "aov": 469.4,
+  "gross_profit": 6975.72,
+  "margin_pct": 22.18,
+  "vs_usual_pct": -5.7,
   "top_products": [
     {
-      "product": "Omega-3 Fish Oil (30 caps)",
-      "units": 7,
-      "revenue": 3150.0
-    },
-    {
-      "product": "Pulse Oximeter",
+      "product": "BP Monitor (Digital) - Medora",
       "units": 2,
-      "revenue": 3000.0
+      "revenue": 3600.0
     },
     {
-      "product": "Pain Relief Gel 30g",
-      "units": 14,
-      "revenue": 2660.0
+      "product": "Adult Diapers (pack of 10) - Curalife",
+      "units": 4,
+      "revenue": 2400.0
+    },
+    {
+      "product": "Glucometer Strips (50) - Brightday",
+      "units": 2,
+      "revenue": 1500.0
     }
   ],
-  "top_category": "Vitamins & Supplements",
+  "top_category": "Medical Devices",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Mon 26 Oct 2026\nSales: \u20b939,904 from 73 bills (8% below a usual Mon)\nGross profit: \u20b98,911 (22.33%)\nBest sellers: Omega-3 Fish Oil (30 caps) (7), Pulse Oximeter (2), Pain Relief Gel 30g (14)\nTop category: Vitamins & Supplements\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Mon 26 Oct 2026\nSales: \u20b931,450 from 67 bills (6% below a usual Mon)\nGross profit: \u20b96,976 (22.18%)\nBest sellers: BP Monitor (Digital) - Medora (2), Adult Diapers (pack of 10) - Curalife (4), Glucometer Strips (50) - Brightday (2)\nTop category: Medical Devices\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const API_BASE = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000").replace(/\/+$/, "");
+import { API_BASE } from "./api";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -47,6 +46,7 @@ export default function Navigation() {
     { href: "/data", label: "Your data" },
     { href: "/billing", label: "Billing" },
     { href: "/reorder", label: "Reorder" },
+    { href: "/refills", label: "Refills" },
     { href: "/summary", label: "Daily summaries" },
   ];
 

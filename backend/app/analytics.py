@@ -5,11 +5,11 @@ import math
 import os
 import time
 from typing import Any, Optional
-from zoneinfo import ZoneInfo
+from urllib.parse import quote
 import numpy as np
 import pandas as pd
 from sqlalchemy import text
-from .db import DayClose, Customer, Inventory, Product, Sale, engine, SessionLocal
+from .db import DayClose, Customer, Product, engine, SessionLocal
 
 
 class Granularity(str, Enum):
@@ -1113,8 +1113,6 @@ def refills(within_days: int = 5, include_names: bool = False) -> dict[str, Any]
 
 def refill_message(customer_id: int, include_names: bool = False) -> dict[str, Any]:
     """Generate a friendly WhatsApp message and click-to-chat URL for customer refill reminder."""
-    import urllib.parse
-
     with SessionLocal() as db:
         customer = db.query(Customer).filter(Customer.id == customer_id).first()
         if not customer:
@@ -1148,7 +1146,7 @@ def refill_message(customer_id: int, include_names: bool = False) -> dict[str, A
         digits = "".join(ch for ch in str(phone) if ch.isdigit())
         if len(digits) == 10:
             digits = default_cc + digits
-        whatsapp_url = f"https://wa.me/{digits}?text={urllib.parse.quote(text)}"
+        whatsapp_url = f"https://wa.me/{digits}?text={quote(text)}"
 
     return {
         "text": text,

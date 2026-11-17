@@ -1,6 +1,5 @@
 .git/
 .github/
-bi-platform/
 frontend/
 node_modules/
 .next/

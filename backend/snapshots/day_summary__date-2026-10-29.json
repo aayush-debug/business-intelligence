@@ -1,40 +1,41 @@
 {
   "date": "2026-10-29",
-  "revenue": 51393.0,
-  "invoices": 82,
-  "aov": 626.74,
-  "gross_profit": 11387.1,
-  "margin_pct": 22.16,
-  "vs_usual_pct": 20.6,
+  "revenue": 42550.0,
+  "invoices": 81,
+  "aov": 525.31,
+  "gross_profit": 9073.67,
+  "margin_pct": 21.32,
+  "vs_usual_pct": 15.4,
   "top_products": [
     {
-      "product": "Multivitamin (30 tabs)",
-      "units": 12,
-      "revenue": 4200.0
-    },
-    {
-      "product": "Protein Powder 500g",
-      "units": 3,
-      "revenue": 3600.0
-    },
-    {
-      "product": "Baby Diapers (pack of 36)",
+      "product": "Baby Diapers (pack of 36) - Curalife",
       "units": 5,
       "revenue": 3250.0
+    },
+    {
+      "product": "Nebulizer - Apex",
+      "units": 1,
+      "revenue": 2200.0
+    },
+    {
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "units": 6,
+      "revenue": 2100.0
     }
   ],
-  "top_category": "Vitamins & Supplements",
+  "top_category": "Chronic Care (Rx)",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Thu 29 Oct 2026\nSales: \u20b951,393 from 82 bills (21% above a usual Thu)\nGross profit: \u20b911,387 (22.16%)\nBest sellers: Multivitamin (30 tabs) (12), Protein Powder 500g (3), Baby Diapers (pack of 36) (5)\nTop category: Vitamins & Supplements\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Thu 29 Oct 2026\nSales: \u20b942,550 from 81 bills (15% above a usual Thu)\nGross profit: \u20b99,074 (21.32%)\nBest sellers: Baby Diapers (pack of 36) - Curalife (5), Nebulizer - Apex (1), Multivitamin (30 tabs) - Zenith (6)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

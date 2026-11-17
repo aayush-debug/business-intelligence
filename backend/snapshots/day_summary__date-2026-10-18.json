@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-18",
+  "revenue": 25555.0,
+  "invoices": 42,
+  "aov": 608.45,
+  "gross_profit": 5679.54,
+  "margin_pct": 22.22,
+  "vs_usual_pct": -17.6,
+  "top_products": [
+    {
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+      "units": 11,
+      "revenue": 2310.0
+    },
+    {
+      "product": "Glucometer Strips (50) - Brightday",
+      "units": 3,
+      "revenue": 2250.0
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps) - Zenith",
+      "units": 4,
+      "revenue": 1668.0
+    }
+  ],
+  "top_category": "Chronic Care (Rx)",
+  "unusual": {
+    "is_unusual": false,
+    "type": null
+  },
+  "low_stock": {
+    "count": 18,
+    "items": [
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
+    ]
+  },
+  "refills_due_tomorrow": 0,
+  "summary_text": "Daily summary, Sun 18 Oct 2026\nSales: \u20b925,555 from 42 bills (18% below a usual Sun)\nGross profit: \u20b95,680 (22.22%)\nBest sellers: Levothyroxine 50mcg (100 tabs) - Medora (11), Glucometer Strips (50) - Brightday (3), Omega-3 Fish Oil (30 caps) - Zenith (4)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
+}

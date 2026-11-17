@@ -1,37 +1,37 @@
 [
   {
     "category": "Chronic Care (Rx)",
-    "revenue": 613887.0,
-    "profit": 97306.08
+    "revenue": 792889.0,
+    "profit": 131508.46
   },
   {
     "category": "Vitamins & Supplements",
-    "revenue": 582740.0,
-    "profit": 162498.9
-  },
-  {
-    "category": "Antibiotics & Acute (Rx)",
-    "revenue": 466974.0,
-    "profit": 87553.1
+    "revenue": 658195.0,
+    "profit": 194126.29
   },
   {
     "category": "OTC Cold & Pain",
-    "revenue": 386408.0,
-    "profit": 91034.26
-  },
-  {
-    "category": "Medical Devices",
-    "revenue": 337900.0,
-    "profit": 78029.0
+    "revenue": 512302.0,
+    "profit": 125842.87
   },
   {
     "category": "Personal & Baby Care",
-    "revenue": 325810.0,
-    "profit": 58907.8
+    "revenue": 461787.0,
+    "profit": 86625.71
+  },
+  {
+    "category": "Antibiotics & Acute (Rx)",
+    "revenue": 440130.0,
+    "profit": 87458.82
+  },
+  {
+    "category": "Medical Devices",
+    "revenue": 424532.0,
+    "profit": 99612.95
   },
   {
     "category": "First Aid",
-    "revenue": 110640.0,
-    "profit": 29213.85
+    "revenue": 161273.0,
+    "profit": 43133.17
   }
 ]

@@ -1,26 +1,26 @@
 {
   "date": "2026-10-22",
-  "revenue": 51945.0,
-  "invoices": 79,
-  "aov": 657.53,
-  "gross_profit": 11024.35,
-  "margin_pct": 21.22,
-  "vs_usual_pct": 33.4,
+  "revenue": 26284.0,
+  "invoices": 43,
+  "aov": 611.26,
+  "gross_profit": 5668.46,
+  "margin_pct": 21.57,
+  "vs_usual_pct": -32.5,
   "top_products": [
     {
-      "product": "Baby Diapers (pack of 36)",
-      "units": 9,
-      "revenue": 5850.0
+      "product": "Glucometer Strips (50) - Brightday",
+      "units": 3,
+      "revenue": 2250.0
     },
     {
-      "product": "Omega-3 Fish Oil (30 caps)",
-      "units": 8,
-      "revenue": 3600.0
+      "product": "Baby Diapers (pack of 36) - Curalife",
+      "units": 3,
+      "revenue": 1950.0
     },
     {
-      "product": "Multivitamin (30 tabs)",
-      "units": 10,
-      "revenue": 3500.0
+      "product": "BP Monitor (Digital) - Medora",
+      "units": 1,
+      "revenue": 1800.0
     }
   ],
   "top_category": "Chronic Care (Rx)",
@@ -29,12 +29,13 @@
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Thu 22 Oct 2026\nSales: \u20b951,945 from 79 bills (33% above a usual Thu)\nGross profit: \u20b911,024 (21.22%)\nBest sellers: Baby Diapers (pack of 36) (9), Omega-3 Fish Oil (30 caps) (8), Multivitamin (30 tabs) (10)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Thu 22 Oct 2026\nSales: \u20b926,284 from 43 bills (32% below a usual Thu)\nGross profit: \u20b95,668 (21.57%)\nBest sellers: Glucometer Strips (50) - Brightday (3), Baby Diapers (pack of 36) - Curalife (3), BP Monitor (Digital) - Medora (1)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

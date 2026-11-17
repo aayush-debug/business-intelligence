@@ -1,113 +1,1502 @@
 [
   {
-    "product_group": "Metformin 500mg",
-    "total_units": 1044,
-    "total_revenue": 39672.0,
-    "leader": "Metformin 500mg (10 tabs)",
+    "product_group": "Cetirizine 10mg (10 tabs)",
+    "total_units": 1138,
+    "total_revenue": 28872.0,
+    "leader": "Cetirizine 10mg (10 tabs) - Medora",
     "brands": [
       {
-        "product_id": 1,
-        "product": "Metformin 500mg (10 tabs)",
-        "manufacturer": "Glyciphage - Franco",
-        "units": 1044,
-        "revenue": 39672.0,
-        "profit": 5554.08,
-        "margin_pct": 14.0,
-        "stock_on_hand": 249,
-        "days_of_cover": 21.5,
-        "share_pct": 100.0,
-        "vs_leader": null,
-        "flag": "leader"
-      },
-      {
-        "product_id": 54,
-        "product": "Glycomet 500mg (10 tabs)",
-        "manufacturer": "USV",
-        "units": 0,
-        "revenue": 0.0,
-        "profit": 0.0,
-        "margin_pct": 0.0,
-        "stock_on_hand": 0,
-        "days_of_cover": null,
-        "share_pct": 0.0,
-        "vs_leader": null,
-        "flag": "underperforming"
-      }
-    ],
-    "insight": "Glyciphage - Franco dominates Metformin 500mg with 1044 units sold while USV had zero sales. USV has 0 units in stock."
-  },
-  {
-    "product_group": "Paracetamol 650mg",
-    "total_units": 1269,
-    "total_revenue": 40608.0,
-    "leader": "Paracetamol 650mg (15 tabs)",
-    "brands": [
-      {
-        "product_id": 18,
-        "product": "Paracetamol 650mg (15 tabs)",
-        "manufacturer": "Dolo 650 - Micro Labs",
-        "units": 1269,
-        "revenue": 40608.0,
-        "profit": 8933.76,
-        "margin_pct": 22.0,
-        "stock_on_hand": 400,
-        "days_of_cover": 28.4,
-        "share_pct": 100.0,
-        "vs_leader": null,
-        "flag": "leader"
-      },
-      {
-        "product_id": 53,
-        "product": "Calpol 650mg (15 tabs)",
-        "manufacturer": "GSK",
-        "units": 0,
-        "revenue": 0.0,
-        "profit": 0.0,
-        "margin_pct": 0.0,
-        "stock_on_hand": 35,
-        "days_of_cover": null,
-        "share_pct": 0.0,
-        "vs_leader": null,
-        "flag": "underperforming"
-      }
-    ],
-    "insight": "Dolo 650 - Micro Labs dominates Paracetamol 650mg with 1269 units sold while GSK had zero sales. GSK has 35 units in stock."
-  },
-  {
-    "product_group": "Cetirizine 10mg",
-    "total_units": 913,
-    "total_revenue": 22729.0,
-    "leader": "Cetirizine 10mg (10 tabs)",
-    "brands": [
-      {
-        "product_id": 15,
-        "product": "Cetirizine 10mg (10 tabs)",
-        "manufacturer": "Medora",
-        "units": 817,
-        "revenue": 20425.0,
-        "profit": 4085.0,
+        "product_id": 26,
+        "product": "Cetirizine 10mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 686,
+        "revenue": 17150.0,
+        "profit": 3430.0,
         "margin_pct": 20.0,
-        "stock_on_hand": 180,
-        "days_of_cover": 19.8,
-        "share_pct": 89.5,
+        "stock_on_hand": 79,
+        "days_of_cover": 10.4,
+        "share_pct": 60.3,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 27,
+        "product": "Cetirizine 10mg (10 tabs) - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 422,
+        "revenue": 10972.0,
+        "profit": 2472.92,
+        "margin_pct": 22.54,
+        "stock_on_hand": 160,
+        "days_of_cover": 34.1,
+        "share_pct": 37.1,
+        "vs_leader": 1.6,
+        "flag": null
+      },
+      {
+        "product_id": 28,
+        "product": "Cetirizine 10mg (10 tabs) - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 30,
+        "revenue": 750.0,
+        "profit": 160.8,
+        "margin_pct": 21.44,
+        "stock_on_hand": 53,
+        "days_of_cover": 159.0,
+        "share_pct": 2.6,
+        "vs_leader": 22.9,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Medora Pharma sells 23x more than Curalife Pharma in Cetirizine 10mg (10 tabs). Curalife Pharma has 53 units in stock, about 159 days of supply."
+  },
+  {
+    "product_group": "Amlodipine 5mg (10 tabs)",
+    "total_units": 1248,
+    "total_revenue": 56228.0,
+    "leader": "Amlodipine 5mg (10 tabs) - Medora",
+    "brands": [
+      {
+        "product_id": 4,
+        "product": "Amlodipine 5mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 896,
+        "revenue": 40320.0,
+        "profit": 6048.0,
+        "margin_pct": 15.0,
+        "stock_on_hand": 92,
+        "days_of_cover": 9.2,
+        "share_pct": 71.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 5,
+        "product": "Amlodipine 5mg (10 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 318,
+        "revenue": 14310.0,
+        "profit": 2655.3,
+        "margin_pct": 18.56,
+        "stock_on_hand": 92,
+        "days_of_cover": 26.0,
+        "share_pct": 25.5,
+        "vs_leader": 2.8,
+        "flag": null
+      },
+      {
+        "product_id": 6,
+        "product": "Amlodipine 5mg (10 tabs) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 34,
+        "revenue": 1598.0,
+        "profit": 277.78,
+        "margin_pct": 17.38,
+        "stock_on_hand": 7,
+        "days_of_cover": 18.5,
+        "share_pct": 2.7,
+        "vs_leader": 26.4,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Medora Pharma sells 26x more than Brightday Pharma in Amlodipine 5mg (10 tabs). Brightday Pharma has 7 units in stock, about 18 days of supply."
+  },
+  {
+    "product_group": "ORS Sachet (pack of 4)",
+    "total_units": 931,
+    "total_revenue": 56358.0,
+    "leader": "ORS Sachet (pack of 4) - Zenith",
+    "brands": [
+      {
+        "product_id": 29,
+        "product": "ORS Sachet (pack of 4) - Zenith",
+        "manufacturer": "Zenith Pharma",
+        "units": 541,
+        "revenue": 32460.0,
+        "profit": 7141.2,
+        "margin_pct": 22.0,
+        "stock_on_hand": 60,
+        "days_of_cover": 10.0,
+        "share_pct": 58.1,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 30,
+        "product": "ORS Sachet (pack of 4) - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 354,
+        "revenue": 21594.0,
+        "profit": 5104.68,
+        "margin_pct": 23.64,
+        "stock_on_hand": 94,
+        "days_of_cover": 23.9,
+        "share_pct": 38.0,
+        "vs_leader": 1.5,
+        "flag": null
+      },
+      {
+        "product_id": 31,
+        "product": "ORS Sachet (pack of 4) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 36,
+        "revenue": 2304.0,
+        "profit": 552.6,
+        "margin_pct": 23.98,
+        "stock_on_hand": 80,
+        "days_of_cover": 200.0,
+        "share_pct": 3.9,
+        "vs_leader": 15.0,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Zenith Pharma sells 15x more than Helix Pharma in ORS Sachet (pack of 4). Helix Pharma has 80 units in stock, about 200 days of supply."
+  },
+  {
+    "product_group": "Sanitary Pads (pack of 15)",
+    "total_units": 401,
+    "total_revenue": 35968.0,
+    "leader": "Sanitary Pads (pack of 15) - Brightday",
+    "brands": [
+      {
+        "product_id": 73,
+        "product": "Sanitary Pads (pack of 15) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 283,
+        "revenue": 25470.0,
+        "profit": 4584.6,
+        "margin_pct": 18.0,
+        "stock_on_hand": 28,
+        "days_of_cover": 8.9,
+        "share_pct": 70.6,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 74,
+        "product": "Sanitary Pads (pack of 15) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 99,
+        "revenue": 8712.0,
+        "profit": 1919.61,
+        "margin_pct": 22.03,
+        "stock_on_hand": 18,
+        "days_of_cover": 16.4,
+        "share_pct": 24.7,
+        "vs_leader": 2.9,
+        "flag": null
+      },
+      {
+        "product_id": 75,
+        "product": "Sanitary Pads (pack of 15) - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 19,
+        "revenue": 1786.0,
+        "profit": 360.81,
+        "margin_pct": 20.2,
+        "stock_on_hand": 7,
+        "days_of_cover": 33.2,
+        "share_pct": 4.7,
+        "vs_leader": 14.9,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Brightday Pharma sells 15x more than Apex Pharma in Sanitary Pads (pack of 15). Apex Pharma has 7 units in stock, about 33 days of supply."
+  },
+  {
+    "product_group": "Atorvastatin 10mg (10 tabs)",
+    "total_units": 970,
+    "total_revenue": 115632.0,
+    "leader": "Atorvastatin 10mg (10 tabs) - Helix",
+    "brands": [
+      {
+        "product_id": 9,
+        "product": "Atorvastatin 10mg (10 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 745,
+        "revenue": 89400.0,
+        "profit": 15198.0,
+        "margin_pct": 17.0,
+        "stock_on_hand": 46,
+        "days_of_cover": 5.6,
+        "share_pct": 76.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 10,
+        "product": "Atorvastatin 10mg (10 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 174,
+        "revenue": 20010.0,
+        "profit": 4155.12,
+        "margin_pct": 20.77,
+        "stock_on_hand": 53,
+        "days_of_cover": 27.4,
+        "share_pct": 17.9,
+        "vs_leader": 4.3,
+        "flag": null
+      },
+      {
+        "product_id": 11,
+        "product": "Atorvastatin 10mg (10 tabs) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 51,
+        "revenue": 6222.0,
+        "profit": 1229.61,
+        "margin_pct": 19.76,
+        "stock_on_hand": 21,
+        "days_of_cover": 37.1,
+        "share_pct": 5.3,
+        "vs_leader": 14.6,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Helix Pharma sells 15x more than Brightday Pharma in Atorvastatin 10mg (10 tabs). Brightday Pharma has 21 units in stock, about 37 days of supply."
+  },
+  {
+    "product_group": "Paracetamol 650mg (15 tabs)",
+    "total_units": 1759,
+    "total_revenue": 55483.0,
+    "leader": "Paracetamol 650mg (15 tabs) - PureWell",
+    "brands": [
+      {
+        "product_id": 32,
+        "product": "Paracetamol 650mg (15 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 1308,
+        "revenue": 41856.0,
+        "profit": 9208.32,
+        "margin_pct": 22.0,
+        "stock_on_hand": 132,
+        "days_of_cover": 9.1,
+        "share_pct": 74.4,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 33,
+        "product": "Paracetamol 650mg (15 tabs) - Zenith",
+        "manufacturer": "Zenith Pharma",
+        "units": 354,
+        "revenue": 10620.0,
+        "profit": 2870.94,
+        "margin_pct": 27.03,
+        "stock_on_hand": 155,
+        "days_of_cover": 39.4,
+        "share_pct": 20.1,
+        "vs_leader": 3.7,
+        "flag": null
+      },
+      {
+        "product_id": 34,
+        "product": "Paracetamol 650mg (15 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 97,
+        "revenue": 3007.0,
+        "profit": 705.19,
+        "margin_pct": 23.45,
+        "stock_on_hand": 19,
+        "days_of_cover": 17.6,
+        "share_pct": 5.5,
+        "vs_leader": 13.5,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "PureWell Pharma sells 14x more than Medora Pharma in Paracetamol 650mg (15 tabs). Medora Pharma has 19 units in stock, about 18 days of supply."
+  },
+  {
+    "product_group": "Multivitamin (30 tabs)",
+    "total_units": 525,
+    "total_revenue": 181844.0,
+    "leader": "Multivitamin (30 tabs) - Zenith",
+    "brands": [
+      {
+        "product_id": 51,
+        "product": "Multivitamin (30 tabs) - Zenith",
+        "manufacturer": "Zenith Pharma",
+        "units": 386,
+        "revenue": 135100.0,
+        "profit": 40530.0,
+        "margin_pct": 30.0,
+        "stock_on_hand": 20,
+        "days_of_cover": 4.7,
+        "share_pct": 73.5,
         "vs_leader": null,
         "flag": "leader"
       },
       {
         "product_id": 52,
-        "product": "Cetirizine 10mg (Curalife)",
-        "manufacturer": "Curalife",
-        "units": 96,
-        "revenue": 2304.0,
-        "profit": 576.0,
-        "margin_pct": 25.0,
-        "stock_on_hand": 53,
-        "days_of_cover": 49.7,
-        "share_pct": 10.5,
-        "vs_leader": 8.5,
+        "product": "Multivitamin (30 tabs) - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 110,
+        "revenue": 37290.0,
+        "profit": 12225.4,
+        "margin_pct": 32.78,
+        "stock_on_hand": 27,
+        "days_of_cover": 22.1,
+        "share_pct": 21.0,
+        "vs_leader": 3.5,
+        "flag": null
+      },
+      {
+        "product_id": 53,
+        "product": "Multivitamin (30 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 29,
+        "revenue": 9454.0,
+        "profit": 3342.25,
+        "margin_pct": 35.35,
+        "stock_on_hand": 10,
+        "days_of_cover": 31.0,
+        "share_pct": 5.5,
+        "vs_leader": 13.3,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Zenith Pharma sells 13x more than Helix Pharma in Multivitamin (30 tabs). Helix Pharma has 10 units in stock, about 31 days of supply."
+  },
+  {
+    "product_group": "Cough Syrup 100ml",
+    "total_units": 1074,
+    "total_revenue": 118302.0,
+    "leader": "Cough Syrup 100ml - Curalife",
+    "brands": [
+      {
+        "product_id": 35,
+        "product": "Cough Syrup 100ml - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 810,
+        "revenue": 89100.0,
+        "profit": 21384.0,
+        "margin_pct": 24.0,
+        "stock_on_hand": 78,
+        "days_of_cover": 8.7,
+        "share_pct": 75.4,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 36,
+        "product": "Cough Syrup 100ml - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 203,
+        "revenue": 22736.0,
+        "profit": 6654.34,
+        "margin_pct": 29.27,
+        "stock_on_hand": 50,
+        "days_of_cover": 22.2,
+        "share_pct": 18.9,
+        "vs_leader": 4.0,
+        "flag": null
+      },
+      {
+        "product_id": 37,
+        "product": "Cough Syrup 100ml - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 61,
+        "revenue": 6466.0,
+        "profit": 1718.37,
+        "margin_pct": 26.58,
+        "stock_on_hand": 16,
+        "days_of_cover": 23.6,
+        "share_pct": 5.7,
+        "vs_leader": 13.3,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Curalife Pharma sells 13x more than Helix Pharma in Cough Syrup 100ml. Helix Pharma has 16 units in stock, about 24 days of supply."
+  },
+  {
+    "product_group": "Vitamin D3 60K (4 caps)",
+    "total_units": 920,
+    "total_revenue": 139748.0,
+    "leader": "Vitamin D3 60K (4 caps) - Apex",
+    "brands": [
+      {
+        "product_id": 46,
+        "product": "Vitamin D3 60K (4 caps) - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 624,
+        "revenue": 93600.0,
+        "profit": 26208.0,
+        "margin_pct": 28.0,
+        "stock_on_hand": 936,
+        "days_of_cover": 135.0,
+        "share_pct": 67.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 47,
+        "product": "Vitamin D3 60K (4 caps) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 242,
+        "revenue": 37994.0,
+        "profit": 11291.72,
+        "margin_pct": 29.72,
+        "stock_on_hand": 105,
+        "days_of_cover": 39.0,
+        "share_pct": 26.3,
+        "vs_leader": 2.6,
+        "flag": null
+      },
+      {
+        "product_id": 48,
+        "product": "Vitamin D3 60K (4 caps) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 54,
+        "revenue": 8154.0,
+        "profit": 2685.42,
+        "margin_pct": 32.93,
+        "stock_on_hand": 21,
+        "days_of_cover": 35.0,
+        "share_pct": 5.9,
+        "vs_leader": 11.6,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Apex Pharma sells 12x more than Helix Pharma in Vitamin D3 60K (4 caps). Helix Pharma has 21 units in stock, about 35 days of supply."
+  },
+  {
+    "product_group": "Baby Diapers (pack of 36)",
+    "total_units": 318,
+    "total_revenue": 212342.0,
+    "leader": "Baby Diapers (pack of 36) - Curalife",
+    "brands": [
+      {
+        "product_id": 70,
+        "product": "Baby Diapers (pack of 36) - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 200,
+        "revenue": 130000.0,
+        "profit": 20800.0,
+        "margin_pct": 16.0,
+        "stock_on_hand": 10,
+        "days_of_cover": 4.5,
+        "share_pct": 62.9,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 71,
+        "product": "Baby Diapers (pack of 36) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 94,
+        "revenue": 65518.0,
+        "profit": 12013.2,
+        "margin_pct": 18.34,
+        "stock_on_hand": 41,
+        "days_of_cover": 39.3,
+        "share_pct": 29.6,
+        "vs_leader": 2.1,
+        "flag": null
+      },
+      {
+        "product_id": 72,
+        "product": "Baby Diapers (pack of 36) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 24,
+        "revenue": 16824.0,
+        "profit": 3069.6,
+        "margin_pct": 18.25,
+        "stock_on_hand": 4,
+        "days_of_cover": 15.0,
+        "share_pct": 7.5,
+        "vs_leader": 8.3,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "Curalife Pharma sells 8x more than Helix Pharma in Baby Diapers (pack of 36). Helix Pharma has 4 units in stock, about 15 days of supply."
+  },
+  {
+    "product_group": "Pantoprazole 40mg (10 tabs)",
+    "total_units": 1175,
+    "total_revenue": 161879.0,
+    "leader": "Pantoprazole 40mg (10 tabs) - PureWell",
+    "brands": [
+      {
+        "product_id": 14,
+        "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 776,
+        "revenue": 108640.0,
+        "profit": 19555.2,
+        "margin_pct": 18.0,
+        "stock_on_hand": 39,
+        "days_of_cover": 4.5,
+        "share_pct": 66.0,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 15,
+        "product": "Pantoprazole 40mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 302,
+        "revenue": 39562.0,
+        "profit": 9289.52,
+        "margin_pct": 23.48,
+        "stock_on_hand": 74,
+        "days_of_cover": 22.1,
+        "share_pct": 25.7,
+        "vs_leader": 2.6,
+        "flag": null
+      },
+      {
+        "product_id": 16,
+        "product": "Pantoprazole 40mg (10 tabs) - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 97,
+        "revenue": 13677.0,
+        "profit": 2699.51,
+        "margin_pct": 19.74,
+        "stock_on_hand": 30,
+        "days_of_cover": 27.8,
+        "share_pct": 8.3,
+        "vs_leader": 8.0,
+        "flag": "underperforming"
+      }
+    ],
+    "insight": "PureWell Pharma sells 8x more than NovaCare Pharma in Pantoprazole 40mg (10 tabs). NovaCare Pharma has 30 units in stock, about 28 days of supply."
+  },
+  {
+    "product_group": "Metformin 500mg (10 tabs)",
+    "total_units": 1383,
+    "total_revenue": 51867.0,
+    "leader": "Metformin 500mg (10 tabs) - Medora",
+    "brands": [
+      {
+        "product_id": 1,
+        "product": "Metformin 500mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 818,
+        "revenue": 31084.0,
+        "profit": 4351.76,
+        "margin_pct": 14.0,
+        "stock_on_hand": 70,
+        "days_of_cover": 7.7,
+        "share_pct": 59.1,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 2,
+        "product": "Metformin 500mg (10 tabs) - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 421,
+        "revenue": 14735.0,
+        "profit": 2319.71,
+        "margin_pct": 15.74,
+        "stock_on_hand": 144,
+        "days_of_cover": 30.8,
+        "share_pct": 30.4,
+        "vs_leader": 1.9,
+        "flag": null
+      },
+      {
+        "product_id": 3,
+        "product": "Metformin 500mg (10 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 144,
+        "revenue": 6048.0,
+        "profit": 928.8,
+        "margin_pct": 15.36,
+        "stock_on_hand": 45,
+        "days_of_cover": 28.1,
+        "share_pct": 10.4,
+        "vs_leader": 5.7,
         "flag": null
       }
     ],
-    "insight": "Medora leads Cetirizine 10mg with 89.5% share across 2 brands."
+    "insight": "Medora Pharma leads Metformin 500mg (10 tabs) with 59.1% share across 3 brands."
+  },
+  {
+    "product_group": "Antiseptic Solution 100ml",
+    "total_units": 438,
+    "total_revenue": 36912.0,
+    "leader": "Antiseptic Solution 100ml - Curalife",
+    "brands": [
+      {
+        "product_id": 83,
+        "product": "Antiseptic Solution 100ml - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 385,
+        "revenue": 32725.0,
+        "profit": 8835.75,
+        "margin_pct": 27.0,
+        "stock_on_hand": 19,
+        "days_of_cover": 4.4,
+        "share_pct": 87.9,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 84,
+        "product": "Antiseptic Solution 100ml - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 53,
+        "revenue": 4187.0,
+        "profit": 1204.69,
+        "margin_pct": 28.77,
+        "stock_on_hand": 21,
+        "days_of_cover": 35.7,
+        "share_pct": 12.1,
+        "vs_leader": 7.3,
+        "flag": null
+      }
+    ],
+    "insight": "Curalife Pharma leads Antiseptic Solution 100ml with 87.9% share across 2 brands."
+  },
+  {
+    "product_group": "Losartan 50mg (10 tabs)",
+    "total_units": 841,
+    "total_revenue": 72262.0,
+    "leader": "Losartan 50mg (10 tabs) - PureWell",
+    "brands": [
+      {
+        "product_id": 12,
+        "product": "Losartan 50mg (10 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 730,
+        "revenue": 62050.0,
+        "profit": 9307.5,
+        "margin_pct": 15.0,
+        "stock_on_hand": 54,
+        "days_of_cover": 6.7,
+        "share_pct": 86.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 13,
+        "product": "Losartan 50mg (10 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 111,
+        "revenue": 10212.0,
+        "profit": 2076.81,
+        "margin_pct": 20.34,
+        "stock_on_hand": 47,
+        "days_of_cover": 38.1,
+        "share_pct": 13.2,
+        "vs_leader": 6.6,
+        "flag": null
+      }
+    ],
+    "insight": "PureWell Pharma leads Losartan 50mg (10 tabs) with 86.8% share across 2 brands."
+  },
+  {
+    "product_group": "Pulse Oximeter",
+    "total_units": 62,
+    "total_revenue": 92307.0,
+    "leader": "Pulse Oximeter - PureWell",
+    "brands": [
+      {
+        "product_id": 66,
+        "product": "Pulse Oximeter - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 53,
+        "revenue": 79500.0,
+        "profit": 19875.0,
+        "margin_pct": 25.0,
+        "stock_on_hand": 6,
+        "days_of_cover": 10.2,
+        "share_pct": 85.5,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 67,
+        "product": "Pulse Oximeter - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 9,
+        "revenue": 12807.0,
+        "profit": 3627.54,
+        "margin_pct": 28.32,
+        "stock_on_hand": 3,
+        "days_of_cover": 30.0,
+        "share_pct": 14.5,
+        "vs_leader": 5.9,
+        "flag": null
+      }
+    ],
+    "insight": "PureWell Pharma leads Pulse Oximeter with 85.5% share across 2 brands."
+  },
+  {
+    "product_group": "Adhesive Bandage (20)",
+    "total_units": 481,
+    "total_revenue": 19386.0,
+    "leader": "Adhesive Bandage (20) - PureWell",
+    "brands": [
+      {
+        "product_id": 85,
+        "product": "Adhesive Bandage (20) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 408,
+        "revenue": 16320.0,
+        "profit": 4896.0,
+        "margin_pct": 30.0,
+        "stock_on_hand": 25,
+        "days_of_cover": 5.5,
+        "share_pct": 84.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 86,
+        "product": "Adhesive Bandage (20) - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 73,
+        "revenue": 3066.0,
+        "profit": 1088.43,
+        "margin_pct": 35.5,
+        "stock_on_hand": 29,
+        "days_of_cover": 35.8,
+        "share_pct": 15.2,
+        "vs_leader": 5.6,
+        "flag": null
+      }
+    ],
+    "insight": "PureWell Pharma leads Adhesive Bandage (20) with 84.8% share across 2 brands."
+  },
+  {
+    "product_group": "Levothyroxine 50mcg (100 tabs)",
+    "total_units": 790,
+    "total_revenue": 168441.0,
+    "leader": "Levothyroxine 50mcg (100 tabs) - Medora",
+    "brands": [
+      {
+        "product_id": 17,
+        "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 669,
+        "revenue": 140490.0,
+        "profit": 19668.6,
+        "margin_pct": 14.0,
+        "stock_on_hand": 47,
+        "days_of_cover": 6.3,
+        "share_pct": 84.7,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 18,
+        "product": "Levothyroxine 50mcg (100 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 121,
+        "revenue": 27951.0,
+        "profit": 4496.36,
+        "margin_pct": 16.09,
+        "stock_on_hand": 41,
+        "days_of_cover": 30.5,
+        "share_pct": 15.3,
+        "vs_leader": 5.5,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads Levothyroxine 50mcg (100 tabs) with 84.7% share across 2 brands."
+  },
+  {
+    "product_group": "Telmisartan 40mg (10 tabs)",
+    "total_units": 1072,
+    "total_revenue": 102680.0,
+    "leader": "Telmisartan 40mg (10 tabs) - Medora",
+    "brands": [
+      {
+        "product_id": 7,
+        "product": "Telmisartan 40mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 904,
+        "revenue": 85880.0,
+        "profit": 13740.8,
+        "margin_pct": 16.0,
+        "stock_on_hand": 65,
+        "days_of_cover": 6.5,
+        "share_pct": 84.3,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 8,
+        "product": "Telmisartan 40mg (10 tabs) - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 168,
+        "revenue": 16800.0,
+        "profit": 3286.08,
+        "margin_pct": 19.56,
+        "stock_on_hand": 31,
+        "days_of_cover": 16.6,
+        "share_pct": 15.7,
+        "vs_leader": 5.4,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads Telmisartan 40mg (10 tabs) with 84.3% share across 2 brands."
+  },
+  {
+    "product_group": "Antacid Gel 200ml",
+    "total_units": 668,
+    "total_revenue": 88352.0,
+    "leader": "Antacid Gel 200ml - Curalife",
+    "brands": [
+      {
+        "product_id": 38,
+        "product": "Antacid Gel 200ml - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 560,
+        "revenue": 72800.0,
+        "profit": 16016.0,
+        "margin_pct": 22.0,
+        "stock_on_hand": 43,
+        "days_of_cover": 6.9,
+        "share_pct": 83.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 39,
+        "product": "Antacid Gel 200ml - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 108,
+        "revenue": 15552.0,
+        "profit": 3841.56,
+        "margin_pct": 24.7,
+        "stock_on_hand": 18,
+        "days_of_cover": 15.0,
+        "share_pct": 16.2,
+        "vs_leader": 5.2,
+        "flag": null
+      }
+    ],
+    "insight": "Curalife Pharma leads Antacid Gel 200ml with 83.8% share across 2 brands."
+  },
+  {
+    "product_group": "Pain Relief Gel 30g",
+    "total_units": 747,
+    "total_revenue": 143516.0,
+    "leader": "Pain Relief Gel 30g - Apex",
+    "brands": [
+      {
+        "product_id": 40,
+        "product": "Pain Relief Gel 30g - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 625,
+        "revenue": 118750.0,
+        "profit": 28500.0,
+        "margin_pct": 24.0,
+        "stock_on_hand": 37,
+        "days_of_cover": 5.3,
+        "share_pct": 83.7,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 41,
+        "product": "Pain Relief Gel 30g - NovaCare",
+        "manufacturer": "NovaCare Pharma",
+        "units": 122,
+        "revenue": 24766.0,
+        "profit": 6241.52,
+        "margin_pct": 25.2,
+        "stock_on_hand": 23,
+        "days_of_cover": 17.0,
+        "share_pct": 16.3,
+        "vs_leader": 5.1,
+        "flag": null
+      }
+    ],
+    "insight": "Apex Pharma leads Pain Relief Gel 30g with 83.7% share across 2 brands."
+  },
+  {
+    "product_group": "Digital Thermometer",
+    "total_units": 174,
+    "total_revenue": 43384.0,
+    "leader": "Digital Thermometer - Curalife",
+    "brands": [
+      {
+        "product_id": 60,
+        "product": "Digital Thermometer - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 145,
+        "revenue": 36250.0,
+        "profit": 10150.0,
+        "margin_pct": 28.0,
+        "stock_on_hand": 7,
+        "days_of_cover": 4.3,
+        "share_pct": 83.3,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 61,
+        "product": "Digital Thermometer - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 29,
+        "revenue": 7134.0,
+        "profit": 2209.8,
+        "margin_pct": 30.98,
+        "stock_on_hand": 7,
+        "days_of_cover": 21.7,
+        "share_pct": 16.7,
+        "vs_leader": 5.0,
+        "flag": null
+      }
+    ],
+    "insight": "Curalife Pharma leads Digital Thermometer with 83.3% share across 2 brands."
+  },
+  {
+    "product_group": "Disinfectant Liquid 250ml",
+    "total_units": 198,
+    "total_revenue": 27010.0,
+    "leader": "Disinfectant Liquid 250ml - Medora",
+    "brands": [
+      {
+        "product_id": 87,
+        "product": "Disinfectant Liquid 250ml - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 158,
+        "revenue": 21330.0,
+        "profit": 5119.2,
+        "margin_pct": 24.0,
+        "stock_on_hand": 17,
+        "days_of_cover": 9.7,
+        "share_pct": 79.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 88,
+        "product": "Disinfectant Liquid 250ml - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 40,
+        "revenue": 5680.0,
+        "profit": 1516.4,
+        "margin_pct": 26.7,
+        "stock_on_hand": 57,
+        "days_of_cover": 128.2,
+        "share_pct": 20.2,
+        "vs_leader": 4.0,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads Disinfectant Liquid 250ml with 79.8% share across 2 brands."
+  },
+  {
+    "product_group": "N95 Masks (pack of 5)",
+    "total_units": 203,
+    "total_revenue": 30685.0,
+    "leader": "N95 Masks (pack of 5) - Medora",
+    "brands": [
+      {
+        "product_id": 78,
+        "product": "N95 Masks (pack of 5) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 156,
+        "revenue": 23400.0,
+        "profit": 6084.0,
+        "margin_pct": 26.0,
+        "stock_on_hand": 19,
+        "days_of_cover": 11.0,
+        "share_pct": 76.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 79,
+        "product": "N95 Masks (pack of 5) - Apex",
+        "manufacturer": "Apex Pharma",
+        "units": 47,
+        "revenue": 7285.0,
+        "profit": 2212.29,
+        "margin_pct": 30.37,
+        "stock_on_hand": 18,
+        "days_of_cover": 34.5,
+        "share_pct": 23.2,
+        "vs_leader": 3.3,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads N95 Masks (pack of 5) with 76.8% share across 2 brands."
+  },
+  {
+    "product_group": "BP Monitor (Digital)",
+    "total_units": 54,
+    "total_revenue": 95731.0,
+    "leader": "BP Monitor (Digital) - Medora",
+    "brands": [
+      {
+        "product_id": 62,
+        "product": "BP Monitor (Digital) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 41,
+        "revenue": 73800.0,
+        "profit": 16236.0,
+        "margin_pct": 22.0,
+        "stock_on_hand": 4,
+        "days_of_cover": 8.8,
+        "share_pct": 75.9,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 63,
+        "product": "BP Monitor (Digital) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 13,
+        "revenue": 21931.0,
+        "profit": 5659.81,
+        "margin_pct": 25.81,
+        "stock_on_hand": 3,
+        "days_of_cover": 20.8,
+        "share_pct": 24.1,
+        "vs_leader": 3.2,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads BP Monitor (Digital) with 75.9% share across 2 brands."
+  },
+  {
+    "product_group": "Iron + Folic Acid (30 tabs)",
+    "total_units": 379,
+    "total_revenue": 41500.0,
+    "leader": "Iron + Folic Acid (30 tabs) - Helix",
+    "brands": [
+      {
+        "product_id": 58,
+        "product": "Iron + Folic Acid (30 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 284,
+        "revenue": 31240.0,
+        "profit": 8434.8,
+        "margin_pct": 27.0,
+        "stock_on_hand": 36,
+        "days_of_cover": 11.4,
+        "share_pct": 74.9,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 59,
+        "product": "Iron + Folic Acid (30 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 95,
+        "revenue": 10260.0,
+        "profit": 3202.45,
+        "margin_pct": 31.21,
+        "stock_on_hand": 35,
+        "days_of_cover": 33.2,
+        "share_pct": 25.1,
+        "vs_leader": 3.0,
+        "flag": null
+      }
+    ],
+    "insight": "Helix Pharma leads Iron + Folic Acid (30 tabs) with 74.9% share across 2 brands."
+  },
+  {
+    "product_group": "B-Complex (30 tabs)",
+    "total_units": 491,
+    "total_revenue": 59168.0,
+    "leader": "B-Complex (30 tabs) - PureWell",
+    "brands": [
+      {
+        "product_id": 54,
+        "product": "B-Complex (30 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 367,
+        "revenue": 44040.0,
+        "profit": 12331.2,
+        "margin_pct": 28.0,
+        "stock_on_hand": 23,
+        "days_of_cover": 5.6,
+        "share_pct": 74.7,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 55,
+        "product": "B-Complex (30 tabs) - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 124,
+        "revenue": 15128.0,
+        "profit": 4446.64,
+        "margin_pct": 29.39,
+        "stock_on_hand": 47,
+        "days_of_cover": 34.1,
+        "share_pct": 25.3,
+        "vs_leader": 3.0,
+        "flag": null
+      }
+    ],
+    "insight": "PureWell Pharma leads B-Complex (30 tabs) with 74.7% share across 2 brands."
+  },
+  {
+    "product_group": "Throat Lozenges (strip)",
+    "total_units": 1084,
+    "total_revenue": 43054.0,
+    "leader": "Throat Lozenges (strip) - Medora",
+    "brands": [
+      {
+        "product_id": 42,
+        "product": "Throat Lozenges (strip) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 778,
+        "revenue": 31120.0,
+        "profit": 8091.2,
+        "margin_pct": 26.0,
+        "stock_on_hand": 97,
+        "days_of_cover": 11.2,
+        "share_pct": 71.8,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 43,
+        "product": "Throat Lozenges (strip) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 306,
+        "revenue": 11934.0,
+        "profit": 3727.08,
+        "margin_pct": 31.23,
+        "stock_on_hand": 129,
+        "days_of_cover": 37.9,
+        "share_pct": 28.2,
+        "vs_leader": 2.5,
+        "flag": null
+      }
+    ],
+    "insight": "Medora Pharma leads Throat Lozenges (strip) with 71.8% share across 2 brands."
+  },
+  {
+    "product_group": "Hand Sanitizer 250ml",
+    "total_units": 272,
+    "total_revenue": 33288.0,
+    "leader": "Hand Sanitizer 250ml - Helix",
+    "brands": [
+      {
+        "product_id": 76,
+        "product": "Hand Sanitizer 250ml - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 191,
+        "revenue": 22920.0,
+        "profit": 5500.8,
+        "margin_pct": 24.0,
+        "stock_on_hand": 21,
+        "days_of_cover": 9.9,
+        "share_pct": 70.2,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 77,
+        "product": "Hand Sanitizer 250ml - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 81,
+        "revenue": 10368.0,
+        "profit": 2742.66,
+        "margin_pct": 26.45,
+        "stock_on_hand": 25,
+        "days_of_cover": 27.8,
+        "share_pct": 29.8,
+        "vs_leader": 2.4,
+        "flag": null
+      }
+    ],
+    "insight": "Helix Pharma leads Hand Sanitizer 250ml with 70.2% share across 2 brands."
+  },
+  {
+    "product_group": "Baby Lotion 200ml",
+    "total_units": 191,
+    "total_revenue": 55304.0,
+    "leader": "Baby Lotion 200ml - Helix",
+    "brands": [
+      {
+        "product_id": 80,
+        "product": "Baby Lotion 200ml - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 134,
+        "revenue": 37520.0,
+        "profit": 7504.0,
+        "margin_pct": 20.0,
+        "stock_on_hand": 13,
+        "days_of_cover": 8.7,
+        "share_pct": 70.2,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 81,
+        "product": "Baby Lotion 200ml - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 57,
+        "revenue": 17784.0,
+        "profit": 3820.14,
+        "margin_pct": 21.48,
+        "stock_on_hand": 100,
+        "days_of_cover": 157.9,
+        "share_pct": 29.8,
+        "vs_leader": 2.4,
+        "flag": null
+      }
+    ],
+    "insight": "Helix Pharma leads Baby Lotion 200ml with 70.2% share across 2 brands."
+  },
+  {
+    "product_group": "Azithromycin 500mg (3 tabs)",
+    "total_units": 874,
+    "total_revenue": 102486.0,
+    "leader": "Azithromycin 500mg (3 tabs) - Helix",
+    "brands": [
+      {
+        "product_id": 22,
+        "product": "Azithromycin 500mg (3 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 608,
+        "revenue": 72960.0,
+        "profit": 13132.8,
+        "margin_pct": 18.0,
+        "stock_on_hand": 80,
+        "days_of_cover": 11.8,
+        "share_pct": 69.6,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 23,
+        "product": "Azithromycin 500mg (3 tabs) - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 266,
+        "revenue": 29526.0,
+        "profit": 5846.68,
+        "margin_pct": 19.8,
+        "stock_on_hand": 66,
+        "days_of_cover": 22.3,
+        "share_pct": 30.4,
+        "vs_leader": 2.3,
+        "flag": null
+      }
+    ],
+    "insight": "Helix Pharma leads Azithromycin 500mg (3 tabs) with 69.6% share across 2 brands."
+  },
+  {
+    "product_group": "Cefixime 200mg (10 tabs)",
+    "total_units": 727,
+    "total_revenue": 96294.0,
+    "leader": "Cefixime 200mg (10 tabs) - Brightday",
+    "brands": [
+      {
+        "product_id": 24,
+        "product": "Cefixime 200mg (10 tabs) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 504,
+        "revenue": 65520.0,
+        "profit": 12448.8,
+        "margin_pct": 19.0,
+        "stock_on_hand": 39,
+        "days_of_cover": 7.0,
+        "share_pct": 69.3,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 25,
+        "product": "Cefixime 200mg (10 tabs) - Medora",
+        "manufacturer": "Medora Pharma",
+        "units": 223,
+        "revenue": 30774.0,
+        "profit": 6239.54,
+        "margin_pct": 20.28,
+        "stock_on_hand": 81,
+        "days_of_cover": 32.7,
+        "share_pct": 30.7,
+        "vs_leader": 2.3,
+        "flag": null
+      }
+    ],
+    "insight": "Brightday Pharma leads Cefixime 200mg (10 tabs) with 69.3% share across 2 brands."
+  },
+  {
+    "product_group": "Amoxicillin-Clav 625 (10 tabs)",
+    "total_units": 740,
+    "total_revenue": 156120.0,
+    "leader": "Amoxicillin-Clav 625 (10 tabs) - Brightday",
+    "brands": [
+      {
+        "product_id": 20,
+        "product": "Amoxicillin-Clav 625 (10 tabs) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 500,
+        "revenue": 105000.0,
+        "profit": 18900.0,
+        "margin_pct": 18.0,
+        "stock_on_hand": 35,
+        "days_of_cover": 6.3,
+        "share_pct": 67.6,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 21,
+        "product": "Amoxicillin-Clav 625 (10 tabs) - Zenith",
+        "manufacturer": "Zenith Pharma",
+        "units": 240,
+        "revenue": 51120.0,
+        "profit": 12028.8,
+        "margin_pct": 23.53,
+        "stock_on_hand": 99,
+        "days_of_cover": 37.1,
+        "share_pct": 32.4,
+        "vs_leader": 2.1,
+        "flag": null
+      }
+    ],
+    "insight": "Brightday Pharma leads Amoxicillin-Clav 625 (10 tabs) with 67.6% share across 2 brands."
+  },
+  {
+    "product_group": "Calcium + D3 (15 tabs)",
+    "total_units": 701,
+    "total_revenue": 95850.0,
+    "leader": "Calcium + D3 (15 tabs) - Brightday",
+    "brands": [
+      {
+        "product_id": 49,
+        "product": "Calcium + D3 (15 tabs) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 472,
+        "revenue": 66080.0,
+        "profit": 17841.6,
+        "margin_pct": 27.0,
+        "stock_on_hand": 716,
+        "days_of_cover": 136.5,
+        "share_pct": 67.3,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 50,
+        "product": "Calcium + D3 (15 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 229,
+        "revenue": 29770.0,
+        "profit": 8871.46,
+        "margin_pct": 29.8,
+        "stock_on_hand": 54,
+        "days_of_cover": 21.2,
+        "share_pct": 32.7,
+        "vs_leader": 2.1,
+        "flag": null
+      }
+    ],
+    "insight": "Brightday Pharma leads Calcium + D3 (15 tabs) with 67.3% share across 2 brands."
+  },
+  {
+    "product_group": "Omega-3 Fish Oil (30 caps)",
+    "total_units": 319,
+    "total_revenue": 140085.0,
+    "leader": "Omega-3 Fish Oil (30 caps) - Helix",
+    "brands": [
+      {
+        "product_id": 56,
+        "product": "Omega-3 Fish Oil (30 caps) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 214,
+        "revenue": 96300.0,
+        "profit": 28890.0,
+        "margin_pct": 30.0,
+        "stock_on_hand": 23,
+        "days_of_cover": 9.7,
+        "share_pct": 67.1,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 57,
+        "product": "Omega-3 Fish Oil (30 caps) - Zenith",
+        "manufacturer": "Zenith Pharma",
+        "units": 105,
+        "revenue": 43785.0,
+        "profit": 13825.35,
+        "margin_pct": 31.58,
+        "stock_on_hand": 40,
+        "days_of_cover": 34.3,
+        "share_pct": 32.9,
+        "vs_leader": 2.0,
+        "flag": null
+      }
+    ],
+    "insight": "Helix Pharma leads Omega-3 Fish Oil (30 caps) with 67.1% share across 2 brands."
+  },
+  {
+    "product_group": "Glucometer Strips (50)",
+    "total_units": 145,
+    "total_revenue": 110910.0,
+    "leader": "Glucometer Strips (50) - Brightday",
+    "brands": [
+      {
+        "product_id": 64,
+        "product": "Glucometer Strips (50) - Brightday",
+        "manufacturer": "Brightday Pharma",
+        "units": 97,
+        "revenue": 72750.0,
+        "profit": 14550.0,
+        "margin_pct": 20.0,
+        "stock_on_hand": 9,
+        "days_of_cover": 8.4,
+        "share_pct": 66.9,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 65,
+        "product": "Glucometer Strips (50) - Helix",
+        "manufacturer": "Helix Pharma",
+        "units": 48,
+        "revenue": 38160.0,
+        "profit": 8140.8,
+        "margin_pct": 21.33,
+        "stock_on_hand": 17,
+        "days_of_cover": 31.9,
+        "share_pct": 33.1,
+        "vs_leader": 2.0,
+        "flag": null
+      }
+    ],
+    "insight": "Brightday Pharma leads Glucometer Strips (50) with 66.9% share across 2 brands."
+  },
+  {
+    "product_group": "Vapour Balm 25ml",
+    "total_units": 833,
+    "total_revenue": 63595.0,
+    "leader": "Vapour Balm 25ml - PureWell",
+    "brands": [
+      {
+        "product_id": 44,
+        "product": "Vapour Balm 25ml - PureWell",
+        "manufacturer": "PureWell Pharma",
+        "units": 553,
+        "revenue": 41475.0,
+        "profit": 10368.75,
+        "margin_pct": 25.0,
+        "stock_on_hand": 864,
+        "days_of_cover": 140.6,
+        "share_pct": 66.4,
+        "vs_leader": null,
+        "flag": "leader"
+      },
+      {
+        "product_id": 45,
+        "product": "Vapour Balm 25ml - Curalife",
+        "manufacturer": "Curalife Pharma",
+        "units": 280,
+        "revenue": 22120.0,
+        "profit": 6515.6,
+        "margin_pct": 29.46,
+        "stock_on_hand": 103,
+        "days_of_cover": 33.1,
+        "share_pct": 33.6,
+        "vs_leader": 2.0,
+        "flag": null
+      }
+    ],
+    "insight": "PureWell Pharma leads Vapour Balm 25ml with 66.4% share across 2 brands."
   }
 ]

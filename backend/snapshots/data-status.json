@@ -1,26 +1,26 @@
 {
   "products": {
-    "rows": 54,
+    "rows": 91,
     "loaded": true
   },
   "customers": {
-    "rows": 420,
+    "rows": 1,
     "loaded": true
   },
   "sales": {
-    "rows": 94677,
+    "rows": 93684,
     "loaded": true
   },
   "expenses": {
-    "rows": 188,
+    "rows": 176,
     "loaded": true
   },
   "inventory": {
-    "rows": 53,
+    "rows": 91,
     "loaded": true
   },
   "first_sale_date": "2024-11-01",
-  "last_sale_date": "2026-11-15",
-  "last_closed_date": "2026-11-15",
+  "last_sale_date": "2026-10-31",
+  "last_closed_date": "2026-10-31",
   "is_mock_data": true
 }

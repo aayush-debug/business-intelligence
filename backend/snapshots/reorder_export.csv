@@ -1,21 +1,52 @@
 manufacturer,product,qty,unit_cost,line_cost
-Amaryl - Sanofi,Glimepiride 2mg (10 tabs),45,75.6,3402.0
-Amlong - Micro Labs,Amlodipine 5mg (10 tabs),141,38.25,5393.25
-Atorva - Zydus,Atorvastatin 10mg (10 tabs),108,99.6,10756.8
-Augmentin - GSK,Amoxicillin-Clav 625 (10 tabs),41,172.2,7060.2
-Azithral - Alembic,Azithromycin 500mg (3 tabs),33,98.4,3247.2
-Benadryl - J&J,Cough Syrup 100ml,63,83.6,5266.8
-Clopilet - Sun Pharma,Clopidogrel 75mg (10 tabs),16,93.5,1496.0
-Electral - FDC,ORS Sachet (pack of 4),49,46.8,2293.2
-Eno - Haleon,Antacid Tablets (strip),19,23.4,444.6
-Losacar - Zydus,Losartan 50mg (10 tabs),91,72.25,6574.75
-Montair-LC - Cipla,Montelukast-Levocetirizine (10 tabs),27,129.6,3499.2
-Pan 40 - Alkem,Pantoprazole 40mg (10 tabs),115,114.8,13202.0
-Standard Labs,Surgical Gloves (box),21,187.5,3937.5
-Standard Labs,Vitamin D3 60K (4 caps),5,108.0,540.0
-Strepsils - Reckitt,Throat Lozenges (strip),54,29.6,1598.4
-Taxim-O - Alkem,Cefixime 200mg (10 tabs),15,105.3,1579.5
-Telma - Glenmark,Telmisartan 40mg (10 tabs),108,79.8,8618.4
-Thyronorm - Abbott,Levothyroxine 50mcg (100 tabs),42,180.6,7585.2
-Vicks - P&G,Vapour Balm 25ml,14,56.25,787.5
-Volini - Sun Pharma,Pain Relief Gel 30g,2,144.4,288.8
+Apex Pharma,Pain Relief Gel 30g - Apex,96,144.4,13862.4
+Apex Pharma,Nebulizer - Apex,4,1716.0,6864.0
+Brightday Pharma,Cefixime 200mg (10 tabs) - Brightday,74,105.3,7792.2
+Brightday Pharma,Amoxicillin-Clav 625 (10 tabs) - Brightday,73,172.2,12570.6
+Brightday Pharma,Sanitary Pads (pack of 15) - Brightday,43,73.8,3173.4
+Brightday Pharma,Glucometer Strips (50) - Brightday,18,600.0,10800.0
+Brightday Pharma,BP Monitor (Digital) - Brightday,3,1251.63,3754.89
+Brightday Pharma,Amlodipine 5mg (10 tabs) - Brightday,2,38.83,77.66
+Curalife Pharma,Cough Syrup 100ml - Curalife,97,83.6,8109.2
+Curalife Pharma,Antacid Gel 200ml - Curalife,81,101.4,8213.4
+Curalife Pharma,Antiseptic Solution 100ml - Curalife,75,62.05,4653.75
+Curalife Pharma,Baby Diapers (pack of 36) - Curalife,42,546.0,22932.0
+Curalife Pharma,Digital Thermometer - Curalife,31,180.0,5580.0
+Curalife Pharma,Adult Diapers (pack of 10) - Curalife,28,498.0,13944.0
+Curalife Pharma,Telmisartan 40mg (10 tabs) - Curalife,11,80.44,884.84
+Helix Pharma,Atorvastatin 10mg (10 tabs) - Helix,132,99.6,13147.2
+Helix Pharma,Glimepiride 2mg (10 tabs) - Helix,126,75.6,9525.6
+Helix Pharma,Azithromycin 500mg (3 tabs) - Helix,44,98.4,4329.6
+Helix Pharma,Iron + Folic Acid (30 tabs) - Helix,44,80.3,3533.2
+Helix Pharma,Omega-3 Fish Oil (30 caps) - Helix,32,315.0,10080.0
+Helix Pharma,Hand Sanitizer 250ml - Helix,30,91.2,2736.0
+Helix Pharma,Baby Lotion 200ml - Helix,21,224.0,4704.0
+Helix Pharma,Calcium + D3 (15 tabs) - Helix,6,91.26,547.56
+Helix Pharma,Baby Diapers (pack of 36) - Helix,2,573.1,1146.2
+Medora Pharma,Telmisartan 40mg (10 tabs) - Medora,147,79.8,11730.6
+Medora Pharma,Amlodipine 5mg (10 tabs) - Medora,120,38.25,4590.0
+Medora Pharma,Metformin 500mg (10 tabs) - Medora,118,32.68,3856.24
+Medora Pharma,Levothyroxine 50mcg (100 tabs) - Medora,114,180.6,20588.4
+Medora Pharma,Cetirizine 10mg (10 tabs) - Medora,70,20.0,1400.0
+Medora Pharma,Throat Lozenges (strip) - Medora,55,29.6,1628.0
+Medora Pharma,Disinfectant Liquid 250ml - Medora,25,102.6,2565.0
+Medora Pharma,N95 Masks (pack of 5) - Medora,18,111.0,1998.0
+Medora Pharma,Paracetamol 650mg (15 tabs) - Medora,12,23.73,284.76
+Medora Pharma,Sanitary Pads (pack of 15) - Medora,12,68.61,823.32
+Medora Pharma,Pantoprazole 40mg (10 tabs) - Medora,7,100.24,701.68
+Medora Pharma,BP Monitor (Digital) - Medora,6,1404.0,8424.0
+Medora Pharma,Digital Thermometer - Medora,3,169.8,509.4
+NovaCare Pharma,Bandage Roll - NovaCare,48,32.4,1555.2
+NovaCare Pharma,Pain Relief Gel 30g - NovaCare,12,151.84,1822.08
+NovaCare Pharma,Antacid Gel 200ml - NovaCare,6,108.43,650.58
+PureWell Pharma,Pantoprazole 40mg (10 tabs) - PureWell,146,114.8,16760.8
+PureWell Pharma,Paracetamol 650mg (15 tabs) - PureWell,137,24.96,3419.52
+PureWell Pharma,Losartan 50mg (10 tabs) - PureWell,120,72.25,8670.0
+PureWell Pharma,Adhesive Bandage (20) - PureWell,80,28.0,2240.0
+PureWell Pharma,B-Complex (30 tabs) - PureWell,65,86.4,5616.0
+PureWell Pharma,Cotton Roll 100g - PureWell,63,43.2,2721.6
+PureWell Pharma,Glucometer - PureWell,9,675.0,6075.0
+PureWell Pharma,Pulse Oximeter - PureWell,7,1125.0,7875.0
+Zenith Pharma,Multivitamin (30 tabs) - Zenith,76,245.0,18620.0
+Zenith Pharma,ORS Sachet (pack of 4) - Zenith,58,46.8,2714.4
+Zenith Pharma,Surgical Gloves (box) - Zenith,22,187.5,4125.0

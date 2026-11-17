@@ -1,271 +1,567 @@
 {
   "lines": [
     {
-      "product": "Glimepiride 2mg (10 tabs)",
-      "manufacturer": "Amaryl - Sanofi",
-      "stock_on_hand": 72,
-      "avg_daily": 5.15,
-      "days_of_cover": 14.0,
-      "suggested_qty": 23,
-      "unit_cost": 75.6,
-      "line_cost": 1738.8
+      "product": "Pain Relief Gel 30g - Apex",
+      "manufacturer": "Apex Pharma",
+      "stock_on_hand": 37,
+      "avg_daily": 6.27,
+      "days_of_cover": 5.9,
+      "suggested_qty": 67,
+      "unit_cost": 144.4,
+      "line_cost": 9674.8
     },
     {
-      "product": "Amlodipine 5mg (10 tabs)",
-      "manufacturer": "Amlong - Micro Labs",
-      "stock_on_hand": 64,
-      "avg_daily": 9.3,
-      "days_of_cover": 6.9,
-      "suggested_qty": 100,
-      "unit_cost": 38.25,
-      "line_cost": 3825.0
+      "product": "Nebulizer - Apex",
+      "manufacturer": "Apex Pharma",
+      "stock_on_hand": 3,
+      "avg_daily": 0.23,
+      "days_of_cover": 13.0,
+      "suggested_qty": 3,
+      "unit_cost": 1716.0,
+      "line_cost": 5148.0
     },
     {
-      "product": "Atorvastatin 10mg (10 tabs)",
-      "manufacturer": "Atorva - Zydus",
-      "stock_on_hand": 68,
-      "avg_daily": 8.0,
-      "days_of_cover": 8.5,
-      "suggested_qty": 73,
-      "unit_cost": 99.6,
-      "line_cost": 7270.8
-    },
-    {
-      "product": "Amoxicillin-Clav 625 (10 tabs)",
-      "manufacturer": "Augmentin - GSK",
-      "stock_on_hand": 80,
-      "avg_daily": 5.4,
-      "days_of_cover": 14.8,
-      "suggested_qty": 17,
+      "product": "Amoxicillin-Clav 625 (10 tabs) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 35,
+      "avg_daily": 4.88,
+      "days_of_cover": 7.2,
+      "suggested_qty": 51,
       "unit_cost": 172.2,
-      "line_cost": 2927.4
+      "line_cost": 8782.2
     },
     {
-      "product": "Azithromycin 500mg (3 tabs)",
-      "manufacturer": "Azithral - Alembic",
-      "stock_on_hand": 82,
-      "avg_daily": 5.05,
-      "days_of_cover": 16.2,
-      "suggested_qty": 11,
-      "unit_cost": 98.4,
-      "line_cost": 1082.4
+      "product": "Cefixime 200mg (10 tabs) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 39,
+      "avg_daily": 5.1,
+      "days_of_cover": 7.6,
+      "suggested_qty": 51,
+      "unit_cost": 105.3,
+      "line_cost": 5370.3
     },
     {
-      "product": "Cough Syrup 100ml",
-      "manufacturer": "Benadryl - J&J",
-      "stock_on_hand": 98,
-      "avg_daily": 7.23,
-      "days_of_cover": 13.6,
-      "suggested_qty": 32,
+      "product": "Sanitary Pads (pack of 15) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 28,
+      "avg_daily": 3.12,
+      "days_of_cover": 9.0,
+      "suggested_qty": 29,
+      "unit_cost": 73.8,
+      "line_cost": 2140.2
+    },
+    {
+      "product": "Glucometer Strips (50) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 9,
+      "avg_daily": 1.18,
+      "days_of_cover": 7.6,
+      "suggested_qty": 13,
+      "unit_cost": 600.0,
+      "line_cost": 7800.0
+    },
+    {
+      "product": "BP Monitor (Digital) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 3,
+      "avg_daily": 0.17,
+      "days_of_cover": 17.6,
+      "suggested_qty": 2,
+      "unit_cost": 1251.63,
+      "line_cost": 2503.26
+    },
+    {
+      "product": "Amlodipine 5mg (10 tabs) - Brightday",
+      "manufacturer": "Brightday Pharma",
+      "stock_on_hand": 7,
+      "avg_daily": 0.27,
+      "days_of_cover": 25.9,
+      "suggested_qty": 1,
+      "unit_cost": 38.83,
+      "line_cost": 38.83
+    },
+    {
+      "product": "Cough Syrup 100ml - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 78,
+      "avg_daily": 8.35,
+      "days_of_cover": 9.3,
+      "suggested_qty": 58,
       "unit_cost": 83.6,
-      "line_cost": 2675.2
+      "line_cost": 4848.8
     },
     {
-      "product": "ORS Sachet (pack of 4)",
-      "manufacturer": "Electral - FDC",
-      "stock_on_hand": 94,
-      "avg_daily": 6.32,
-      "days_of_cover": 14.9,
-      "suggested_qty": 21,
-      "unit_cost": 46.8,
-      "line_cost": 982.8
+      "product": "Antiseptic Solution 100ml - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 19,
+      "avg_daily": 4.12,
+      "days_of_cover": 4.6,
+      "suggested_qty": 57,
+      "unit_cost": 62.05,
+      "line_cost": 3536.85
     },
     {
-      "product": "Losartan 50mg (10 tabs)",
-      "manufacturer": "Losacar - Zydus",
-      "stock_on_hand": 70,
-      "avg_daily": 7.18,
-      "days_of_cover": 9.7,
-      "suggested_qty": 59,
-      "unit_cost": 72.25,
-      "line_cost": 4262.75
+      "product": "Antacid Gel 200ml - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 43,
+      "avg_daily": 5.67,
+      "days_of_cover": 7.6,
+      "suggested_qty": 55,
+      "unit_cost": 101.4,
+      "line_cost": 5577.0
     },
     {
-      "product": "Montelukast-Levocetirizine (10 tabs)",
-      "manufacturer": "Montair-LC - Cipla",
-      "stock_on_hand": 92,
-      "avg_daily": 5.35,
-      "days_of_cover": 17.2,
-      "suggested_qty": 4,
-      "unit_cost": 129.6,
-      "line_cost": 518.4
+      "product": "Baby Diapers (pack of 36) - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 10,
+      "avg_daily": 2.2,
+      "days_of_cover": 4.5,
+      "suggested_qty": 32,
+      "unit_cost": 546.0,
+      "line_cost": 17472.0
     },
     {
-      "product": "Pantoprazole 40mg (10 tabs)",
-      "manufacturer": "Pan 40 - Alkem",
-      "stock_on_hand": 76,
-      "avg_daily": 8.62,
-      "days_of_cover": 8.8,
-      "suggested_qty": 76,
-      "unit_cost": 114.8,
-      "line_cost": 8724.8
+      "product": "Digital Thermometer - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 7,
+      "avg_daily": 1.72,
+      "days_of_cover": 4.1,
+      "suggested_qty": 23,
+      "unit_cost": 180.0,
+      "line_cost": 4140.0
     },
     {
-      "product": "Surgical Gloves (box)",
-      "manufacturer": "Standard Labs",
+      "product": "Adult Diapers (pack of 10) - Curalife",
+      "manufacturer": "Curalife Pharma",
       "stock_on_hand": 8,
-      "avg_daily": 1.15,
-      "days_of_cover": 7.0,
-      "suggested_qty": 17,
-      "unit_cost": 187.5,
-      "line_cost": 3187.5
+      "avg_daily": 1.45,
+      "days_of_cover": 5.5,
+      "suggested_qty": 22,
+      "unit_cost": 498.0,
+      "line_cost": 10956.0
     },
     {
-      "product": "Throat Lozenges (strip)",
-      "manufacturer": "Strepsils - Reckitt",
-      "stock_on_hand": 106,
-      "avg_daily": 7.28,
-      "days_of_cover": 14.6,
+      "product": "Telmisartan 40mg (10 tabs) - Curalife",
+      "manufacturer": "Curalife Pharma",
+      "stock_on_hand": 31,
+      "avg_daily": 1.8,
+      "days_of_cover": 17.2,
+      "suggested_qty": 3,
+      "unit_cost": 80.44,
+      "line_cost": 241.32
+    },
+    {
+      "product": "Atorvastatin 10mg (10 tabs) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 46,
+      "avg_daily": 8.22,
+      "days_of_cover": 5.6,
+      "suggested_qty": 95,
+      "unit_cost": 99.6,
+      "line_cost": 9462.0
+    },
+    {
+      "product": "Glimepiride 2mg (10 tabs) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 48,
+      "avg_daily": 8.03,
+      "days_of_cover": 6.0,
+      "suggested_qty": 89,
+      "unit_cost": 75.6,
+      "line_cost": 6728.4
+    },
+    {
+      "product": "Iron + Folic Acid (30 tabs) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 36,
+      "avg_daily": 3.57,
+      "days_of_cover": 10.1,
+      "suggested_qty": 29,
+      "unit_cost": 80.3,
+      "line_cost": 2328.7
+    },
+    {
+      "product": "Omega-3 Fish Oil (30 caps) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 23,
+      "avg_daily": 2.37,
+      "days_of_cover": 9.7,
       "suggested_qty": 21,
-      "unit_cost": 29.6,
-      "line_cost": 621.6
+      "unit_cost": 315.0,
+      "line_cost": 6615.0
     },
     {
-      "product": "Telmisartan 40mg (10 tabs)",
-      "manufacturer": "Telma - Glenmark",
-      "stock_on_hand": 66,
-      "avg_daily": 7.75,
-      "days_of_cover": 8.5,
-      "suggested_qty": 74,
+      "product": "Hand Sanitizer 250ml - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 21,
+      "avg_daily": 2.2,
+      "days_of_cover": 9.5,
+      "suggested_qty": 21,
+      "unit_cost": 91.2,
+      "line_cost": 1915.2
+    },
+    {
+      "product": "Azithromycin 500mg (3 tabs) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 80,
+      "avg_daily": 5.73,
+      "days_of_cover": 14.0,
+      "suggested_qty": 18,
+      "unit_cost": 98.4,
+      "line_cost": 1771.2
+    },
+    {
+      "product": "Baby Lotion 200ml - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 13,
+      "avg_daily": 1.37,
+      "days_of_cover": 9.5,
+      "suggested_qty": 16,
+      "unit_cost": 224.0,
+      "line_cost": 3584.0
+    },
+    {
+      "product": "Baby Diapers (pack of 36) - Helix",
+      "manufacturer": "Helix Pharma",
+      "stock_on_hand": 4,
+      "avg_daily": 0.17,
+      "days_of_cover": 23.5,
+      "suggested_qty": 1,
+      "unit_cost": 573.1,
+      "line_cost": 573.1
+    },
+    {
+      "product": "Telmisartan 40mg (10 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 65,
+      "avg_daily": 9.88,
+      "days_of_cover": 6.6,
+      "suggested_qty": 101,
       "unit_cost": 79.8,
-      "line_cost": 5905.2
+      "line_cost": 8059.8
     },
     {
-      "product": "Levothyroxine 50mcg (100 tabs)",
-      "manufacturer": "Thyronorm - Abbott",
-      "stock_on_hand": 74,
-      "avg_daily": 5.22,
-      "days_of_cover": 14.2,
-      "suggested_qty": 19,
+      "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 47,
+      "avg_daily": 7.58,
+      "days_of_cover": 6.2,
+      "suggested_qty": 79,
       "unit_cost": 180.6,
-      "line_cost": 3431.4
+      "line_cost": 14267.4
+    },
+    {
+      "product": "Metformin 500mg (10 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 70,
+      "avg_daily": 8.92,
+      "days_of_cover": 7.8,
+      "suggested_qty": 76,
+      "unit_cost": 32.68,
+      "line_cost": 2483.68
+    },
+    {
+      "product": "Amlodipine 5mg (10 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 92,
+      "avg_daily": 9.98,
+      "days_of_cover": 9.2,
+      "suggested_qty": 74,
+      "unit_cost": 38.25,
+      "line_cost": 2830.5
+    },
+    {
+      "product": "Cetirizine 10mg (10 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 79,
+      "avg_daily": 7.07,
+      "days_of_cover": 11.2,
+      "suggested_qty": 38,
+      "unit_cost": 20.0,
+      "line_cost": 760.0
+    },
+    {
+      "product": "Throat Lozenges (strip) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 97,
+      "avg_daily": 7.13,
+      "days_of_cover": 13.6,
+      "suggested_qty": 23,
+      "unit_cost": 29.6,
+      "line_cost": 680.8
+    },
+    {
+      "product": "Disinfectant Liquid 250ml - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 17,
+      "avg_daily": 1.77,
+      "days_of_cover": 9.6,
+      "suggested_qty": 18,
+      "unit_cost": 102.6,
+      "line_cost": 1846.8
+    },
+    {
+      "product": "N95 Masks (pack of 5) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 19,
+      "avg_daily": 1.52,
+      "days_of_cover": 12.5,
+      "suggested_qty": 12,
+      "unit_cost": 111.0,
+      "line_cost": 1332.0
+    },
+    {
+      "product": "Paracetamol 650mg (15 tabs) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 19,
+      "avg_daily": 1.23,
+      "days_of_cover": 15.4,
+      "suggested_qty": 7,
+      "unit_cost": 23.73,
+      "line_cost": 166.11
+    },
+    {
+      "product": "Sanitary Pads (pack of 15) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 18,
+      "avg_daily": 1.2,
+      "days_of_cover": 15.0,
+      "suggested_qty": 7,
+      "unit_cost": 68.61,
+      "line_cost": 480.27
+    },
+    {
+      "product": "BP Monitor (Digital) - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 4,
+      "avg_daily": 0.4,
+      "days_of_cover": 10.0,
+      "suggested_qty": 5,
+      "unit_cost": 1404.0,
+      "line_cost": 7020.0
+    },
+    {
+      "product": "Digital Thermometer - Medora",
+      "manufacturer": "Medora Pharma",
+      "stock_on_hand": 7,
+      "avg_daily": 0.38,
+      "days_of_cover": 18.4,
+      "suggested_qty": 2,
+      "unit_cost": 169.8,
+      "line_cost": 339.6
+    },
+    {
+      "product": "Bandage Roll - NovaCare",
+      "manufacturer": "NovaCare Pharma",
+      "stock_on_hand": 27,
+      "avg_daily": 3.27,
+      "days_of_cover": 8.3,
+      "suggested_qty": 33,
+      "unit_cost": 32.4,
+      "line_cost": 1069.2
+    },
+    {
+      "product": "Pain Relief Gel 30g - NovaCare",
+      "manufacturer": "NovaCare Pharma",
+      "stock_on_hand": 23,
+      "avg_daily": 1.45,
+      "days_of_cover": 15.9,
+      "suggested_qty": 6,
+      "unit_cost": 151.84,
+      "line_cost": 911.04
+    },
+    {
+      "product": "Antacid Gel 200ml - NovaCare",
+      "manufacturer": "NovaCare Pharma",
+      "stock_on_hand": 18,
+      "avg_daily": 0.93,
+      "days_of_cover": 19.4,
+      "suggested_qty": 3,
+      "unit_cost": 108.43,
+      "line_cost": 325.29
+    },
+    {
+      "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 39,
+      "avg_daily": 8.8,
+      "days_of_cover": 4.4,
+      "suggested_qty": 106,
+      "unit_cost": 114.8,
+      "line_cost": 12168.8
+    },
+    {
+      "product": "Losartan 50mg (10 tabs) - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 54,
+      "avg_daily": 8.13,
+      "days_of_cover": 6.6,
+      "suggested_qty": 83,
+      "unit_cost": 72.25,
+      "line_cost": 5996.75
+    },
+    {
+      "product": "Paracetamol 650mg (15 tabs) - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 132,
+      "avg_daily": 12.97,
+      "days_of_cover": 10.2,
+      "suggested_qty": 76,
+      "unit_cost": 24.96,
+      "line_cost": 1896.96
+    },
+    {
+      "product": "Adhesive Bandage (20) - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 25,
+      "avg_daily": 4.72,
+      "days_of_cover": 5.3,
+      "suggested_qty": 59,
+      "unit_cost": 28.0,
+      "line_cost": 1652.0
+    },
+    {
+      "product": "B-Complex (30 tabs) - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 23,
+      "avg_daily": 3.95,
+      "days_of_cover": 5.8,
+      "suggested_qty": 47,
+      "unit_cost": 86.4,
+      "line_cost": 4060.8
+    },
+    {
+      "product": "Cotton Roll 100g - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 15,
+      "avg_daily": 3.48,
+      "days_of_cover": 4.3,
+      "suggested_qty": 47,
+      "unit_cost": 43.2,
+      "line_cost": 2030.4
+    },
+    {
+      "product": "Glucometer - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 3,
+      "avg_daily": 0.45,
+      "days_of_cover": 6.7,
+      "suggested_qty": 7,
+      "unit_cost": 675.0,
+      "line_cost": 4725.0
+    },
+    {
+      "product": "Pulse Oximeter - PureWell",
+      "manufacturer": "PureWell Pharma",
+      "stock_on_hand": 6,
+      "avg_daily": 0.52,
+      "days_of_cover": 11.5,
+      "suggested_qty": 5,
+      "unit_cost": 1125.0,
+      "line_cost": 5625.0
+    },
+    {
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "manufacturer": "Zenith Pharma",
+      "stock_on_hand": 20,
+      "avg_daily": 4.28,
+      "days_of_cover": 4.7,
+      "suggested_qty": 57,
+      "unit_cost": 245.0,
+      "line_cost": 13965.0
+    },
+    {
+      "product": "ORS Sachet (pack of 4) - Zenith",
+      "manufacturer": "Zenith Pharma",
+      "stock_on_hand": 60,
+      "avg_daily": 5.45,
+      "days_of_cover": 11.0,
+      "suggested_qty": 34,
+      "unit_cost": 46.8,
+      "line_cost": 1591.2
+    },
+    {
+      "product": "Surgical Gloves (box) - Zenith",
+      "manufacturer": "Zenith Pharma",
+      "stock_on_hand": 23,
+      "avg_daily": 1.95,
+      "days_of_cover": 11.8,
+      "suggested_qty": 14,
+      "unit_cost": 187.5,
+      "line_cost": 2625.0
     }
   ],
   "by_manufacturer": [
     {
-      "manufacturer": "Amaryl - Sanofi",
-      "items": 1,
-      "total_cost": 1738.8
+      "manufacturer": "Apex Pharma",
+      "items": 2,
+      "total_cost": 14822.8
     },
     {
-      "manufacturer": "Amlong - Micro Labs",
-      "items": 1,
-      "total_cost": 3825.0
+      "manufacturer": "Brightday Pharma",
+      "items": 6,
+      "total_cost": 26634.79
     },
     {
-      "manufacturer": "Atorva - Zydus",
-      "items": 1,
-      "total_cost": 7270.8
+      "manufacturer": "Curalife Pharma",
+      "items": 7,
+      "total_cost": 46771.97
     },
     {
-      "manufacturer": "Augmentin - GSK",
-      "items": 1,
-      "total_cost": 2927.4
+      "manufacturer": "Helix Pharma",
+      "items": 8,
+      "total_cost": 32977.6
     },
     {
-      "manufacturer": "Azithral - Alembic",
-      "items": 1,
-      "total_cost": 1082.4
+      "manufacturer": "Medora Pharma",
+      "items": 12,
+      "total_cost": 40266.96
     },
     {
-      "manufacturer": "Benadryl - J&J",
-      "items": 1,
-      "total_cost": 2675.2
+      "manufacturer": "NovaCare Pharma",
+      "items": 3,
+      "total_cost": 2305.53
     },
     {
-      "manufacturer": "Electral - FDC",
-      "items": 1,
-      "total_cost": 982.8
+      "manufacturer": "PureWell Pharma",
+      "items": 8,
+      "total_cost": 38155.71
     },
     {
-      "manufacturer": "Losacar - Zydus",
-      "items": 1,
-      "total_cost": 4262.75
-    },
-    {
-      "manufacturer": "Montair-LC - Cipla",
-      "items": 1,
-      "total_cost": 518.4
-    },
-    {
-      "manufacturer": "Pan 40 - Alkem",
-      "items": 1,
-      "total_cost": 8724.8
-    },
-    {
-      "manufacturer": "Standard Labs",
-      "items": 1,
-      "total_cost": 3187.5
-    },
-    {
-      "manufacturer": "Strepsils - Reckitt",
-      "items": 1,
-      "total_cost": 621.6
-    },
-    {
-      "manufacturer": "Telma - Glenmark",
-      "items": 1,
-      "total_cost": 5905.2
-    },
-    {
-      "manufacturer": "Thyronorm - Abbott",
-      "items": 1,
-      "total_cost": 3431.4
+      "manufacturer": "Zenith Pharma",
+      "items": 3,
+      "total_cost": 18181.2
     }
   ],
-  "total_cost": 47154.05,
+  "total_cost": 220116.56,
   "do_not_reorder": [
     {
-      "product": "Metformin 500mg (10 tabs)",
-      "reason": "Batch expiring soon (2026-12-15)"
+      "product": "Cetirizine 10mg (10 tabs) - Curalife",
+      "reason": "Already overstocked (143 days of supply)"
     },
     {
-      "product": "Protein Powder 500g",
-      "reason": "Already overstocked (106 days of supply)"
+      "product": "ORS Sachet (pack of 4) - Helix",
+      "reason": "Already overstocked (170 days of supply)"
     },
     {
-      "product": "Digital Thermometer",
-      "reason": "Already overstocked (99 days of supply)"
+      "product": "Vapour Balm 25ml - PureWell",
+      "reason": "Already overstocked (150 days of supply)"
     },
     {
-      "product": "BP Monitor (Digital)",
-      "reason": "Already overstocked (246 days of supply)"
+      "product": "Vitamin D3 60K (4 caps) - Apex",
+      "reason": "Already overstocked (138 days of supply)"
     },
     {
-      "product": "Glucometer",
-      "reason": "Already overstocked (302 days of supply)"
+      "product": "Calcium + D3 (15 tabs) - Brightday",
+      "reason": "Already overstocked (144 days of supply)"
     },
     {
-      "product": "Glucometer Strips (50)",
-      "reason": "Already overstocked (120 days of supply)"
+      "product": "Baby Lotion 200ml - PureWell",
+      "reason": "Already overstocked (208 days of supply)"
     },
     {
-      "product": "Pulse Oximeter",
-      "reason": "Already overstocked (319 days of supply)"
-    },
-    {
-      "product": "Nebulizer",
-      "reason": "Already overstocked (250 days of supply)"
-    },
-    {
-      "product": "Baby Lotion 200ml",
-      "reason": "Already overstocked (116 days of supply)"
-    },
-    {
-      "product": "Adult Diapers (pack of 10)",
-      "reason": "Already overstocked (115 days of supply)"
-    },
-    {
-      "product": "N95 Masks (pack of 5)",
-      "reason": "Already overstocked (105 days of supply)"
-    },
-    {
-      "product": "Calpol 650mg (15 tabs)",
-      "reason": "No sales in the last 60 days"
-    },
-    {
-      "product": "Glycomet 500mg (10 tabs)",
-      "reason": "No sales in the last 60 days"
+      "product": "Disinfectant Liquid 250ml - PureWell",
+      "reason": "Already overstocked (172 days of supply)"
     }
   ]
 }

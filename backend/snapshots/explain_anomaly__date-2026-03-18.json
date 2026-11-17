@@ -1,29 +1,29 @@
 {
   "date": "2026-03-18",
   "type": "spike",
-  "revenue": 89380.0,
-  "baseline_revenue": 32982.25,
-  "diff_pct": 171.0,
-  "invoices": 56,
+  "revenue": 86282.0,
+  "baseline_revenue": 27923.5,
+  "diff_pct": 209.0,
+  "invoices": 65,
   "top_products": [
     {
-      "product": "Surgical Gloves (box)",
-      "units": 120,
-      "revenue": 30000.0,
-      "share_pct": 33.6
+      "product": "Surgical Gloves (box) - Zenith",
+      "units": 122,
+      "revenue": 30500.0,
+      "share_pct": 35.3
     },
     {
-      "product": "ORS Sachet (pack of 4)",
-      "units": 126,
-      "revenue": 7560.0,
-      "share_pct": 8.5
+      "product": "ORS Sachet (pack of 4) - Zenith",
+      "units": 123,
+      "revenue": 7380.0,
+      "share_pct": 8.6
     },
     {
-      "product": "Protein Powder 500g",
-      "units": 6,
-      "revenue": 7200.0,
-      "share_pct": 8.1
+      "product": "Bandage Roll - NovaCare",
+      "units": 124,
+      "revenue": 5580.0,
+      "share_pct": 6.5
     }
   ],
-  "explanation": "On 18 Mar 2026, revenue spiked to \u20b989,380 (+171.0% above the usual Wednesday average of \u20b932,982). The spike was driven by strong sales in: Surgical Gloves (box) (120 units, \u20b930,000), ORS Sachet (pack of 4) (126 units, \u20b97,560), Protein Powder 500g (6 units, \u20b97,200) across 56 orders."
+  "explanation": "On 18 Mar 2026, revenue spiked to \u20b986,282 (+209.0% above the usual Wednesday average of \u20b927,924). The spike was driven by strong sales in: Surgical Gloves (box) - Zenith (122 units, \u20b930,500), ORS Sachet (pack of 4) - Zenith (123 units, \u20b97,380), Bandage Roll - NovaCare (124 units, \u20b95,580) across 65 orders."
 }

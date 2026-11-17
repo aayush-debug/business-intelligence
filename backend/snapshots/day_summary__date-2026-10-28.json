@@ -1,40 +1,41 @@
 {
   "date": "2026-10-28",
-  "revenue": 31704.0,
-  "invoices": 67,
-  "aov": 473.19,
-  "gross_profit": 6742.77,
-  "margin_pct": 21.27,
-  "vs_usual_pct": -13.4,
+  "revenue": 37009.0,
+  "invoices": 68,
+  "aov": 544.25,
+  "gross_profit": 8407.54,
+  "margin_pct": 22.72,
+  "vs_usual_pct": -8.5,
   "top_products": [
     {
-      "product": "Amoxicillin-Clav 625 (10 tabs)",
-      "units": 11,
-      "revenue": 2310.0
+      "product": "Omega-3 Fish Oil (30 caps) - Helix",
+      "units": 7,
+      "revenue": 3150.0
     },
     {
-      "product": "Omega-3 Fish Oil (30 caps)",
-      "units": 4,
+      "product": "Multivitamin (30 tabs) - Zenith",
+      "units": 8,
+      "revenue": 2800.0
+    },
+    {
+      "product": "BP Monitor (Digital) - Medora",
+      "units": 1,
       "revenue": 1800.0
-    },
-    {
-      "product": "Multivitamin (30 tabs)",
-      "units": 5,
-      "revenue": 1750.0
     }
   ],
-  "top_category": "Chronic Care (Rx)",
+  "top_category": "Vitamins & Supplements",
   "unusual": {
     "is_unusual": false,
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Wed 28 Oct 2026\nSales: \u20b931,704 from 67 bills (13% below a usual Wed)\nGross profit: \u20b96,743 (21.27%)\nBest sellers: Amoxicillin-Clav 625 (10 tabs) (11), Omega-3 Fish Oil (30 caps) (4), Multivitamin (30 tabs) (5)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Wed 28 Oct 2026\nSales: \u20b937,009 from 68 bills (8% below a usual Wed)\nGross profit: \u20b98,408 (22.72%)\nBest sellers: Omega-3 Fish Oil (30 caps) - Helix (7), Multivitamin (30 tabs) - Zenith (8), BP Monitor (Digital) - Medora (1)\nTop category: Vitamins & Supplements\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

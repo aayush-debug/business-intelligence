@@ -1,26 +1,26 @@
 {
   "date": "2026-10-30",
-  "revenue": 48084.0,
-  "invoices": 81,
-  "aov": 593.63,
-  "gross_profit": 10082.56,
-  "margin_pct": 20.97,
-  "vs_usual_pct": 38.0,
+  "revenue": 34054.0,
+  "invoices": 72,
+  "aov": 472.97,
+  "gross_profit": 7052.91,
+  "margin_pct": 20.71,
+  "vs_usual_pct": 2.3,
   "top_products": [
     {
-      "product": "Baby Diapers (pack of 36)",
-      "units": 7,
-      "revenue": 4550.0
+      "product": "Pantoprazole 40mg (10 tabs) - PureWell",
+      "units": 25,
+      "revenue": 3500.0
     },
     {
-      "product": "BP Monitor (Digital)",
-      "units": 2,
-      "revenue": 3600.0
+      "product": "Glucometer - PureWell",
+      "units": 3,
+      "revenue": 2700.0
     },
     {
-      "product": "Pantoprazole 40mg (10 tabs)",
-      "units": 23,
-      "revenue": 3220.0
+      "product": "Glucometer Strips (50) - Helix",
+      "units": 3,
+      "revenue": 2385.0
     }
   ],
   "top_category": "Chronic Care (Rx)",
@@ -29,12 +29,13 @@
     "type": null
   },
   "low_stock": {
-    "count": 2,
+    "count": 18,
     "items": [
-      "Amlodipine 5mg (10 tabs)",
-      "Surgical Gloves (box)"
+      "Telmisartan 40mg (10 tabs) - Medora",
+      "Atorvastatin 10mg (10 tabs) - Helix",
+      "Losartan 50mg (10 tabs) - PureWell"
     ]
   },
   "refills_due_tomorrow": 0,
-  "summary_text": "Daily summary, Fri 30 Oct 2026\nSales: \u20b948,084 from 81 bills (38% above a usual Fri)\nGross profit: \u20b910,083 (20.97%)\nBest sellers: Baby Diapers (pack of 36) (7), BP Monitor (Digital) (2), Pantoprazole 40mg (10 tabs) (23)\nTop category: Chronic Care (Rx)\nRunning low: Amlodipine 5mg (10 tabs), Surgical Gloves (box) (2 items)\nRefills due tomorrow: 0"
+  "summary_text": "Daily summary, Fri 30 Oct 2026\nSales: \u20b934,054 from 72 bills (2% above a usual Fri)\nGross profit: \u20b97,053 (20.71%)\nBest sellers: Pantoprazole 40mg (10 tabs) - PureWell (25), Glucometer - PureWell (3), Glucometer Strips (50) - Helix (3)\nTop category: Chronic Care (Rx)\nRunning low: Telmisartan 40mg (10 tabs) - Medora, Atorvastatin 10mg (10 tabs) - Helix, Losartan 50mg (10 tabs) - PureWell (18 items)\nRefills due tomorrow: 0"
 }

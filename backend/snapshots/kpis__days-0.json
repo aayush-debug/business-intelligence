@@ -1,12 +1,12 @@
 {
-  "revenue": 26245699.0,
-  "cogs": 20604461.39,
-  "gross_profit": 5641237.61,
-  "expenses": 4651186.0,
-  "net_profit": 990051.61,
-  "margin": 3.77,
-  "orders": 46686,
-  "customers": 420,
-  "aov": 562.17,
+  "revenue": 25622120.0,
+  "cogs": 19950986.57,
+  "gross_profit": 5671133.43,
+  "expenses": 4572956.0,
+  "net_profit": 1098177.43,
+  "margin": 4.29,
+  "orders": 46525,
+  "customers": 1,
+  "aov": 550.72,
   "days": 0
 }

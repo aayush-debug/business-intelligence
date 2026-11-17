@@ -12,117 +12,213 @@
   "brand_margin_gaps": {
     "items": [
       {
-        "product_group": "Cetirizine 10mg",
-        "brand": "Cetirizine 10mg (Curalife)",
-        "manufacturer": "Curalife",
-        "share_pct": 11.6,
-        "margin_pct": 25.0,
-        "leader": "Cetirizine 10mg (10 tabs)",
-        "leader_margin_pct": 20.0,
-        "est_extra_profit_per_month": 5.1
+        "product_group": "Vitamin D3 60K (4 caps)",
+        "brand": "Vitamin D3 60K (4 caps) - Helix",
+        "manufacturer": "Helix Pharma",
+        "share_pct": 4.8,
+        "margin_pct": 32.93,
+        "leader": "Vitamin D3 60K (4 caps) - Apex",
+        "leader_margin_pct": 28.0,
+        "est_extra_profit_per_month": 54.37
+      },
+      {
+        "product_group": "Multivitamin (30 tabs)",
+        "brand": "Multivitamin (30 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "share_pct": 2.6,
+        "margin_pct": 35.35,
+        "leader": "Multivitamin (30 tabs) - Zenith",
+        "leader_margin_pct": 30.0,
+        "est_extra_profit_per_month": 50.23
+      },
+      {
+        "product_group": "Losartan 50mg (10 tabs)",
+        "brand": "Losartan 50mg (10 tabs) - Helix",
+        "manufacturer": "Helix Pharma",
+        "share_pct": 11.7,
+        "margin_pct": 20.34,
+        "leader": "Losartan 50mg (10 tabs) - PureWell",
+        "leader_margin_pct": 15.0,
+        "est_extra_profit_per_month": 49.47
+      },
+      {
+        "product_group": "Pulse Oximeter",
+        "brand": "Pulse Oximeter - Apex",
+        "manufacturer": "Apex Pharma",
+        "share_pct": 13.6,
+        "margin_pct": 28.32,
+        "leader": "Pulse Oximeter - PureWell",
+        "leader_margin_pct": 25.0,
+        "est_extra_profit_per_month": 17.77
+      },
+      {
+        "product_group": "N95 Masks (pack of 5)",
+        "brand": "N95 Masks (pack of 5) - Apex",
+        "manufacturer": "Apex Pharma",
+        "share_pct": 14.8,
+        "margin_pct": 30.37,
+        "leader": "N95 Masks (pack of 5) - Medora",
+        "leader_margin_pct": 26.0,
+        "est_extra_profit_per_month": 13.99
+      },
+      {
+        "product_group": "Adhesive Bandage (20)",
+        "brand": "Adhesive Bandage (20) - Apex",
+        "manufacturer": "Apex Pharma",
+        "share_pct": 8.9,
+        "margin_pct": 35.5,
+        "leader": "Adhesive Bandage (20) - PureWell",
+        "leader_margin_pct": 30.0,
+        "est_extra_profit_per_month": 13.87
       }
     ],
-    "headline": "Switching 10% of sales to higher-margin brands could add ~\u20b95/month in extra profit.",
+    "headline": "Switching 10% of sales to higher-margin brands could add ~\u20b9200/month in extra profit.",
     "what_to_do": "Recommend higher-margin alternatives when customers do not specify a brand."
   },
   "low_margin_bestsellers": {
     "items": [
       {
-        "product": "Baby Diapers (pack of 36)",
-        "category": "Personal & Baby Care",
-        "revenue": 35100.0,
-        "margin_pct": 16.0,
-        "overall_margin_pct": 21.42,
-        "diff_pct": 5.42
+        "product": "Levothyroxine 50mcg (100 tabs) - Medora",
+        "category": "Chronic Care (Rx)",
+        "revenue": 51240.0,
+        "margin_pct": 14.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 8.24
       },
       {
-        "product": "Levothyroxine 50mcg (100 tabs)",
+        "product": "Baby Diapers (pack of 36) - Curalife",
+        "category": "Personal & Baby Care",
+        "revenue": 46800.0,
+        "margin_pct": 16.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 6.24
+      },
+      {
+        "product": "Adult Diapers (pack of 10) - Curalife",
+        "category": "Personal & Baby Care",
+        "revenue": 32400.0,
+        "margin_pct": 17.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 5.24
+      },
+      {
+        "product": "Telmisartan 40mg (10 tabs) - Medora",
         "category": "Chronic Care (Rx)",
-        "revenue": 25200.0,
-        "margin_pct": 14.0,
-        "overall_margin_pct": 21.42,
-        "diff_pct": 7.42
+        "revenue": 27455.0,
+        "margin_pct": 16.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 6.24
+      },
+      {
+        "product": "Atorvastatin 10mg (10 tabs) - Helix",
+        "category": "Chronic Care (Rx)",
+        "revenue": 26760.0,
+        "margin_pct": 17.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 5.24
+      },
+      {
+        "product": "Glimepiride 2mg (10 tabs) - Helix",
+        "category": "Chronic Care (Rx)",
+        "revenue": 23220.0,
+        "margin_pct": 16.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 6.24
+      },
+      {
+        "product": "Losartan 50mg (10 tabs) - PureWell",
+        "category": "Chronic Care (Rx)",
+        "revenue": 21165.0,
+        "margin_pct": 15.0,
+        "overall_margin_pct": 22.24,
+        "diff_pct": 7.24
       }
     ],
-    "headline": "2 best-selling products make significantly lower profit margins than your store average of 21.42%.",
+    "headline": "7 best-selling products make significantly lower profit margins than your store average of 22.24%.",
     "what_to_do": "Review supplier purchase costs or consider modest price adjustments for these bestsellers."
   },
   "expiry_writeoffs": {
     "months": [
       {
         "month": "2026-10",
-        "amount": 22198.0,
-        "pct_of_revenue": 1.81,
+        "amount": 9328.0,
+        "pct_of_revenue": 0.8,
         "is_above_2x_median": false
       },
       {
         "month": "2026-09",
-        "amount": 23276.0,
-        "pct_of_revenue": 2.16,
+        "amount": 18358.0,
+        "pct_of_revenue": 1.72,
         "is_above_2x_median": false
       },
       {
         "month": "2026-08",
-        "amount": 31145.0,
-        "pct_of_revenue": 2.49,
+        "amount": 10452.0,
+        "pct_of_revenue": 0.82,
         "is_above_2x_median": false
       },
       {
         "month": "2026-07",
-        "amount": 17912.0,
-        "pct_of_revenue": 1.6,
+        "amount": 16369.0,
+        "pct_of_revenue": 1.44,
         "is_above_2x_median": false
       },
       {
         "month": "2026-06",
-        "amount": 66518.0,
-        "pct_of_revenue": 5.97,
+        "amount": 65957.0,
+        "pct_of_revenue": 5.98,
         "is_above_2x_median": true
       },
       {
         "month": "2026-05",
-        "amount": 23657.0,
-        "pct_of_revenue": 2.1,
+        "amount": 19729.0,
+        "pct_of_revenue": 1.68,
         "is_above_2x_median": false
       },
       {
         "month": "2026-04",
-        "amount": 20542.0,
-        "pct_of_revenue": 1.87,
+        "amount": 7198.0,
+        "pct_of_revenue": 0.65,
         "is_above_2x_median": false
       },
       {
         "month": "2026-03",
-        "amount": 25234.0,
-        "pct_of_revenue": 2.11,
+        "amount": 8856.0,
+        "pct_of_revenue": 0.77,
         "is_above_2x_median": false
       },
       {
         "month": "2026-02",
-        "amount": 19388.0,
-        "pct_of_revenue": 2.04,
+        "amount": 11983.0,
+        "pct_of_revenue": 1.32,
         "is_above_2x_median": false
       },
       {
         "month": "2026-01",
-        "amount": 24410.0,
-        "pct_of_revenue": 2.23,
+        "amount": 14118.0,
+        "pct_of_revenue": 1.22,
         "is_above_2x_median": false
       },
       {
         "month": "2025-12",
-        "amount": 14680.0,
-        "pct_of_revenue": 1.27,
+        "amount": 15105.0,
+        "pct_of_revenue": 1.4,
         "is_above_2x_median": false
       },
       {
         "month": "2025-11",
-        "amount": 7094.0,
+        "amount": 13068.0,
         "pct_of_revenue": 1.2,
+        "is_above_2x_median": false
+      },
+      {
+        "month": "2025-10",
+        "amount": 12203.0,
+        "pct_of_revenue": 50.19,
         "is_above_2x_median": false
       }
     ],
-    "headline": "\u20b9296,054 written off due to expired stock over the last 12 months.",
+    "headline": "\u20b9222,724 written off due to expired stock over the last 12 months.",
     "what_to_do": "Order in smaller batches and monitor upcoming expiry dates closely."
   }
 }

@@ -1,75 +1,15 @@
 {
-  "total_invoices": 5065,
+  "total_invoices": 6288,
   "pairs": [
     {
-      "group_a": "Clopidogrel 75mg",
-      "group_b": "Pantoprazole 40mg",
-      "both_count": 22,
-      "support": 0.0043,
-      "confidence_a_to_b": 0.1294,
-      "confidence_b_to_a": 0.0579,
-      "lift": 1.72,
-      "insight": "13% of invoices with Clopidogrel 75mg also include Pantoprazole 40mg, 1.72x more often than usual."
-    },
-    {
-      "group_a": "Amoxicillin-Clav 625",
-      "group_b": "Antacid Tablets",
+      "group_a": "Glimepiride 2mg (10 tabs)",
+      "group_b": "Losartan 50mg (10 tabs)",
       "both_count": 27,
-      "support": 0.0053,
-      "confidence_a_to_b": 0.0982,
-      "confidence_b_to_a": 0.0846,
-      "lift": 1.56,
-      "insight": "10% of invoices with Amoxicillin-Clav 625 also include Antacid Tablets, 1.56x more often than usual."
-    },
-    {
-      "group_a": "Cough Syrup",
-      "group_b": "Pain Relief Gel",
-      "both_count": 23,
-      "support": 0.0045,
-      "confidence_a_to_b": 0.0667,
-      "confidence_b_to_a": 0.1065,
-      "lift": 1.56,
-      "insight": "11% of invoices with Pain Relief Gel also include Cough Syrup, 1.56x more often than usual."
-    },
-    {
-      "group_a": "Losartan 50mg",
-      "group_b": "Telmisartan 40mg",
-      "both_count": 30,
-      "support": 0.0059,
-      "confidence_a_to_b": 0.1056,
-      "confidence_b_to_a": 0.0857,
-      "lift": 1.53,
-      "insight": "11% of invoices with Losartan 50mg also include Telmisartan 40mg, 1.53x more often than usual."
-    },
-    {
-      "group_a": "Losartan 50mg",
-      "group_b": "Metformin 500mg",
-      "both_count": 39,
-      "support": 0.0077,
-      "confidence_a_to_b": 0.1373,
-      "confidence_b_to_a": 0.0853,
-      "lift": 1.52,
-      "insight": "14% of invoices with Losartan 50mg also include Metformin 500mg, 1.52x more often than usual."
-    },
-    {
-      "group_a": "Metformin 500mg",
-      "group_b": "Pantoprazole 40mg",
-      "both_count": 52,
-      "support": 0.0103,
-      "confidence_a_to_b": 0.1138,
-      "confidence_b_to_a": 0.1368,
-      "lift": 1.52,
-      "insight": "14% of invoices with Pantoprazole 40mg also include Metformin 500mg, 1.52x more often than usual."
-    },
-    {
-      "group_a": "Atorvastatin 10mg",
-      "group_b": "Metformin 500mg",
-      "both_count": 45,
-      "support": 0.0089,
-      "confidence_a_to_b": 0.136,
-      "confidence_b_to_a": 0.0985,
+      "support": 0.0043,
+      "confidence_a_to_b": 0.0874,
+      "confidence_b_to_a": 0.0744,
       "lift": 1.51,
-      "insight": "14% of invoices with Atorvastatin 10mg also include Metformin 500mg, 1.51x more often than usual."
+      "insight": "9% of invoices with Glimepiride 2mg (10 tabs) also include Losartan 50mg (10 tabs), 1.51x more often than usual."
     }
   ]
 }

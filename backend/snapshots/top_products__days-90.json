@@ -1,66 +1,66 @@
 [
   {
-    "product": "Baby Diapers (pack of 36)",
-    "category": "Personal & Baby Care",
-    "revenue": 149500.0,
-    "units": 230,
-    "profit": 23920.0,
-    "margin_pct": 16.0
-  },
-  {
-    "product": "Protein Powder 500g",
-    "category": "Vitamins & Supplements",
-    "revenue": 142800.0,
-    "units": 119,
-    "profit": 35700.0,
-    "margin_pct": 25.0
-  },
-  {
-    "product": "Multivitamin (30 tabs)",
-    "category": "Vitamins & Supplements",
-    "revenue": 124950.0,
-    "units": 357,
-    "profit": 37485.0,
-    "margin_pct": 30.0
-  },
-  {
-    "product": "Amoxicillin-Clav 625 (10 tabs)",
-    "category": "Antibiotics & Acute (Rx)",
-    "revenue": 121590.0,
-    "units": 579,
-    "profit": 21886.2,
-    "margin_pct": 18.0
-  },
-  {
-    "product": "Pantoprazole 40mg (10 tabs)",
+    "product": "Levothyroxine 50mcg (100 tabs) - Medora",
     "category": "Chronic Care (Rx)",
-    "revenue": 119140.0,
-    "units": 851,
-    "profit": 21445.2,
-    "margin_pct": 18.0
-  },
-  {
-    "product": "Omega-3 Fish Oil (30 caps)",
-    "category": "Vitamins & Supplements",
-    "revenue": 103050.0,
-    "units": 229,
-    "profit": 30915.0,
-    "margin_pct": 30.0
-  },
-  {
-    "product": "Levothyroxine 50mcg (100 tabs)",
-    "category": "Chronic Care (Rx)",
-    "revenue": 101220.0,
-    "units": 482,
-    "profit": 14170.8,
+    "revenue": 140490.0,
+    "units": 669,
+    "profit": 19668.6,
     "margin_pct": 14.0
   },
   {
-    "product": "Atorvastatin 10mg (10 tabs)",
+    "product": "Multivitamin (30 tabs) - Zenith",
+    "category": "Vitamins & Supplements",
+    "revenue": 135100.0,
+    "units": 386,
+    "profit": 40530.0,
+    "margin_pct": 30.0
+  },
+  {
+    "product": "Baby Diapers (pack of 36) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 130000.0,
+    "units": 200,
+    "profit": 20800.0,
+    "margin_pct": 16.0
+  },
+  {
+    "product": "Pain Relief Gel 30g - Apex",
+    "category": "OTC Cold & Pain",
+    "revenue": 118750.0,
+    "units": 625,
+    "profit": 28500.0,
+    "margin_pct": 24.0
+  },
+  {
+    "product": "Pantoprazole 40mg (10 tabs) - PureWell",
     "category": "Chronic Care (Rx)",
-    "revenue": 93000.0,
-    "units": 775,
-    "profit": 15810.0,
+    "revenue": 108640.0,
+    "units": 776,
+    "profit": 19555.2,
+    "margin_pct": 18.0
+  },
+  {
+    "product": "Amoxicillin-Clav 625 (10 tabs) - Brightday",
+    "category": "Antibiotics & Acute (Rx)",
+    "revenue": 105000.0,
+    "units": 500,
+    "profit": 18900.0,
+    "margin_pct": 18.0
+  },
+  {
+    "product": "Omega-3 Fish Oil (30 caps) - Helix",
+    "category": "Vitamins & Supplements",
+    "revenue": 96300.0,
+    "units": 214,
+    "profit": 28890.0,
+    "margin_pct": 30.0
+  },
+  {
+    "product": "Adult Diapers (pack of 10) - Curalife",
+    "category": "Personal & Baby Care",
+    "revenue": 94200.0,
+    "units": 157,
+    "profit": 16014.0,
     "margin_pct": 17.0
   }
 ]
