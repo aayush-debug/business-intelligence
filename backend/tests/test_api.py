@@ -109,6 +109,34 @@ class TestCompanyBrainAPI(unittest.TestCase):
         self.assertEqual(resp.status_code, 200)
         self.assertIn("product_id", resp.text)
 
+    def test_head_http_method_compatibility(self):
+        # 1. Health checks
+        for path in ["/ping", "/health"]:
+            head_resp = self.client.head(path)
+            self.assertEqual(head_resp.status_code, 200, f"HEAD {path} failed")
+            self.assertEqual(head_resp.content, b"", f"HEAD {path} must have empty body")
+
+        # 2. Key API endpoints
+        endpoints = [
+            "/api/config",
+            "/api/stats",
+            "/api/day/status",
+            "/api/kpis?days=90",
+            "/api/trend?days=30&granularity=day",
+            "/api/top-products?days=90",
+            "/api/inventory/status",
+            "/api/reorder/suggestions?lead_days=5&cover_days=14",
+        ]
+        for ep in endpoints:
+            head_resp = self.client.head(ep)
+            self.assertEqual(head_resp.status_code, 200, f"HEAD {ep} failed with {head_resp.status_code}")
+            self.assertEqual(head_resp.content, b"", f"HEAD {ep} must return empty body")
+
+        # 3. 404 for non-existent routes
+        head_404 = self.client.head("/api/nonexistent-route-xyz")
+        self.assertEqual(head_404.status_code, 404)
+        self.assertEqual(head_404.content, b"")
+
 
 if __name__ == "__main__":
     unittest.main()

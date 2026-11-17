@@ -65,6 +65,32 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Company Brain", lifespan=lifespan)
 
+# HTTP HEAD method compatibility middleware (RFC 7231 / RFC 9110)
+class HeadMethodMiddleware:
+    """Ensure HTTP HEAD requests work seamlessly across all GET endpoints for uptime monitors and health checks."""
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] == "http" and scope["method"] == "HEAD":
+            scope["method"] = "GET"
+            async def send_wrapper(message):
+                if message["type"] == "http.response.start":
+                    await send(message)
+                elif message["type"] == "http.response.body":
+                    # RFC compliance: HEAD must not return message body
+                    await send({
+                        "type": "http.response.body",
+                        "body": b"",
+                        "more_body": False
+                    })
+            await self.app(scope, receive, send_wrapper)
+            return
+
+        await self.app(scope, receive, send)
+
+app.add_middleware(HeadMethodMiddleware)
+
 # CORS configuration
 raw_origins = os.getenv("FRONTEND_ORIGIN")
 if raw_origins is None or not raw_origins.strip():
@@ -85,8 +111,8 @@ app.add_middleware(
 # Health & Database Status
 # ---------------------------------------------------------
 
-@app.get("/ping")
-@app.get("/health")
+@app.api_route("/ping", methods=["GET", "HEAD"])
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
     return {"status": "ok"}
 
