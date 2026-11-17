@@ -60,6 +60,23 @@ If you use Git Bash or Windows Subsystem for Linux (WSL), run:
 
 ---
 
+### 🐳 Running with Docker (PostgreSQL 16 + FastAPI)
+
+To run the backend containerized with a production PostgreSQL 16 database:
+
+```bash
+docker compose up -d
+```
+
+- **Backend API**: [http://localhost:8000](http://localhost:8000)
+- **API Docs (Swagger UI)**: [http://localhost:8000/docs](http://localhost:8000/docs)
+- **PostgreSQL Database**: `localhost:5432` (`company_brain` database)
+- **Check Status**: `docker compose ps`
+- **View Logs**: `docker compose logs -f backend`
+- **Stop Services**: `docker compose down`
+
+---
+
 ## 📊 Mock Data vs. Custom Business Data
 
 Company Brain lets users seamlessly choose between testing with sample data or running their own store records:

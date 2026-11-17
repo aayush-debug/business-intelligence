@@ -1,0 +1,15 @@
+.git/
+.github/
+bi-platform/
+frontend/
+node_modules/
+.next/
+out/
+logs/
+*.log
+__pycache__/
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*

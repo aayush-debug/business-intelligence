@@ -1,7 +1,7 @@
 from datetime import date, datetime, timedelta
 from pathlib import Path
 import pandas as pd
-from sqlalchemy import func
+from sqlalchemy import func, text
 from sqlalchemy.orm import Session
 from .db import Customer, DayClose, Expense, Inventory, Product, Sale, SessionLocal
 
@@ -169,12 +169,14 @@ def load_demo_data(db: Session) -> bool:
     # Add Expired Stock Write-off expenses over the last 12 months for profit leaks demo
     last_sale_date = frames["sales.csv"]["sale_date"].max()
     writeoff_expenses = []
+    max_exp_id = int(exp_df["id"].max()) if not exp_df.empty else 0
     for m in range(12):
         exp_d = (last_sale_date - timedelta(days=m * 30)).replace(day=1)
         # One high month (spike > 2x median) around 3 months ago
         amt = 18500.0 if m == 3 else 5200.0 + (m * 250.0)
         writeoff_expenses.append(
             Expense(
+                id=max_exp_id + m + 1,
                 expense_date=exp_d,
                 category="Expired Stock Write-off",
                 amount=amt,
@@ -325,6 +327,15 @@ def load_demo_data(db: Session) -> bool:
         for d_val, inv_count, rev_sum in distinct_sales_dates
     ]
     db.bulk_save_objects(day_closes_to_insert)
+
+    if db.bind.dialect.name == "postgresql":
+        for table_name in ["products", "customers", "expenses", "sales", "inventory"]:
+            try:
+                db.execute(
+                    text(f"SELECT setval(pg_get_serial_sequence('{table_name}', 'id'), COALESCE((SELECT MAX(id) FROM {table_name}), 1), true);")
+                )
+            except Exception:
+                pass
 
     db.commit()
     return True

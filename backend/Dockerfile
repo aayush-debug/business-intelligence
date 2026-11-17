@@ -6,9 +6,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code and seed data
+# Copy application code, seed data, and snapshots
 COPY app/ ./app/
 COPY data/ ./data/
+COPY snapshots/ ./snapshots/
 
 # Run uvicorn on the configured PORT (default: 8000)
 CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
