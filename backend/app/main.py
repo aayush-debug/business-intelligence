@@ -1,5 +1,6 @@
 from contextlib import asynccontextmanager
 from datetime import date, datetime
+import logging
 import os
 from typing import Any, Optional
 from zoneinfo import ZoneInfo
@@ -31,6 +32,7 @@ from .db import (
     Inventory,
     Product,
     Sale,
+    SessionLocal,
     engine,
     get_db,
 )
@@ -39,6 +41,7 @@ from . import reports as R
 from . import email_digest as ED
 from .seed import load_demo_data
 
+logger = logging.getLogger("companybrain")
 
 STORE_TZ = os.getenv("STORE_TZ", "Asia/Kolkata")
 CRON_SECRET = os.getenv("CRON_SECRET", "cron_secret_123")
@@ -49,6 +52,14 @@ async def lifespan(app: FastAPI):
     # Startup creates database tables only when NOT running in snapshot mode
     if not is_snapshot_mode():
         Base.metadata.create_all(bind=engine)
+        auto_seed = os.getenv("AUTO_SEED", "false").lower() in ("true", "1", "yes")
+        if auto_seed:
+            try:
+                db = SessionLocal()
+                load_demo_data(db)
+                db.close()
+            except Exception as e:
+                logger.warning(f"Auto-seed check/load skipped: {e}")
     yield
 
 
