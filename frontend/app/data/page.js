@@ -39,6 +39,7 @@ export default function YourDataPage() {
   const [mapping, setMapping] = useState({});
   const [mode, setMode] = useState("append");
   const [importing, setImporting] = useState(false);
+  const [parsingFile, setParsingFile] = useState(false);
   const [commitResult, setCommitResult] = useState(null);
   const [loadingDemo, setLoadingDemo] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -97,6 +98,7 @@ export default function YourDataPage() {
     setSelectedDataset(ds);
     setFile(null);
     setPreview(null);
+    setParsingFile(false);
     setMapping({});
     setCommitResult(null);
     setErrorMessage("");
@@ -110,6 +112,7 @@ export default function YourDataPage() {
     setPreview(null);
     setCommitResult(null);
     setErrorMessage("");
+    setParsingFile(true);
 
     const formData = new FormData();
     formData.append("file", selectedFile);
@@ -128,6 +131,8 @@ export default function YourDataPage() {
       setMapping(data.suggested_mapping || {});
     } catch (err) {
       setErrorMessage(err.message || "Failed to parse file.");
+    } finally {
+      setParsingFile(false);
     }
   };
 
@@ -341,6 +346,15 @@ export default function YourDataPage() {
             Choose a file (.csv, .tsv, .txt, .xlsx, .json) up to 20MB. Check column mappings below before importing.
           </p>
 
+          {selectedDataset?.key === "sales" && (
+            <div className="info-banner">
+              <span style={{ fontSize: 16 }}>⏳</span>
+              <div>
+                <strong>Large File Notice:</strong> Sales CSV files typically contain tens of thousands of rows and take a little time to load, parse, and verify. Please allow a few moments for the file to process.
+              </div>
+            </div>
+          )}
+
           {errorMessage && (
             <div className="error-banner" style={{ margin: "16px 0" }}>
               <strong>Error:</strong> {errorMessage}
@@ -353,11 +367,17 @@ export default function YourDataPage() {
               type="file"
               accept=".csv,.tsv,.txt,.xlsx,.json"
               onChange={handleFileChange}
+              disabled={parsingFile || importing}
               style={{ fontSize: 14 }}
             />
-            {preview && (
+            {parsingFile && (
+              <span style={{ fontSize: 13, color: "var(--brand-primary)", display: "inline-flex", alignItems: "center", gap: 6 }}>
+                <span className="spinner"></span> Loading and analyzing file… Large datasets take a little time to load.
+              </span>
+            )}
+            {preview && !parsingFile && (
               <span style={{ fontSize: 13, color: "var(--text-muted)" }}>
-                Detected <strong>{preview.row_count}</strong> rows across <strong>{preview.columns?.length}</strong> columns.
+                Detected <strong>{preview.row_count?.toLocaleString("en-IN")}</strong> rows across <strong>{preview.columns?.length}</strong> columns.
               </span>
             )}
           </div>
@@ -476,9 +496,22 @@ export default function YourDataPage() {
                   onClick={handleCommit}
                   disabled={importing}
                 >
-                  {importing ? "Importing…" : `Import ${selectedDataset.name}`}
+                  {importing ? (
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}>
+                      <span className="spinner"></span> Importing {selectedDataset.name}…
+                    </span>
+                  ) : (
+                    `Import ${selectedDataset.name}`
+                  )}
                 </button>
               </div>
+
+              {importing && (
+                <div style={{ marginTop: 14, padding: "10px 14px", background: "#f0fdf4", border: "1px solid #bbf7d0", borderRadius: 6, fontSize: 13, color: "#166534", display: "flex", alignItems: "center", gap: 8 }}>
+                  <span className="spinner"></span>
+                  <span>Writing records to the database and recalculating analytics. Huge files take a little time to import—please wait.</span>
+                </div>
+              )}
             </div>
           )}
 
