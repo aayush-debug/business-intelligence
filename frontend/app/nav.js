@@ -46,7 +46,6 @@ export default function Navigation() {
     { href: "/data", label: "Your data" },
     { href: "/billing", label: "Billing" },
     { href: "/reorder", label: "Reorder" },
-    { href: "/refills", label: "Refills" },
     { href: "/summary", label: "Daily summaries" },
   ];
 

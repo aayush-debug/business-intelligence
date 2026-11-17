@@ -233,7 +233,7 @@ export default function DailySummariesPage() {
                     <strong>Best Sellers:</strong>{" "}
                     {selectedDay.top_products.map((p) => `${p.product} (${p.units} units)`).join(", ") || "None"}
                   </div>
-                  <div style={{ marginBottom: 8 }}>
+                  <div>
                     <strong>Low Stock Alerts:</strong>{" "}
                     {selectedDay.low_stock?.count > 0 ? (
                       <span style={{ color: "var(--anomaly)" }}>
@@ -242,9 +242,6 @@ export default function DailySummariesPage() {
                     ) : (
                       "All stock levels healthy"
                     )}
-                  </div>
-                  <div>
-                    <strong>Refills Due Tomorrow:</strong> {selectedDay.refills_due_tomorrow || 0}
                   </div>
                 </div>
 
