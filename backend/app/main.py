@@ -85,6 +85,7 @@ app.add_middleware(
 # Health & Database Status
 # ---------------------------------------------------------
 
+@app.get("/ping")
 @app.get("/health")
 def health():
     return {"status": "ok"}
