@@ -16,7 +16,7 @@ import {
   Legend,
 } from "recharts";
 
-import { API_BASE } from "./api";
+import { API_BASE, setCustomApiBase, getCustomApiBase } from "./api";
 
 const DATE_RANGES = [
   { label: "30 days", value: 30 },
@@ -294,17 +294,61 @@ export default function BusinessOverviewPage() {
           <div style={{ marginTop: 4 }}>
             Error connecting to <code>{API_BASE}</code>: {errorMessage}.
           </div>
-          {typeof window !== "undefined" && window.location.hostname !== "localhost" && API_BASE.includes("localhost") ? (
-            <div style={{ marginTop: 10, fontSize: "13px", color: "#991b1b", background: "#fff", padding: "12px", borderRadius: "6px", border: "1px solid #fca5a5", lineHeight: 1.6 }}>
-              💡 <strong>Render Configuration Required:</strong> This deployed frontend is trying to connect to <code>http://localhost:8000</code> because the backend URL was not configured during build time.
-              <br />
-              <strong>To fix:</strong> In your Render dashboard for <em>business-intelligence-frontend</em>, go to <strong>Environment</strong>, add <code>NEXT_PUBLIC_API_URL = https://&lt;your-backend&gt;.onrender.com</code>, and click <strong>Manual Deploy → Clear build cache & deploy</strong>.
+
+          <div style={{ marginTop: 12, background: "#ffffff", padding: "14px 16px", borderRadius: "8px", border: "1px solid #fca5a5" }}>
+            <div style={{ fontWeight: 600, color: "#991b1b", marginBottom: 6, fontSize: "14px" }}>
+              🔗 Connect to your Render Backend
             </div>
-          ) : (
-            <div style={{ marginTop: 6, fontSize: "13px", color: "var(--text-muted)" }}>
-              Please verify backend server is running. If on Render free tier, the backend may take 30–50 seconds to wake from cold sleep.
+            <p style={{ margin: "0 0 10px 0", fontSize: "13px", color: "var(--text-muted)", lineHeight: 1.5 }}>
+              Paste your deployed Render backend URL below (e.g. <code>https://YOUR-BACKEND.onrender.com</code>) to connect immediately:
+            </p>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                const inputVal = e.target.elements.backendUrl.value.trim();
+                if (inputVal) {
+                  setCustomApiBase(inputVal);
+                }
+              }}
+              style={{ display: "flex", gap: "8px", flexWrap: "wrap", alignItems: "center" }}
+            >
+              <input
+                name="backendUrl"
+                type="text"
+                placeholder="https://your-backend.onrender.com"
+                defaultValue={getCustomApiBase()}
+                required
+                style={{
+                  flex: "1 1 280px",
+                  padding: "8px 12px",
+                  borderRadius: "6px",
+                  border: "1px solid #d1d5db",
+                  fontSize: "13.5px",
+                  outline: "none",
+                }}
+              />
+              <button
+                type="submit"
+                className="btn btn-primary btn-sm"
+                style={{ padding: "8px 16px", fontSize: "13.5px", fontWeight: 600 }}
+              >
+                Connect Now →
+              </button>
+              {getCustomApiBase() && (
+                <button
+                  type="button"
+                  className="btn btn-secondary btn-sm"
+                  onClick={() => setCustomApiBase("")}
+                  style={{ padding: "8px 12px", fontSize: "12px" }}
+                >
+                  Reset
+                </button>
+              )}
+            </form>
+            <div style={{ marginTop: 10, fontSize: "12px", color: "var(--text-muted)", borderTop: "1px solid #f3f4f6", paddingTop: 8 }}>
+              💡 <em>Permanent Render Configuration:</em> In your Render dashboard for <strong>business-intelligence-frontend</strong>, go to <strong>Environment</strong>, add <code>NEXT_PUBLIC_API_URL = https://&lt;your-backend&gt;.onrender.com</code>, then click <strong>Manual Deploy → Clear build cache & deploy</strong>.
             </div>
-          )}
+          </div>
         </div>
       )}
 
