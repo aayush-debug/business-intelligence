@@ -291,9 +291,20 @@ export default function BusinessOverviewPage() {
       {errorMessage && (
         <div className="error-banner" role="alert">
           <strong>Unable to load dashboard data</strong>
-          <div>
-            Error connecting to <code>{API_BASE}</code>: {errorMessage}. Please verify backend server is running.
+          <div style={{ marginTop: 4 }}>
+            Error connecting to <code>{API_BASE}</code>: {errorMessage}.
           </div>
+          {typeof window !== "undefined" && window.location.hostname !== "localhost" && API_BASE.includes("localhost") ? (
+            <div style={{ marginTop: 10, fontSize: "13px", color: "#991b1b", background: "#fff", padding: "12px", borderRadius: "6px", border: "1px solid #fca5a5", lineHeight: 1.6 }}>
+              💡 <strong>Render Configuration Required:</strong> This deployed frontend is trying to connect to <code>http://localhost:8000</code> because the backend URL was not configured during build time.
+              <br />
+              <strong>To fix:</strong> In your Render dashboard for <em>business-intelligence-frontend</em>, go to <strong>Environment</strong>, add <code>NEXT_PUBLIC_API_URL = https://&lt;your-backend&gt;.onrender.com</code>, and click <strong>Manual Deploy → Clear build cache & deploy</strong>.
+            </div>
+          ) : (
+            <div style={{ marginTop: 6, fontSize: "13px", color: "var(--text-muted)" }}>
+              Please verify backend server is running. If on Render free tier, the backend may take 30–50 seconds to wake from cold sleep.
+            </div>
+          )}
         </div>
       )}
 
