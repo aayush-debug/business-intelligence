@@ -9,6 +9,7 @@ echo "  --------------------------------------------------"
 
 # 1. Free ports 8000 and 3000 if occupied
 echo "  [1/4] Freeing ports 8000 and 3000..."
+docker compose stop backend 2>/dev/null || true
 lsof -ti :8000 | xargs kill -9 2>/dev/null || true
 lsof -ti :3000 | xargs kill -9 2>/dev/null || true
 
