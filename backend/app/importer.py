@@ -1,4 +1,5 @@
 import csv
+from contextlib import nullcontext
 import io
 import json
 import re
@@ -496,7 +497,7 @@ def commit_import(
         row_dict = row.to_dict()
 
         try:
-            with db.begin_nested():
+            with (db.begin_nested() if dataset in ("products", "customers") else nullcontext()):
                 if dataset == "products":
                     name = str(row_dict.get(mapping.get("name")) or "").strip()
                     if not name:
